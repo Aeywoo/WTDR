@@ -1,0 +1,24 @@
+{
+	"Name": "Walk to the Desert NPCs",
+	"Author": "Tarniyar & Aeywoo",
+	"Description": "Adds NPCs to Walk to the Desert - Special thanks to Miss Coriel",
+	"Version": "1.1.2",
+	"UniqueID": "Tarniyar.NPC.WTD",
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher"
+	},
+	"Dependencies": [
+		{
+			"UniqueID": "Tarniyar.CP.WalkToDesert",
+			"IsRequired": true,
+		},
+		{
+			"UniqueID": "SuperAardvark.AntiSocial",
+			"IsRequired": true,
+		},
+		{
+			"UniqueID": "Esca.CustomNPCExclusions",
+			"IsRequired": true,
+		}
+	]
+}

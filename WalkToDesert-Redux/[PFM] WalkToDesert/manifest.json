@@ -1,0 +1,12 @@
+﻿{
+	"Name": "[PFM] Walk to the Desert",
+	"Author": "Tarniyar & Aeywoo",
+	"Version": "1.1.2",
+	"Description": "Adds the ability to produce extra artisan goods from the machines.",
+	"UniqueID": "Tarniyar.PFM.WalkToDesert",
+	"MinimumApiVersion": "3.0.0",
+    "UpdateKeys": [ ],
+	"ContentPackFor": {
+		"UniqueID": "DIGUS.ProducerFrameworkMod"
+	}
+}

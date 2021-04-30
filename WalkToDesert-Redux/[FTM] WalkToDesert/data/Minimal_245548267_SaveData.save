@@ -1,0 +1,163 @@
+{
+  "WeatherForYesterday": "Sunny",
+  "LNOSCounter": {
+    "MeadowBlock": 1
+  },
+  "ExistingObjectLocations": {},
+  "SavedObjects": [
+    {
+      "MapName": "ForestRoad",
+      "Name": null,
+      "Tile": "9, 0",
+      "Type": "LargeObject",
+      "ID": 672,
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Meadow",
+      "Name": "Common Mushroom",
+      "Tile": "4, 7",
+      "Type": "Forage",
+      "ID": 404,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Meadow",
+      "Name": "Dandelion",
+      "Tile": "5, 6",
+      "Type": "Forage",
+      "ID": 22,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Meadow",
+      "Name": "Daffodil",
+      "Tile": "6, 8",
+      "Type": "Forage",
+      "ID": 18,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Meadow",
+      "Name": "Dandelion",
+      "Tile": "10, 9",
+      "Type": "Forage",
+      "ID": 22,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Meadow",
+      "Name": "Tulip",
+      "Tile": "5, 14",
+      "Type": "Forage",
+      "ID": 591,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "GhostTown",
+      "Name": "Artifact Spot",
+      "Tile": "30, 56",
+      "Type": "Forage",
+      "ID": 590,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "GhostTown",
+      "Name": "Artifact Spot",
+      "Tile": "35, 14",
+      "Type": "Forage",
+      "ID": 590,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Interchange",
+      "Name": "Artifact Spot",
+      "Tile": "18, 51",
+      "Type": "Forage",
+      "ID": 590,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Interchange",
+      "Name": "Artifact Spot",
+      "Tile": "1, 26",
+      "Type": "Forage",
+      "ID": 590,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Interchange",
+      "Name": "Artifact Spot",
+      "Tile": "8, 45",
+      "Type": "Forage",
+      "ID": 590,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Interchange",
+      "Name": "Artifact Spot",
+      "Tile": "13, 27",
+      "Type": "Forage",
+      "ID": 590,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Interchange",
+      "Name": "Artifact Spot",
+      "Tile": "2, 30",
+      "Type": "Forage",
+      "ID": 590,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "ForestRoad",
+      "Name": "Cherry",
+      "Tile": "10, 10",
+      "Type": "Forage",
+      "ID": 638,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    }
+  ]
+}

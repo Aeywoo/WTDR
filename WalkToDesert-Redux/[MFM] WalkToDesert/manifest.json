@@ -1,0 +1,18 @@
+﻿{
+	"Name": "[MFM] Walk to the Desert",
+	"Author": "Tarniyar & Aeywoo",
+	"Version": "1.1.2",
+	"Description": "Sends new letters to the player.",
+	"UniqueID": "Tarniyar.MFM.WalkToDesert",
+	"MinimumApiVersion": "3.2.0",
+	"UpdateKeys": [ ],
+	"Dependencies": [
+		{
+			"UniqueID": "Tarniyar.JA.WalktoDesert",
+			"IsRequired": true
+		}
+	],
+	"ContentPackFor": {
+		"UniqueID": "DIGUS.MailFrameworkMod"
+	}
+}

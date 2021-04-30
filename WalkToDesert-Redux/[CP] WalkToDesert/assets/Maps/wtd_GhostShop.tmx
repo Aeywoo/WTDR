@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.6.0" orientation="orthogonal" renderorder="right-down" width="13" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="3">
+ <properties>
+  <property name="AmbientLight" value="125 125 125"/>
+  <property name="Warp" value="4 7 GhostTown 55 24"/>
+ </properties>
+ <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="37" name="z_ghostshoptiles" tilewidth="16" tileheight="16" tilecount="176" columns="11">
+  <image source="z_ghostshoptiles" width="176" height="256"/>
+ </tileset>
+ <layer id="1" name="Back" width="13" height="9">
+  <data encoding="base64" compression="zlib">
+   eJydy0s3QmEAQNH7Z0TlFUKlRFHeSkUR0UNI6f9P7OE3vmetPTxRFK8GTR5o0abDI0906fEcPC/0eeWNAe98MGTEmEnwfDLli29+mPHLnAV/LINnhQSrrJEkRZp1NthkK3i2ybDDLntk2eeAQ3Lkg6fAEUVKHFPmhFMqVDkLnnNq1LngkiuuueGWO+6j+P0DGwIWkA==
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="13" height="9">
+  <data encoding="base64" compression="zlib">
+   eJwLYGBgCCADkwJgemJwyCeh8dOQ9KQDcQYQZwJxFhBnA3EOEOcCcR4Q5wNxARAXIukpwuOWDiDuBOIuIK5B0jMNiKcD8QwgnglVWwzEJXj8QwrAFYbkhD0hDAD0BRs3
+  </data>
+ </layer>
+ <objectgroup id="4" name="Buildings">
+  <object id="1" name="TileData" x="112" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;GhostShop.1&quot;"/>
+   </properties>
+  </object>
+  <object id="2" name="TileData" x="32" y="80" width="16" height="16">
+   <properties>
+    <property name="Action" value=""/>
+    <property name="Shop" value="WTDGhostShop"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Front" width="13" height="9">
+  <data encoding="base64" compression="zlib">
+   eJyt0NsKgkAQxvF5RF/G8kBllnrRyUNeKZjd1VP2hx0xFkEvHPjB7rc7s7COiHR4LRDCwQdfMeVigy08zXwEuk6RoZKxIhwR46TZGcnfndLqmaod9jhYPRdcccN9ZsaSd6Z6nqjxQK55oXtbj7eYvxs0etZa+Rp+weIntA==
+  </data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+ <layer id="7" name="Paths" width="13" height="9">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFww0AAAHUAAE=
+  </data>
+ </layer>
+ <objectgroup id="8" name="Paths"/>
+</map>

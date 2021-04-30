@@ -1,0 +1,13 @@
+﻿{
+	"Name": "[STF] Walk to the Desert Shops",
+	"Author": "Tarniyar & Aeywoo",
+	"Version": "1.1.2",
+	"Description": "Adds NPC Shops to the Walk to the Desert Mod.",
+	"UniqueID": "Tarniyar.STF.WalkToDesert",
+	"MinimumApiVersion": "2.0",
+	"UpdateKeys": [ ],
+	"ContentPackFor": {
+		"UniqueID": "Cherry.ShopTileFramework",
+		"MinimumVersion": "1.0.1"
+	}
+}
