@@ -111,26 +111,25 @@
 	
 	"Changes": [
 	// MapPatches
-	
-	{ // Backwoods Overwrite
+	{ // Adds custom Backwoods edit to the Backwoods map.
 		"Action": "EditMap",
 		"Target": "Maps/Backwoods",
-		"FromFile": "assets/Maps/wtd_Backwoods.tmx",
-		"ToArea": { "X": 0, "Y": 0, "Width": 50, "Height": 40 },
+		"FromFile": "assets/Maps/MapPatches/Backwoods.tmx",
+		"ToArea": { "X": 24, "Y": 21, "Width": 10, "Height": 8 },
 	},
-	/*{ // Adds a Staircase to Backwoods
+	{ // Adds custom Backwoods Fence edit to the Backwoods map.
 		"Action": "EditMap",
 		"Target": "Maps/Backwoods",
-		"FromFile": "assets/Maps/wtd_Backwoods_Staircase.tmx",
-		"ToArea": { "X": 0, "Y": 0, "Width": 50, "Height": 40 },
-	},*/
+		"FromFile": "assets/Maps/MapPatches/BackwoodsFence.tmx",
+		"ToArea": { "X": 41, "Y": 25, "Width": 6, "Height": 4 },
+	},
 	{ // Removes the barrier from the Tunnel.
 		"Action": "EditMap",
 		"Target": "Maps/Tunnel",
 		"FromFile": "assets/Maps/MapPatches/Tunnel.tmx",
 		"ToArea": { "X": 6, "Y": 6, "Width": 1, "Height": 7},
 	},
-	{ // This blocks the road going to the left towards GardenVillage if GardenVillage isn't installed via a 'When' check. //
+	{ // This blocks the road going to the left towards GardenVillage if the GardenVillage mod isn't installed.
 		"Action": "EditMap",
 		"Target": "Maps/Custom_Tarniyar_WindingRoad",
 		"FromFile": "assets/Maps/MapPatches/WindingRoad.tmx",
@@ -139,6 +138,15 @@
 			"HasMod |contains=Tarniyar.TMX.GardenVillage": false
 		}
 	},
+	/*{ // This blocks the road to the North on the Interchange map if the Downtown Zuzu mod isn't installed.
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Tarniyar_Interchange",
+		"FromFile": "assets/Maps/MapPatches/Interchange.tmx",
+		"ToArea": { "X": 19, "Y": 0, "Width": 11, "Height": 1 },
+		"When": {
+			"HasMod |contains=XxHarvzBackxX.DowntownZuzuCP": false
+		}
+	},*/
 	
 	// Adding Map Warps
 	
@@ -231,20 +239,6 @@
 			"70 49 Custom_Tarniyar_Interchange 1 39"
 		]
 	},
-	{ // This warp is only added if GardenVillage is installed.
-		"Action": "EditMap",
-		"Target": "Maps/Custom_Tarniyar_WindingRoad",
-		"AddWarps": [
-			"54 19 Custom_Tarniyar_WindingRoad 1 81",
-			"54 20 Custom_Tarniyar_WindingRoad 1 82",
-			"54 21 Custom_Tarniyar_WindingRoad 1 83",
-			"54 22 Custom_Tarniyar_WindingRoad 1 84",
-			"54 23 Custom_Tarniyar_WindingRoad 1 85"
-		],
-		"When": {
-			"HasMod": "Tarniyar.TMX.GardenVillage"
-		}
-	},
 	{ // This adds compatability with SVE since they overhauled the Desert Map
 		"Action": "EditMap",
 		"Target": "Maps/Desert",
@@ -303,6 +297,35 @@
 		],
 		"When": {
 			"HasMod |contains=FlashShifter.StardewValleyExpandedALL": false
+		}
+	},
+	
+	{ // Adds warps to Garden Village, but only if the Garden Village mod is installed.
+		"Action": "EditMap",
+		"Target": "Maps/MainShops",
+		"AddWarps": [
+			"54 19 Custom_Tarniyar_WindingRoad 0 81",
+			"54 20 Custom_Tarniyar_WindingRoad 0 82",
+			"54 21 Custom_Tarniyar_WindingRoad 0 83",
+			"54 22 Custom_Tarniyar_WindingRoad 0 84",
+			"54 23 Custom_Tarniyar_WindingRoad 0 85"
+		],
+		"When": {
+			"HasMod": "Tarniyar.TMX.GardenVillage"
+		}
+	},
+	{ // Adds warps to Garden Village, but only if the Garden Village mod is installed.
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Tarniyar_WindingRoad",
+		"AddWarps": [
+			"-1 81 MainShops 54 19",
+			"-1 82 MainShops 54 20",
+			"-1 83 MainShops 54 21",
+			"-1 84 MainShops 54 22",
+			"-1 85 MainShops 54 23"
+		],
+		"When": {
+			"HasMod": "Tarniyar.TMX.GardenVillage"
 		}
 	},
 	
@@ -408,9 +431,9 @@
 		"Action": "EditData",
 		"Target": "Strings/StringsFromMaps",
 		"Entries": {
-			"Interchange.1": "You don't have any reason to go to Zuzu City today.",
-			"Interchange.2": "` Highway 5 to Zuzu City^@ Calico Desert",
-			"Interchange.3": "` Highway 5 to Zuzu City^> Glacier Outpost",
+			"Interchange.1": "You don't have any reason to go to Downtown Zuzu City today.",
+			"Interchange.2": "` Highway 5 to Downtown Zuzu City^@ Calico Desert",
+			"Interchange.3": "` Highway 5 to Downtown Zuzu City^> Glacier Outpost",
 			"Interchange.4": "Road blocked by an avalanche. I'm sure it will be cleared in a future update.",
 			"GhostTown.1": "DANGER!",
 			"GhostTown.2": "DO NOT ENTER!",
@@ -421,11 +444,11 @@
 			"Horsepath.1": "Horses are prohibited to enter the tunnel!^Tractors are prohibited to enter the tunnel!",
 			"Horsepath.2": "@ Equestrian path this way",
 			"Horsepath.3": "> Equestrian path this way",
-			"Winding.1": "` Highway 5 to Zuzu City^@ Garden Village^> Pelican Town",
-			"Winding.2": "` Highway 5 to Zuzu City^@ Nuclear Power Plant",
+			"Winding.1": "` Highway 5 to Downtown Zuzu City^@ Garden Village^> Pelican Town",
+			"Winding.2": "` Highway 5 to Downtown Zuzu City^@ Nuclear Power Plant",
 			"Winding.3": "Due to a leak in the main reactor containment structure, the Nuclear Power Plant is closed to Visitors.",
 			"GardenVillage.1": "Several downed powerlines and a fallen tree block your path as you try to reach The Garden Village."
-		}	  
+		}
 	},
 		{
 			"Action": "EditData",

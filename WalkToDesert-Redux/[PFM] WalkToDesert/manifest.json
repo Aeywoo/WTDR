@@ -5,6 +5,7 @@
 	"Description": "Adds the ability to produce extra artisan goods from the machines.",
 	"UniqueID": "Tarniyar.PFM.WalkToDesert",
 	"MinimumApiVersion": "3.0.0",
+	"UpdateKeys": [ "Nexus:???" ],
     "UpdateKeys": [ ],
 	"ContentPackFor": {
 		"UniqueID": "DIGUS.ProducerFrameworkMod"

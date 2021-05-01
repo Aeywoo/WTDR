@@ -3,7 +3,7 @@
 	"Author": "Tarniyar & Aeywoo",
 	"Version": "1.1.2",
 	"UniqueID": "Tarniyar.JA.WalktoDesert",
-	"UpdateKeys": [ ],
+	"UpdateKeys": [ "Nexus:???" ],
 	"ContentPackFor": {
 		"UniqueID": "spacechase0.JsonAssets"
 	},

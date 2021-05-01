@@ -5,7 +5,7 @@
 	"Description": "Adds forage items to new maps",
 	"UniqueID": "Tarniyar.FTM.WalkToDesert",
 	"MinimumApiVersion": "3.0.0",
-	"UpdateKeys": [ ],
+	"UpdateKeys": [ "Nexus:???" ],
 	"Dependencies": [
 		{
 			"UniqueID": "Tarniyar.JA.WalktoDesert"

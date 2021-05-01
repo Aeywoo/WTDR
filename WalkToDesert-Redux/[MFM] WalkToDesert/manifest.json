@@ -5,7 +5,7 @@
 	"Description": "Sends new letters to the player.",
 	"UniqueID": "Tarniyar.MFM.WalkToDesert",
 	"MinimumApiVersion": "3.2.0",
-	"UpdateKeys": [ ],
+	"UpdateKeys": [ "Nexus:???" ],
 	"Dependencies": [
 		{
 			"UniqueID": "Tarniyar.JA.WalktoDesert",
