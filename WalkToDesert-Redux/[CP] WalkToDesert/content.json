@@ -114,14 +114,8 @@
 	{ // Adds custom Backwoods edit to the Backwoods map.
 		"Action": "EditMap",
 		"Target": "Maps/Backwoods",
-		"FromFile": "assets/Maps/MapPatches/Backwoods.tmx",
-		"ToArea": { "X": 24, "Y": 21, "Width": 10, "Height": 8 },
-	},
-	{ // Adds custom Backwoods Fence edit to the Backwoods map.
-		"Action": "EditMap",
-		"Target": "Maps/Backwoods",
-		"FromFile": "assets/Maps/MapPatches/BackwoodsFence.tmx",
-		"ToArea": { "X": 41, "Y": 25, "Width": 6, "Height": 4 },
+		"FromFile": "assets/Maps/MapPatches/RoadSign.tmx",
+		"ToArea": { "X": 24, "Y": 26, "Width": 1, "Height": 3 },
 	},
 	{ // Removes the barrier from the Tunnel.
 		"Action": "EditMap",
@@ -149,14 +143,6 @@
 	},*/
 	
 	// Adding Map Warps
-	
-	{ // This is only for the Horse Teleport Hacky Stuff
-		"Action": "EditMap",
-		"Target": "Maps/Backwoods",
-		"AddWarps": [
-			"29 23 Custom_Tarniyar_ForestRoad 48 5"
-		]
-	},
 	{
 		"Action": "EditMap",
 		"Target": "Maps/Tunnel",
@@ -442,8 +428,6 @@
 			"GhostShop.1": "The Door is Locked. And the doorknob is covered in spiderwebs!",
 			"GhostShop.2": "Ghost: Buy something?",
 			"Horsepath.1": "Horses are prohibited to enter the tunnel!^Tractors are prohibited to enter the tunnel!",
-			"Horsepath.2": "@ Equestrian path this way",
-			"Horsepath.3": "> Equestrian path this way",
 			"Winding.1": "` Highway 5 to Downtown Zuzu City^@ Garden Village^> Pelican Town",
 			"Winding.2": "` Highway 5 to Downtown Zuzu City^@ Nuclear Power Plant",
 			"Winding.3": "Due to a leak in the main reactor containment structure, the Nuclear Power Plant is closed to Visitors.",

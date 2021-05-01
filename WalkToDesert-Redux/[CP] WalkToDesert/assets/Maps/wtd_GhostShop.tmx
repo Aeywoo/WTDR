@@ -2,7 +2,8 @@
 <map version="1.5" tiledversion="1.6.0" orientation="orthogonal" renderorder="right-down" width="13" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="3">
  <properties>
   <property name="AmbientLight" value="125 125 125"/>
-  <property name="Warp" value="4 7 GhostTown 55 24"/>
+  <property name="Music" value="desolate"/>
+  <property name="Warp" value="4 7 Custom_Tarniyar_GhostTown 55 24"/>
  </properties>
  <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
   <image source="paths" width="64" height="144"/>

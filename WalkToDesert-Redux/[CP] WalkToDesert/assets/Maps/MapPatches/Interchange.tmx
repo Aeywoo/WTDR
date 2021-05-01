@@ -11,7 +11,7 @@
   <property name="Warp" value=""/>
   <property name="Winter_Objects" value="414 .1 418 .3"/>
  </properties>
- <tileset firstgid="1" name="outdoors" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+ <tileset firstgid="1" name="outdoors" tilewidth="16" tileheight="16" tilecount="164" columns="25">
   <image source="spring_outdoorsTileSheet" width="400" height="1264"/>
   <tile id="150">
    <properties>
@@ -877,51 +877,18 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="1976" name="spring_z_wtd_tilesheet" tilewidth="16" tileheight="16" tilecount="256" columns="16">
+ <tileset firstgid="1058" name="spring_z_wtd_tilesheet" tilewidth="16" tileheight="16" tilecount="0" columns="16">
   <image source="spring_z_wtd_tilesheet" width="256" height="256"/>
- </tileset>
- <tileset firstgid="2232" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
-  <image source="paths" width="64" height="144"/>
-  <tile id="0">
-   <properties>
-    <property name="PathType" value="NE"/>
-   </properties>
-  </tile>
-  <tile id="1">
-   <properties>
-    <property name="PathType" value="SE"/>
-   </properties>
-  </tile>
-  <tile id="2">
-   <properties>
-    <property name="PathType" value="WS"/>
-   </properties>
-  </tile>
-  <tile id="3">
-   <properties>
-    <property name="PathType" value="WN"/>
-   </properties>
-  </tile>
-  <tile id="4">
-   <properties>
-    <property name="PathType" value="Crossroad"/>
-   </properties>
-  </tile>
-  <tile id="7">
-   <properties>
-    <property name="PathType" value="End"/>
-   </properties>
-  </tile>
  </tileset>
  <layer id="1" name="Back" width="11" height="1">
   <data encoding="base64" compression="zlib">
-   eJwTYWRgEIFibQ4GhhfsEKyHxAaKN4DkAWOABS0=
+   eJwTYWRgEIHiqSwMDEFQPAOJDRRvAMkDAEuwA/s=
   </data>
  </layer>
  <objectgroup id="2" name="Back"/>
  <layer id="3" name="Buildings" width="11" height="1">
   <data encoding="base64" compression="zlib">
-   eJwTYWRgEAFiJiDW5mBgeMHOcACE9ZDYQPEGkBoAk/gIGw==
+   eJwTYWRgEAFiJiCeysLAEMTCcACEZyCxgeINIDUAfCgG6Q==
   </data>
  </layer>
  <objectgroup id="4" name="Buildings">
@@ -989,7 +956,7 @@
  <objectgroup id="6" name="Front"/>
  <layer id="7" name="Paths" width="11" height="1">
   <data encoding="base64" compression="zlib">
-   eJw7wcFAFDgFVAcAJyQBow==
+   eJxjYCAeAAAALAAB
   </data>
  </layer>
  <objectgroup id="8" name="Paths"/>
