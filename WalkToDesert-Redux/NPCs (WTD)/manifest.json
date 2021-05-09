@@ -1,8 +1,8 @@
 {
-	"Name": "Walk to the Desert NPCs",
+	"Name": "[CP] Walk to the Desert Redux NPCs",
 	"Author": "Tarniyar & Aeywoo",
 	"Description": "Adds NPCs to Walk to the Desert - Special thanks to Miss Coriel",
-	"Version": "1.1.2",
+	"Version": "1.2.0",
 	"UniqueID": "Tarniyar.NPC.WTD",
 	"UpdateKeys": [ "Nexus:???" ],
 	"ContentPackFor": {

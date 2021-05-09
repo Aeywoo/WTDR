@@ -1,0 +1,21 @@
+{
+	"Name": "[JA] Walk to the Desert Redux",
+	"Author": "Tarniyar & Aeywoo",
+	"Version": "1.2.0",
+	"UniqueID": "Tarniyar.JA.WalktoDesert",
+	"UpdateKeys": [ "Nexus:???" ],
+	"ContentPackFor": {
+		"UniqueID": "spacechase0.JsonAssets"
+	},
+  	"Dependencies": [
+		{
+			"UniqueID": "Tarniyar.CP.WalktoDesert",
+			"IsRequired": true
+		},
+		// Fixes Item ID Collisions
+		{
+			"UniqueID": "MoreFish",    // CP only mod
+			"IsRequired": false
+		}
+	]
+}

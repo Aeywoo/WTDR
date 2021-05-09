@@ -1,0 +1,185 @@
+{
+  "WeatherForYesterday": "Sunny",
+  "LNOSCounter": {
+    "MeadowBlock": 1
+  },
+  "ExistingObjectLocations": {},
+  "SavedObjects": [
+    {
+      "MapName": "Custom_Tarniyar_ForestRoad",
+      "Name": null,
+      "Tile": "9, 0",
+      "Type": "LargeObject",
+      "ID": 672,
+      "DaysUntilExpire": 0,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Custom_Tarniyar_Meadow",
+      "Name": "Sweet Pea",
+      "Tile": "11, 10",
+      "Type": "Forage",
+      "ID": 402,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Custom_Tarniyar_Meadow",
+      "Name": "Red Mushroom",
+      "Tile": "10, 11",
+      "Type": "Forage",
+      "ID": 420,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Custom_Tarniyar_Meadow",
+      "Name": "Fiddlehead Fern",
+      "Tile": "13, 6",
+      "Type": "Forage",
+      "ID": 259,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Custom_Tarniyar_Meadow",
+      "Name": "Sunflower",
+      "Tile": "16, 14",
+      "Type": "Forage",
+      "ID": 421,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Custom_Tarniyar_Meadow",
+      "Name": "Fragrant Lilac",
+      "Tile": "10, 10",
+      "Type": "Forage",
+      "ID": 2210,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Custom_Tarniyar_Meadow",
+      "Name": "Blue Mist",
+      "Tile": "15, 12",
+      "Type": "Forage",
+      "ID": 2203,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Custom_Tarniyar_Meadow",
+      "Name": "Blue Mist",
+      "Tile": "12, 10",
+      "Type": "Forage",
+      "ID": 2203,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Custom_Tarniyar_GhostTown",
+      "Name": "Artifact Spot",
+      "Tile": "27, 13",
+      "Type": "Forage",
+      "ID": 590,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Custom_Tarniyar_GhostTown",
+      "Name": "Artifact Spot",
+      "Tile": "10, 9",
+      "Type": "Forage",
+      "ID": 590,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Custom_Tarniyar_GhostTown",
+      "Name": "Artifact Spot",
+      "Tile": "21, 12",
+      "Type": "Forage",
+      "ID": 590,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Custom_Tarniyar_Interchange",
+      "Name": "Artifact Spot",
+      "Tile": "15, 48",
+      "Type": "Forage",
+      "ID": 590,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Custom_Tarniyar_Interchange",
+      "Name": "Artifact Spot",
+      "Tile": "10, 28",
+      "Type": "Forage",
+      "ID": 590,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Custom_Tarniyar_Interchange",
+      "Name": "Artifact Spot",
+      "Tile": "8, 20",
+      "Type": "Forage",
+      "ID": 590,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Custom_Tarniyar_Interchange",
+      "Name": "Artifact Spot",
+      "Tile": "14, 54",
+      "Type": "Forage",
+      "ID": 590,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Custom_Tarniyar_WindingRoad",
+      "Name": "Artifact Spot",
+      "Tile": "6, 1",
+      "Type": "Forage",
+      "ID": 590,
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    }
+  ]
+}
