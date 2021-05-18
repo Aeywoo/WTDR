@@ -23,14 +23,14 @@
             "Name": "recolor",
             "Value": "earthy",
             "When": {
-                "HasMod": "DaisyNiko.Earthyrecolor"
+                "HasMod": "DaisyNiko.EarthyRecolour"
             }
         },
         {
             "Name": "recolor",
             "Value": "eemie",
             "When": {
-                "HasMod": "minervamaga.CP.eemieMaprecolor"
+                "HasMod": "minervamaga.CP.eemieMapRecolour"
             }
         },
 		{
@@ -132,7 +132,7 @@
 			"HasMod |contains=XxHarvzBackxX.DowntownZuzuCP": false
 		}
 	},
-	/*{ // Adds a custom map patch to Ridgeside Villages Minecart map that takes you to the Ghost Town Cave.
+	{ // Adds a custom map patch to Ridgeside Villages Minecart map that takes you to the Ghost Town Cave.
 		"Action": "EditMap",
 		"Target": "Maps/RSVMinecart",
 		"FromFile": "assets/Maps/MapPatches/Minecart.tmx",
@@ -140,16 +140,32 @@
 		"When": {
 			"HasMod |contains=Rafseazz.RSVTMXL": true
 		}
-	},*/
-	/*{ // This replaces the Warp TileData boxes with Message TileData boxes.
+	},
+	{ // Ridgeside Unlock Minecarts Thing (Not Stolen)
 		"Action": "EditMap",
 		"Target": "Maps/Custom_Tarniyar_Cave",
-		"FromFile": "assets/Maps/MapPatches/Cave.tmx",
-		"ToArea": { "X": 6, "Y": 5, "Width": 9, "Height": 7 },
+		"MapTiles": [
+			{
+				"Position": { "X": 11, "Y": 11 },
+				"Layer": "Buildings",
+				"SetProperties": {
+					"Action": "Warp 23 11 Custom_Ridgeside_RSVMinecart"
+				}
+			},
+			{
+				"Position": { "X": 12, "Y": 11 },
+				"Layer": "Buildings",
+				"SetProperties": {
+					"Action": "Warp 23 11 Custom_Ridgeside_RSVMinecart"
+				}
+			}
+		],
 		"When": {
-			"HasMod |contains=Rafseazz.RSVTMXL": false
-		}
-	},*/
+			"HasSeenEvent: |contains=75160190": true,
+			"HasMod": "Rafseazz.RSVCP"
+		},
+		"Update": "OnLocationChange, OnTimeChange"
+	},
 	
 	// Load Tilesheets
 	{
@@ -395,6 +411,7 @@
 		"Target": "Maps/Custom_XxHarvzBackxX_ZuzuCityFreeway",
 		"AddWarps": [
 			"20 36 Custom_Tarniyar_Interchange 20 1",
+			"21 36 Custom_Tarniyar_Interchange 22 1",
 			"22 36 Custom_Tarniyar_Interchange 22 1",
 			"23 36 Custom_Tarniyar_Interchange 23 1",
 			"24 36 Custom_Tarniyar_Interchange 24 1",
@@ -426,7 +443,7 @@
 		"Target": "Characters/Dialogue/Sandy",
 		"Entries": {
 			"Mon2": "Hey, sweetie, how's the farm?#$e#Let me guess. You're here to buy a whole bunch of seeds... right, sweetie?$h",
-	}
+		}
 	},
 	// Objects
 	{
@@ -441,28 +458,28 @@
 		"Action": "EditData",
 		"Target": "Data/Locations",
 		"Entries": { 
-			"ForestRoad": "-1/-1/-1/-1/-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Giant Old Coin}} .05 {{spacechase0.JsonAssets/ObjectId:Old Coin}} .3 770 .25 390 .25 330 1"
+			"Custom_Tarniyar_ForestRoad": "-1/-1/-1/-1/-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Giant Old Coin}} .05 {{spacechase0.JsonAssets/ObjectId:Old Coin}} .3 770 .25 390 .25 330 1"
 	}
 	},
 	{   
 		"Action": "EditData",
 		"Target": "Data/Locations",
 		"Entries": { 
-			"WindingRoad": "-1/-1/-1/-1/-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Giant Old Coin}} .05 {{spacechase0.JsonAssets/ObjectId:Old Coin}} .3 770 .25 390 .25 330 1"
+			"Custom_Tarniyar_WindingRoad": "-1/-1/-1/-1/-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Giant Old Coin}} .05 {{spacechase0.JsonAssets/ObjectId:Old Coin}} .3 770 .25 390 .25 330 1"
 		}
 	},
 	{
 		"Action": "EditData",
 		"Target": "Data/Locations",
 		"Entries": { 
-			"Interchange": "22 .5/402 .5/408 .5/283 .5/-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Giant Old Coin}} .05 {{spacechase0.JsonAssets/ObjectId:Old Coin}} .3 770 .25 390 .25 330 1"
+			"Custom_Tarniyar_Interchange": "22 .5/402 .5/408 .5/283 .5/-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Giant Old Coin}} .05 {{spacechase0.JsonAssets/ObjectId:Old Coin}} .3 770 .25 390 .25 330 1"
 		}
 	},
 	{
 		"Action": "EditData",
 		"Target": "Data/Locations",
 		"Entries": {
-			"GhostTown": "88 .5 90 .5/88 .5 90 .5/88 .5 90 .5/88 .5 90 .5/-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Giant Old Coin}} .05 {{spacechase0.JsonAssets/ObjectId:Old Coin}} .3 770 .25 390 .25 330 1"
+			"Custom_Tarniyar_GhostTown": "88 .5 90 .5/88 .5 90 .5/88 .5 90 .5/88 .5 90 .5/-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Giant Old Coin}} .05 {{spacechase0.JsonAssets/ObjectId:Old Coin}} .3 770 .25 390 .25 330 1"
 		}
 	},
 	{
@@ -483,8 +500,8 @@
 			"Horsepath.2": "@ Equestrian horse path this way.",
 			"Horsepath.3": "> Equestrian horse path this way.",
 			"Winding.1": "` Highway 5 to Downtown Zuzu City^@ Garden Village^> Pelican Town",
-			"Winding.2": "` Highway 5 to Downtown Zuzu City^@ Nuclear Power Plant",
-			"Winding.3": "Due to a leak in the main reactor containment structure, the Nuclear Power Plant is closed to Visitors.",
+			"Winding.2": "` Highway 5 to Downtown Zuzu City^@ Ridgeside Village",
+			"Winding.3": "Sadly the road to Ridgeside Village is still under construction, check back later.",
 			"Cave.1": "For some odd reason, this door appears to be painted onto the wall?^Who would do such a thing?",
 			"Cave.2": "It's a pile of bones, nothing too interesting.",
 			"Cave.3": "This is a hole, you cannot jump into it because that would not be a smart idea. Also because it's illegal, so don't try it!",

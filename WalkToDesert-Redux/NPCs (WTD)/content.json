@@ -73,8 +73,9 @@
 			"Entries": null
 		},
 		{
+			"LogName": "PickledPete Event",
 			"Action": "Load",
-			"Target": "Data/Events/GhostShop",
+			"Target": "Data/Events/Custom_Tarniyar_GhostShop",
 			"FromFile": "assets/events/GhostShop.json"
 		}
 	]

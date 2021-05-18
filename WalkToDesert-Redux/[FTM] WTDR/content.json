@@ -1,56 +1,62 @@
 {
-  "ForageSpawnEnabled": true,
-  "LargeObjectSpawnEnabled": true,
-  "OreSpawnEnabled": true,
-  "MonsterSpawnEnabled": true,
-  "Forage_Spawn_Settings": {
-    "Areas": [
-      {
-        "SpringItemIndex": [
-          "Cherry"
-        ],
-        "SummerItemIndex": [
-          "Peach"
-        ],
-        "FallItemIndex": [
-          "Apple"
-        ],
-        "WinterItemIndex": [
-          "Crystal Fruit"
-        ],
-        "UniqueAreaID": "OldOrchard",
-        "MapName": "Custom_Tarniyar_ForestRoad",
-        "MinimumSpawnsPerDay": -1,
-        "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": [],
-        "ExcludeTerrainTypes": [],
-        "IncludeCoordinates": [
-          "5,6/11,10"
-        ],
-        "ExcludeCoordinates": [],
-        "StrictTileChecking": "Maximum",
-        "SpawnTiming": {
-          "StartTime": 600,
-          "EndTime": 600,
-          "MinimumTimeBetweenSpawns": 10,
-          "MaximumSimultaneousSpawns": null,
-          "OnlySpawnIfAPlayerIsPresent": false,
-          "SpawnSound": ""
-        },
-        "ExtraConditions": {
-          "Years": [
-            "2"
-          ],
-          "Seasons": [],
-          "Days": [],
-          "WeatherYesterday": [],
-          "WeatherToday": [],
-          "WeatherTomorrow": [],
-          "EPUPreconditions": [],
-          "LimitedNumberOfSpawns": null
-        },
-        "DaysUntilSpawnsExpire": 2
-      },
+	"ForageSpawnEnabled": true,
+	"LargeObjectSpawnEnabled": true,
+	"OreSpawnEnabled": true,
+	"MonsterSpawnEnabled": true,
+	"Forage_Spawn_Settings": {
+	"Areas": [
+	{
+		"SpringItemIndex": [
+			"Cherry",
+			"Apricot",
+			"Lemon",
+			"Lime"
+		],
+		"SummerItemIndex": [
+			"Orange",
+			"Peach",
+			"Banana",
+			"Papaya"
+		],
+		"FallItemIndex": [
+			"Pomegranate",
+			"Apple",
+			"Granny Smith Apple",
+			"Persimmon"
+		],
+		"WinterItemIndex": [
+			"Crystal Fruit"
+		],
+		"UniqueAreaID": "OldOrchard",
+		"MapName": "Custom_Tarniyar_ForestRoad",
+		"MinimumSpawnsPerDay": -1,
+		"MaximumSpawnsPerDay": 2,
+		"IncludeTerrainTypes": [],
+		"ExcludeTerrainTypes": [],
+		"IncludeCoordinates": [
+		"5,6/11,10"
+		],
+		"ExcludeCoordinates": [],
+		"StrictTileChecking": "Maximum",
+		"SpawnTiming": {
+		"StartTime": 600,
+		"EndTime": 600,
+		"MinimumTimeBetweenSpawns": 10,
+		"MaximumSimultaneousSpawns": null,
+		"OnlySpawnIfAPlayerIsPresent": false,
+		"SpawnSound": ""
+	},
+	"ExtraConditions": {
+		"Years": [],
+		"Seasons": [],
+		"Days": [],
+		"WeatherYesterday": [],
+		"WeatherToday": [],
+		"WeatherTomorrow": [],
+		"LimitedNumberOfSpawns": null
+	},
+		"DaysUntilSpawnsExpire": 2
+	},
       {
         "SpringItemIndex": [
           "Blue Easter Egg",
@@ -90,14 +96,14 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
-          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
       },
       {
         "SpringItemIndex": [
-          "Daffodil"
+          "Rose",
+          "Spring Rose"
         ],
         "SummerItemIndex": [],
         "FallItemIndex": [],
@@ -132,7 +138,6 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
-          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
@@ -174,7 +179,6 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
-          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
@@ -217,7 +221,6 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
-          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
@@ -226,7 +229,7 @@
         "SpringItemIndex": [],
         "SummerItemIndex": [],
         "FallItemIndex": [
-          "Prehistoric Tibia"
+          "Joja Cola"
         ],
         "WinterItemIndex": [],
         "UniqueAreaID": "OldOrchardOctoberfest",
@@ -259,7 +262,6 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
-          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
@@ -268,7 +270,7 @@
         "SpringItemIndex": [],
         "SummerItemIndex": [],
         "FallItemIndex": [
-          "Yellowfeet"
+          "Prehistoric Tibia"
         ],
         "WinterItemIndex": [],
         "UniqueAreaID": "OldOrchardHalloween",
@@ -301,7 +303,6 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
-          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
@@ -310,7 +311,9 @@
         "SpringItemIndex": [],
         "SummerItemIndex": [],
         "FallItemIndex": [],
-        "WinterItemIndex": [],
+        "WinterItemIndex": [
+          "Ice Cream"
+        ],
         "UniqueAreaID": "OldOrchardIce",
         "MapName": "Custom_Tarniyar_ForestRoad",
         "MinimumSpawnsPerDay": 1,
@@ -341,7 +344,6 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
-          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
@@ -383,20 +385,33 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
-          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
       },
       {
         "SpringItemIndex": [
-          "Parsnip"
+          "Potato",
+          "Parsnip",
+          "Onion",
+          "Spinach"
         ],
-        "SummerItemIndex": [],
+        "SummerItemIndex": [
+          "Hops",
+          "Radish",
+          "Adzuki Bean",
+          "Lettuce"
+        ],
         "FallItemIndex": [
-          "Beet"
+          "Beet",
+          "Yam",
+          "Bell Pepper",
+          "Carrot"
         ],
-        "WinterItemIndex": [],
+        "WinterItemIndex": [
+          "Juniper Berry",
+          "Mint"
+        ],
         "UniqueAreaID": "OldFarm",
         "MapName": "Custom_Tarniyar_ForestRoad",
         "MinimumSpawnsPerDay": -1,
@@ -425,7 +440,6 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
-          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
@@ -469,7 +483,6 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
-          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
@@ -513,7 +526,6 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
-          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
@@ -561,7 +573,6 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
-          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
@@ -613,20 +624,31 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
-          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
       },
       {
         "SpringItemIndex": [
-          "Tulip"
+          "Tulip",
+          "Blue Jazz",
+          "Giant Allium",
+          "Chamomile",
+          "Pink Cat"
         ],
         "SummerItemIndex": [
-          "Sunflower"
+          "Sunflower",
+          "Poppy",
+          "Summer Spangle",
+          "Blue Mist",
+          "Fragrant Lilac"
         ],
         "FallItemIndex": [
-          "Bee Balm"
+          "Fairy Rose",
+          "Sunflower",
+          "Mophead Hydrangea",
+          "Bee Balm",
+          "Purple Coneflower"
         ],
         "WinterItemIndex": [],
         "UniqueAreaID": "MeadowFlowers",
@@ -649,15 +671,12 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "Years": [
-            "2"
-          ],
+          "Years": [],
           "Seasons": [],
           "Days": [],
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
-          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
@@ -666,10 +685,12 @@
         "SpringItemIndex": [
           "Daffodil",
           "Dandelion",
-          "Common Mushroom"
+          "Common Mushroom",
+          "Morel"
         ],
         "SummerItemIndex": [
           "Sweet Pea",
+          "Fiddlehead Fern",
           "Red Mushroom"
         ],
         "FallItemIndex": [
@@ -708,7 +729,6 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
-          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
@@ -774,7 +794,6 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
-          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": 1
         },
         "DaysUntilSpawnsExpire": null
@@ -814,7 +833,6 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
-          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
@@ -850,7 +868,6 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
-          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
@@ -920,17 +937,41 @@
     "Areas": [
       {
         "MonsterTypes": [
+		  {
+			"MonsterName": "Green Slime",
+			"Settings": {
+			  "HP": 20
+			}
+		  },
+		  {
+			"MonsterName": "Blue Slime",
+			"Settings": {
+			  "HP": 30
+			}
+		  },
+		  {
+			"MonsterName": "Red Slime",
+			"Settings": {
+			  "HP": 40
+			}
+		  },
           {
-            "MonsterName": "Green Slime",
+            "MonsterName": "Wilderness Golem",
             "Settings": {
-              "HP": 20
+              "HP": 25
+            }
+          },
+          {
+            "MonsterName": "Grub",
+            "Settings": {
+              "HP": 10
             }
           }
         ],
         "UniqueAreaID": "ForestRoadMonsters",
         "MapName": "Custom_Tarniyar_ForestRoad",
-        "MinimumSpawnsPerDay": 30,
-        "MaximumSpawnsPerDay": 60,
+        "MinimumSpawnsPerDay": 20,
+        "MaximumSpawnsPerDay": 40,
         "IncludeTerrainTypes": [
           "All"
         ],
@@ -948,32 +989,57 @@
         },
         "ExtraConditions": {
           "Years": [],
-          "Seasons": [
-            "Summer",
-            "Spring",
-            "Fall"
-          ],
+          "Seasons": [],
           "Days": [],
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
-          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
       },
       {
         "MonsterTypes": [
+		  {
+			"MonsterName": "Green Slime",
+			"Settings": {
+			  "HP": 20
+			}
+		  },
+		  {
+			"MonsterName": "Blue Slime",
+			"Settings": {
+			  "HP": 30
+			}
+		  },
+		  {
+			"MonsterName": "Red Slime",
+			"Settings": {
+			  "HP": 40
+			}
+		  },
           {
-            "MonsterName": "Green Slime",
+            "MonsterName": "Duggy",
             "Settings": {
-              "HP": 20
+              "HP": 30
             }
           },
           {
-            "MonsterName": "Blue Slime",
+            "MonsterName": "Rock Crab",
             "Settings": {
-              "HP": 30
+              "HP": 40
+            }
+          },
+          {
+            "MonsterName": "Wilderness Golem",
+            "Settings": {
+              "HP": 50
+            }
+          },
+          {
+            "MonsterName": "Grub",
+            "Settings": {
+              "HP": 20
             }
           }
         ],
@@ -998,30 +1064,43 @@
         },
         "ExtraConditions": {
           "Years": [],
-          "Seasons": [
-            "Summer",
-            "Spring",
-            "Fall"
-          ],
+          "Seasons": [],
           "Days": [],
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
-          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
       },
       {
         "MonsterTypes": [
+		  {
+			"MonsterName": "Green Slime",
+			"Settings": {
+			  "HP": 20
+			}
+		  },
+		  {
+			"MonsterName": "Blue Slime",
+			"Settings": {
+			  "HP": 30
+			}
+		  },
+		  {
+			"MonsterName": "Red Slime",
+			"Settings": {
+			  "HP": 40
+			}
+		  },
           {
-            "MonsterName": "Green Slime",
+            "MonsterName": "Duggy",
             "Settings": {
-              "HP": 20
+              "HP": 30
             }
           },
           {
-            "MonsterName": "Red Slime",
+            "MonsterName": "Rock Crab",
             "Settings": {
               "HP": 40
             }
@@ -1031,11 +1110,17 @@
             "Settings": {
               "HP": 50
             }
+          },
+          {
+            "MonsterName": "Grub",
+            "Settings": {
+              "HP": 20
+            }
           }
         ],
         "UniqueAreaID": "InterchangeDayMonsters",
         "MapName": "Custom_Tarniyar_Interchange",
-        "MinimumSpawnsPerDay": 50,
+        "MinimumSpawnsPerDay": 40,
         "MaximumSpawnsPerDay": 90,
         "IncludeTerrainTypes": [
           "All"
@@ -1047,161 +1132,18 @@
         "SpawnTiming": {
           "StartTime": 600,
           "EndTime": 2350,
-          "MinimumTimeBetweenSpawns": 20,
+          "MinimumTimeBetweenSpawns": 10,
           "MaximumSimultaneousSpawns": null,
           "OnlySpawnIfAPlayerIsPresent": false,
           "SpawnSound": ""
         },
         "ExtraConditions": {
           "Years": [],
-          "Seasons": [
-            "Summer",
-            "Spring",
-            "Fall"
-          ],
+          "Seasons": [],
           "Days": [],
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
-          "EPUPreconditions": [],
-          "LimitedNumberOfSpawns": null
-        },
-        "DaysUntilSpawnsExpire": null
-      },
-      {
-        "MonsterTypes": [
-          {
-            "MonsterName": "Dust Sprite",
-            "Settings": {
-              "HP": 20
-            }
-          }
-        ],
-        "UniqueAreaID": "ForestRoadDayMonstersWinter",
-        "MapName": "Custom_Tarniyar_ForestRoad",
-        "MinimumSpawnsPerDay": 30,
-        "MaximumSpawnsPerDay": 90,
-        "IncludeTerrainTypes": [
-          "All"
-        ],
-        "ExcludeTerrainTypes": [],
-        "IncludeCoordinates": [],
-        "ExcludeCoordinates": [],
-        "StrictTileChecking": "Maximum",
-        "SpawnTiming": {
-          "StartTime": 600,
-          "EndTime": 2350,
-          "MinimumTimeBetweenSpawns": 20,
-          "MaximumSimultaneousSpawns": null,
-          "OnlySpawnIfAPlayerIsPresent": false,
-          "SpawnSound": ""
-        },
-        "ExtraConditions": {
-          "Years": [],
-          "Seasons": [
-            "Winter"
-          ],
-          "Days": [],
-          "WeatherYesterday": [],
-          "WeatherToday": [],
-          "WeatherTomorrow": [],
-          "EPUPreconditions": [],
-          "LimitedNumberOfSpawns": null
-        },
-        "DaysUntilSpawnsExpire": null
-      },
-      {
-        "MonsterTypes": [
-          {
-            "MonsterName": "Blue Slime",
-            "Settings": {
-              "HP": 40
-            }
-          },
-          {
-            "MonsterName": "Dust Sprite",
-            "Settings": {
-              "HP": 20
-            }
-          }
-        ],
-        "UniqueAreaID": "WindingRoadDayMonstersWinter",
-        "MapName": "Custom_Tarniyar_WindingRoad",
-        "MinimumSpawnsPerDay": 30,
-        "MaximumSpawnsPerDay": 90,
-        "IncludeTerrainTypes": [
-          "All"
-        ],
-        "ExcludeTerrainTypes": [],
-        "IncludeCoordinates": [],
-        "ExcludeCoordinates": [],
-        "StrictTileChecking": "Maximum",
-        "SpawnTiming": {
-          "StartTime": 600,
-          "EndTime": 2350,
-          "MinimumTimeBetweenSpawns": 20,
-          "MaximumSimultaneousSpawns": null,
-          "OnlySpawnIfAPlayerIsPresent": false,
-          "SpawnSound": ""
-        },
-        "ExtraConditions": {
-          "Years": [],
-          "Seasons": [
-            "Winter"
-          ],
-          "Days": [],
-          "WeatherYesterday": [],
-          "WeatherToday": [],
-          "WeatherTomorrow": [],
-          "EPUPreconditions": [],
-          "LimitedNumberOfSpawns": null
-        },
-        "DaysUntilSpawnsExpire": null
-      },
-      {
-        "MonsterTypes": [
-          {
-            "MonsterName": "Blue Slime",
-            "Settings": {
-              "HP": 40
-            }
-          },
-          {
-            "MonsterName": "Dust Sprite",
-            "Settings": {
-              "HP": 20
-            }
-          }
-        ],
-        "UniqueAreaID": "InterchangeDayMonstersWinter",
-        "MapName": "Custom_Tarniyar_Interchange",
-        "MinimumSpawnsPerDay": 50,
-        "MaximumSpawnsPerDay": 90,
-        "IncludeTerrainTypes": [
-          "All"
-        ],
-        "ExcludeTerrainTypes": [],
-        "IncludeCoordinates": [],
-        "ExcludeCoordinates": [],
-        "StrictTileChecking": "Maximum",
-        "SpawnTiming": {
-          "StartTime": 600,
-          "EndTime": 2350,
-          "MinimumTimeBetweenSpawns": 20,
-          "MaximumSimultaneousSpawns": null,
-          "OnlySpawnIfAPlayerIsPresent": false,
-          "SpawnSound": ""
-        },
-        "ExtraConditions": {
-          "Years": [],
-          "Seasons": [
-            "Winter"
-          ],
-          "Days": [],
-          "WeatherYesterday": [],
-          "WeatherToday": [],
-          "WeatherTomorrow": [],
-          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
@@ -1215,7 +1157,7 @@
               "Loot": [
                 {
                   "Category": "Object",
-                  "Name": "Prehistoric Tibia",
+                  "Name": "Fiber",
                   "Stack": 1,
                   "PercentChanceToSpawn": 30
                 },
@@ -1249,7 +1191,7 @@
         ],
         "UniqueAreaID": "InterchangeNightMonsters",
         "MapName": "Custom_Tarniyar_Interchange",
-        "MinimumSpawnsPerDay": 2,
+        "MinimumSpawnsPerDay": 5,
         "MaximumSpawnsPerDay": 10,
         "IncludeTerrainTypes": [
           "All"
@@ -1261,7 +1203,7 @@
         "SpawnTiming": {
           "StartTime": 1930,
           "EndTime": 2350,
-          "MinimumTimeBetweenSpawns": 20,
+          "MinimumTimeBetweenSpawns": 10,
           "MaximumSimultaneousSpawns": null,
           "OnlySpawnIfAPlayerIsPresent": false,
           "SpawnSound": ""
@@ -1273,7 +1215,6 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
-          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
@@ -1287,7 +1228,7 @@
               "Loot": [
                 {
                   "Category": "Object",
-                  "Name": "Prehistoric Tibia",
+                  "Name": "Fiber",
                   "Stack": 1,
                   "PercentChanceToSpawn": 30
                 },
@@ -1321,7 +1262,7 @@
         ],
         "UniqueAreaID": "GhostTownMonsters",
         "MapName": "Custom_Tarniyar_GhostTown",
-        "MinimumSpawnsPerDay": 40,
+        "MinimumSpawnsPerDay": 50,
         "MaximumSpawnsPerDay": 80,
         "IncludeTerrainTypes": [
           "All"
@@ -1333,7 +1274,7 @@
         "SpawnTiming": {
           "StartTime": 1930,
           "EndTime": 2350,
-          "MinimumTimeBetweenSpawns": 20,
+          "MinimumTimeBetweenSpawns": 10,
           "MaximumSimultaneousSpawns": null,
           "OnlySpawnIfAPlayerIsPresent": false,
           "SpawnSound": ""
@@ -1345,7 +1286,6 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
-          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null

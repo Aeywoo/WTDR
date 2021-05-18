@@ -1,7 +1,7 @@
 {
 	"Name": "[FTM] Walk to the Desert Redux [A]",
 	"Author": "Tarniyar & Aeywoo",
-	"Version": "1.2.0",
+	"Version": "1.2.1",
 	"Description": "Adds more varied forage items to the new Custom Maps",
 	"UniqueID": "Tarniyar.FTM.WalkToDesert",
 	"MinimumApiVersion": "3.0.0",
