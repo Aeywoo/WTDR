@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.6.0" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="24" height="22" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="1">
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="3" height="12" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="5">
  <properties>
-  <property name="Arch" value="114 .01 101 .003 105 .005"/>
-  <property name="Debris" value="2 .01 4"/>
-  <property name="Fall_Objects" value="406 .6 408 .4 410 .6"/>
-  <property name="Outdoors" value="T"/>
-  <property name="Spring_Objects" value="18 .9 20 .4 22 .7"/>
-  <property name="Summer_Objects" value="396 .4 398 .4 402 .7"/>
   <property name="Warp" value=""/>
-  <property name="Winter_Objects" value="414 .1 418 .3"/>
  </properties>
- <tileset firstgid="1" name="outdoors" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
-  <image source="spring_outdoorsTileSheet" width="400" height="1264"/>
+ <tileset firstgid="1" name="Landscape" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+  <image source="spring_outdoorsTileSheet.png" width="400" height="1264"/>
   <tile id="150">
    <properties>
     <property name="Spawnable" value="t"/>
@@ -23,12 +16,11 @@
     <property name="Type" value="Grass"/>
    </properties>
   </tile>
-  <tile id="152">
-   <animation>
-    <frame tileid="152" duration="1000"/>
-    <frame tileid="151" duration="1000"/>
-    <frame tileid="152" duration="1000"/>
-   </animation>
+  <tile id="156">
+   <properties>
+    <property name="Spawnable" value="t"/>
+    <property name="Type" value="Grass"/>
+   </properties>
   </tile>
   <tile id="175">
    <properties>
@@ -73,6 +65,18 @@
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
+  <tile id="184">
+   <animation>
+    <frame tileid="184" duration="550"/>
+    <frame tileid="1183" duration="550"/>
+   </animation>
+  </tile>
+  <tile id="185">
+   <animation>
+    <frame tileid="185" duration="550"/>
+    <frame tileid="1184" duration="550"/>
+   </animation>
+  </tile>
   <tile id="200">
    <properties>
     <property name="Spawnable" value="t"/>
@@ -111,10 +115,22 @@
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
+  <tile id="208">
+   <animation>
+    <frame tileid="208" duration="550"/>
+    <frame tileid="1207" duration="550"/>
+   </animation>
+  </tile>
   <tile id="209">
    <properties>
     <property name="Water" value="t"/>
    </properties>
+  </tile>
+  <tile id="211">
+   <animation>
+    <frame tileid="211" duration="550"/>
+    <frame tileid="1210" duration="550"/>
+   </animation>
   </tile>
   <tile id="225">
    <properties>
@@ -153,6 +169,12 @@
     <property name="Diggable" value="t"/>
     <property name="Type" value="Dirt"/>
    </properties>
+  </tile>
+  <tile id="233">
+   <animation>
+    <frame tileid="233" duration="550"/>
+    <frame tileid="1232" duration="550"/>
+   </animation>
   </tile>
   <tile id="234">
    <properties>
@@ -221,6 +243,12 @@
     <property name="Type" value="Grass"/>
    </properties>
   </tile>
+  <tile id="284">
+   <animation>
+    <frame tileid="284" duration="550"/>
+    <frame tileid="1313" duration="550"/>
+   </animation>
+  </tile>
   <tile id="285">
    <properties>
     <property name="Water" value="t"/>
@@ -267,6 +295,21 @@
     <property name="Water" value="t"/>
    </properties>
   </tile>
+  <tile id="312">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="313">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="314">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
   <tile id="325">
    <properties>
     <property name="Type" value="Grass"/>
@@ -310,6 +353,21 @@
   <tile id="336">
    <properties>
     <property name="Water" value="t"/>
+   </properties>
+  </tile>
+  <tile id="337">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="338">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="339">
+   <properties>
+    <property name="Type" value="Wood"/>
    </properties>
   </tile>
   <tile id="350">
@@ -832,8 +890,33 @@
     <property name="Water" value="t"/>
    </properties>
   </tile>
+  <tile id="779">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="780">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="781">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="782">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
   <tile id="809">
    <properties>
+    <property name="Passable" value="T"/>
     <property name="Type" value="Wood"/>
    </properties>
   </tile>
@@ -849,37 +932,316 @@
   </tile>
   <tile id="834">
    <properties>
+    <property name="Passable" value="T"/>
     <property name="Type" value="Wood"/>
    </properties>
   </tile>
   <tile id="859">
    <properties>
+    <property name="Passable" value="T"/>
     <property name="Type" value="Wood"/>
    </properties>
   </tile>
   <tile id="884">
    <properties>
+    <property name="Passable" value="T"/>
     <property name="Type" value="Wood"/>
    </properties>
   </tile>
-  <tile id="1030">
+  <tile id="1186">
    <properties>
-    <property name="Type" value="Stone"/>
+    <property name="Water" value="T"/>
    </properties>
   </tile>
-  <tile id="1054">
+  <tile id="1187">
    <properties>
-    <property name="Type" value="Stone"/>
+    <property name="Water" value="T"/>
    </properties>
   </tile>
-  <tile id="1056">
+  <tile id="1188">
    <properties>
-    <property name="Type" value="Stone"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1211">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1212">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1213">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1227">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1228">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1229">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1230">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1231">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1237">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1238">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1239">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1240">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1241">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1242">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1243">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1244">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1245">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1246">
+   <properties>
+    <property name="Passable" value="F"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1247">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1248">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1249">
+   <properties>
+    <property name="Passable" value="F"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1252">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1253">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1254">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1255">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1256">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1263">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1264">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1265">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1266">
+   <properties>
+    <property name="Passable" value="F"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1267">
+   <properties>
+    <property name="Passable" value="F"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1268">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1269">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1270">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1271">
+   <properties>
+    <property name="Passable" value="F"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1272">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1273">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1274">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1277">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1278">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1279">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1280">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1281">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1297">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1298">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1299">
+   <properties>
+    <property name="Passable" value="F"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1302">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1303">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1304">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1305">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1306">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1322">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1323">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1324">
+   <properties>
+    <property name="Water" value="T"/>
    </properties>
   </tile>
  </tileset>
  <tileset firstgid="1976" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
-  <image source="paths" width="64" height="144"/>
+  <image source="paths.png" width="64" height="144"/>
   <tile id="0">
    <properties>
     <property name="PathType" value="NE"/>
@@ -911,138 +1273,235 @@
    </properties>
   </tile>
  </tileset>
- <layer id="1" name="Back" width="24" height="22">
+ <tileset firstgid="2012" name="sveoutdoors" tilewidth="16" tileheight="16" tilecount="1664" columns="32">
+  <image source="spring_SVEoutdoors.png" width="512" height="832"/>
+  <tile id="336">
+   <animation>
+    <frame tileid="336" duration="300"/>
+    <frame tileid="337" duration="300"/>
+    <frame tileid="338" duration="300"/>
+    <frame tileid="338" duration="300"/>
+    <frame tileid="338" duration="300"/>
+    <frame tileid="338" duration="300"/>
+    <frame tileid="338" duration="300"/>
+    <frame tileid="339" duration="300"/>
+   </animation>
+  </tile>
+  <tile id="368">
+   <animation>
+    <frame tileid="368" duration="300"/>
+    <frame tileid="369" duration="300"/>
+    <frame tileid="370" duration="300"/>
+    <frame tileid="370" duration="300"/>
+    <frame tileid="370" duration="300"/>
+    <frame tileid="370" duration="300"/>
+    <frame tileid="370" duration="300"/>
+    <frame tileid="371" duration="300"/>
+   </animation>
+  </tile>
+  <tile id="504">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="505">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="506">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="536">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="537">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="538">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="540">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="568">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="569">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="570">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="600">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="601">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="602">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="604">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="605">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="606">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="607">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="632">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="633">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="634">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="664">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="665">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="666">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="672">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer id="1" name="Back" width="3" height="12">
   <data encoding="csv">
-381,381,381,381,381,381,381,381,381,381,381,381,381,381,381,381,381,381,381,381,381,381,381,381,
-381,381,381,381,381,381,381,381,381,381,381,381,381,381,381,381,381,381,381,381,381,381,381,381,
-381,381,381,381,381,381,381,381,358,406,406,406,406,406,408,381,381,381,381,381,381,381,381,381,
-381,381,381,381,381,381,358,406,407,352,352,352,305,352,306,406,408,381,381,381,381,381,381,381,
-381,381,381,381,358,406,407,306,352,306,352,352,352,352,352,305,405,406,406,408,381,381,381,381,
-381,381,381,381,382,352,305,352,352,352,354,377,377,377,404,352,352,306,306,380,381,381,381,381,
-381,381,381,381,382,306,352,354,377,377,378,176,176,176,376,404,352,352,305,405,408,381,381,381,
-381,381,381,381,382,352,352,353,176,153,176,176,402,176,176,376,377,377,404,352,380,381,381,381,
-381,381,358,406,407,352,354,378,176,176,151,176,176,176,153,176,176,176,351,352,380,381,381,381,
-381,381,382,352,352,305,353,176,176,402,176,176,402,176,176,176,402,176,351,305,405,408,381,381,
-381,381,382,306,352,354,378,176,176,176,176,176,176,176,151,176,176,176,376,404,352,380,381,381,
-381,381,382,305,352,353,176,151,176,176,151,176,176,176,176,176,176,176,176,351,306,380,381,381,
-381,381,382,352,352,353,176,176,176,153,176,176,176,402,176,176,402,151,176,351,352,380,381,381,
-381,381,383,306,352,353,176,402,176,176,402,176,176,176,176,176,176,176,176,351,352,380,381,381,
-381,381,381,382,352,379,328,176,176,176,176,176,176,153,176,176,176,153,176,351,352,380,381,381,
-381,381,381,382,306,352,353,176,151,153,176,151,176,176,151,176,402,326,327,329,306,380,381,381,
-381,381,381,382,305,352,379,328,176,176,176,176,176,176,176,176,176,351,306,352,352,380,381,381,
-381,381,381,383,357,306,352,353,176,402,176,176,151,176,326,327,327,329,352,305,355,333,381,381,
-381,381,381,381,383,356,357,379,327,328,176,176,176,176,351,352,352,305,306,355,333,381,381,381,
-381,381,381,381,381,381,382,306,305,379,328,176,176,153,329,352,306,352,352,380,381,381,381,381,
-381,381,381,381,381,381,383,356,357,352,353,402,176,351,352,306,355,356,356,333,381,381,381,381,
-381,381,381,381,381,381,381,381,383,357,353,176,176,376,404,352,380,381,381,381,381,381,381,381
+327,327,327,
+352,352,306,
+377,377,377,
+2515,2613,2613,
+2547,1630,2554,
+2547,2807,2807,
+2547,2554,2554,
+2579,2677,2677,
+176,176,255,
+327,327,327,
+352,352,352,
+356,356,356
+</data>
+ </layer>
+ <layer id="3" name="Buildings" width="3" height="12">
+  <data encoding="csv">
+412,0,0,
+387,0,0,
+437,0,3150,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+387,0,0,
+387,0,0,
+387,0,0,
+385,385,385
 </data>
  </layer>
  <objectgroup id="2" name="Back"/>
- <layer id="3" name="Buildings" width="24" height="22">
-  <data encoding="csv">
-0,0,0,0,0,0,0,381,381,381,381,381,381,381,381,381,381,381,0,0,0,0,0,0,
-0,0,0,381,381,381,381,0,14,15,16,0,0,0,0,14,15,16,381,381,381,381,381,0,
-0,0,0,381,0,0,0,0,39,40,41,0,0,0,0,39,40,41,0,0,0,0,381,0,
-0,0,0,381,0,0,0,0,64,65,66,233,0,0,0,64,65,66,0,89,90,0,381,0,
-0,0,0,381,0,258,0,0,0,0,0,0,0,0,0,0,258,0,0,114,115,0,381,0,
-0,381,381,381,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,15,16,381,
-0,381,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,39,40,41,381,
-0,381,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,308,64,65,66,381,
-0,381,0,283,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,381,
-0,381,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,381,
-0,381,0,0,308,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,89,90,381,
-381,89,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,114,115,381,
-381,114,115,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,258,0,0,0,381,
-381,14,15,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,381,
-381,39,40,41,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,381,
-381,64,65,66,0,0,0,0,0,0,0,0,0,0,0,0,0,0,233,0,0,0,0,381,
-0,381,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,308,0,0,381,
-0,381,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,381,
-0,381,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,381,
-0,381,89,90,258,0,0,0,0,0,0,0,0,0,0,0,0,0,89,90,0,0,0,381,
-0,381,114,115,0,0,0,0,0,0,0,0,0,0,308,0,0,0,114,115,381,381,381,381,
-0,0,381,381,381,381,0,0,0,0,0,0,0,283,0,0,0,0,0,381,381,0,0,0
-</data>
- </layer>
  <objectgroup id="4" name="Buildings"/>
- <layer id="5" name="Front" width="24" height="22">
+ <layer id="5" name="Paths" width="3" height="12">
   <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0
 </data>
  </layer>
- <objectgroup id="6" name="Front"/>
- <layer id="7" name="Paths" width="24" height="22">
+ <objectgroup id="6" name="Paths"/>
+ <layer id="7" name="Front" width="3" height="12">
   <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,2002,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,2001,0,1998,1998,0,2001,0,2001,0,0,0,0,0,0,0,0,0,
-0,0,0,0,2000,0,1993,0,1998,1993,0,1998,1991,1998,0,0,2000,0,0,2000,0,0,0,0,
-0,0,0,0,0,0,1991,1994,0,0,1992,1991,0,0,1998,1993,1998,1991,1994,0,0,0,0,0,
-0,0,0,0,0,2002,0,0,1998,0,1998,1998,0,0,1990,0,0,1992,0,1994,0,0,0,0,
-0,0,2000,0,0,0,1998,0,1991,0,0,0,1989,1989,1998,1998,1998,1998,0,0,0,0,0,0,
-0,0,0,0,0,1989,0,0,0,0,1998,0,0,0,0,0,0,0,0,2002,0,0,0,0,
-0,0,2000,0,0,1998,0,1998,0,0,0,0,0,1998,1998,0,0,1991,1991,0,2001,0,0,0,
-0,0,2002,0,1998,0,0,1990,0,1990,0,0,1990,0,0,1989,1990,1990,0,0,0,0,0,0,
-0,0,0,0,1990,0,0,0,1990,0,1991,0,0,0,0,0,1990,0,1998,0,1994,0,0,0,
-0,0,0,1994,0,0,1991,0,1998,0,0,0,0,0,0,0,0,1991,1998,0,0,0,0,0,
-0,0,0,0,1998,1989,0,0,0,1989,1998,0,0,1998,0,0,1991,1991,0,0,2000,0,0,0,
-0,0,0,0,1998,0,1998,0,0,1998,0,0,0,0,0,0,0,0,0,1994,0,0,0,0,
-0,0,0,0,0,1994,0,1992,0,0,0,0,0,0,1989,1998,1998,0,0,0,0,2000,0,0,
-0,0,0,0,0,1994,1989,0,1994,0,1991,1991,0,0,0,1989,1989,0,0,2002,0,0,0,0,
-0,0,2000,0,0,0,1989,1998,0,1998,1998,0,0,1990,0,0,0,1998,1998,0,2001,0,0,0,
-0,0,0,0,2002,0,1998,1991,0,0,0,0,0,0,0,1994,1990,1990,0,1993,0,0,0,0,
-0,0,2001,0,0,0,0,0,1991,0,0,0,0,0,0,1991,0,0,0,0,2001,0,0,0,
-0,0,0,0,0,2000,0,0,1993,0,0,0,0,0,0,0,2000,0,0,0,0,0,0,0,
-0,0,2000,0,0,0,0,0,2002,2001,0,0,0,0,2001,0,0,0,0,2000,0,0,0,0
+0,0,0,
+0,3117,3118,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+362,0,0,
+0,0,0,
+0,0,0,
+360,360,360,
+0,0,0
 </data>
  </layer>
- <objectgroup id="8" name="Paths"/>
- <layer id="9" name="AlwaysFront" width="24" height="22">
+ <objectgroup id="8" name="Front"/>
+ <layer id="9" name="AlwaysFront" width="3" height="12">
   <data encoding="csv">
-947,972,947,997,947,947,947,997,947,947,947,972,997,947,947,947,972,947,947,972,947,972,947,947,
-947,947,947,947,947,972,947,945,944,944,945,944,945,944,945,944,944,947,997,947,947,947,947,972,
-947,947,997,941,944,945,942,967,968,969,968,969,968,969,968,969,970,943,944,945,945,946,947,947,
-972,947,947,966,967,968,969,993,0,0,0,0,0,0,0,0,994,968,969,968,970,971,947,972,
-947,947,972,991,992,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,995,996,972,947,
-997,947,947,966,1017,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1020,1021,947,947,
-947,972,941,1016,992,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,995,996,947,997,
-947,941,942,967,993,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,994,970,946,947,
-947,966,967,993,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1020,1021,947,
-947,991,992,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,995,996,972,
-972,1016,1017,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1020,1021,947,
-947,1016,1017,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,995,996,947,
-997,991,992,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1020,1021,947,
-947,1016,1017,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,995,996,947,
-947,991,992,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1020,1021,947,
-947,1016,1017,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,995,996,997,
-947,991,992,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1020,1021,947,
-972,1041,1042,1018,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,995,996,947,
-947,1066,1070,992,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1019,1043,1044,1045,1046,972,
-947,997,1016,1017,0,0,0,0,0,0,0,0,0,0,0,0,0,1019,1045,996,1068,1071,1071,947,
-997,947,1041,1042,1043,1044,1018,0,0,0,0,0,0,0,0,0,0,995,1070,1071,972,997,947,947,
-947,972,1066,1067,1068,1041,1042,1018,0,0,0,0,0,0,0,0,0,1020,971,997,947,947,947,997
+0,3085,3086,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+8,9,10,
+33,34,35,
+58,59,60,
+83,84,85
 </data>
  </layer>
  <objectgroup id="10" name="AlwaysFront"/>
