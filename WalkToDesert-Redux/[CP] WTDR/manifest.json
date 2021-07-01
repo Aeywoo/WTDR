@@ -5,7 +5,10 @@
 	"Description": "Adds custom maps, warps and messages to the game.",
 	"UniqueID": "Tarniyar.CP.WalkToDesert",
 	"MinimumApiVersion": "3.0",
-	"UpdateKeys": [ "Nexus:8630" ],
+	"UpdateKeys": [
+		"ModDrop:980591",
+		"Nexus:8630"
+	],
 	"ContentPackFor": {
 		"UniqueID": "Pathoschild.ContentPatcher",
 	},

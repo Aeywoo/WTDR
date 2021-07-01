@@ -12,13 +12,13 @@
   <property name="Winter_Objects" value="414 .1 418 .3"/>
  </properties>
  <tileset firstgid="1" name="winter_outdoorsTileSheet2" tilewidth="16" tileheight="16" tilecount="256" columns="16">
-  <image source="../../../../zModding Assets/winter_outdoorsTileSheet2.png" width="256" height="256"/>
+  <image source="winter_outdoorsTileSheet2" width="256" height="256"/>
  </tileset>
  <tileset firstgid="257" name="winter_z_wtd_tilesheet" tilewidth="16" tileheight="16" tilecount="256" columns="16">
-  <image source="../../../../zModding Assets/default/winter_z_wtd_tilesheet.png" width="256" height="256"/>
+  <image source="default/winter_z_wtd_tilesheet" width="256" height="256"/>
  </tileset>
  <tileset firstgid="513" name="outdoors" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
-  <image source="../../../../zModding Assets/winter_outdoorsTileSheet.png" width="400" height="1264"/>
+  <image source="winter_outdoorsTileSheet" width="400" height="1264"/>
   <tile id="150">
    <properties>
     <property name="Spawnable" value="t"/>
@@ -884,7 +884,7 @@
   </tile>
  </tileset>
  <tileset firstgid="2488" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
-  <image source="../../../../zModding Assets/paths.png" width="64" height="144"/>
+  <image source="paths" width="64" height="144"/>
   <tile id="0">
    <properties>
     <property name="PathType" value="NE"/>
