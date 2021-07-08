@@ -1,0 +1,28 @@
+{
+	"Shops": [
+	{
+		"ShopName": "WTDRGhostShop",
+		"CategoriesToSellHere": [-74,-80,-81],
+		"PortraitPath": "assets/PeteShop.png",
+		"Quote": "Buy something?",
+		"When": ["NPCAt PickledPete 2 4"],
+		"ItemStocks": [
+		{
+			"ItemType": "Object",
+			"StockItemCurrency": "Old Coin",
+			"StockPrice": 0,
+			"StockCurrencyStack": 10,
+			"ItemNames": ["Eerie Seeds"],
+		},
+		{
+			"ItemType": "Object",
+			"StockItemCurrency": "Slime Cheese",
+			"StockPrice": 0,
+			"StockCurrencyStack": 1,
+			"ItemNames": ["Old Coin"],
+		},
+	],
+	"ClosedMessage": "Come back later."
+	}
+  ]
+}
