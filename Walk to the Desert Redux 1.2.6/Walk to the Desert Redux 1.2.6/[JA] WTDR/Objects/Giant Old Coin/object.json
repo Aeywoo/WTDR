@@ -1,0 +1,11 @@
+{
+    "Name": "Giant Old Coin",
+    "Description": "This coin is huge! What a lucky find!",
+    "Category": -12,  
+    "CategoryTextOverride": "Coin",
+    "Edibility": -300,
+    "IsColored": false,
+	"CanSell": true,
+    "Recipe": null,
+	"Price": 500
+}
