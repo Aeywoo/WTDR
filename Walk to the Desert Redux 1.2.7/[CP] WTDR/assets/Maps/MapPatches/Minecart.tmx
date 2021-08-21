@@ -70,12 +70,12 @@
  <objectgroup id="4" name="Buildings">
   <object id="1" name="TileData" x="16" y="64" width="16" height="16">
    <properties>
-    <property name="Action" value="Warp 11 12 Custom_Tarniyar_Cave"/>
+    <property name="Action" value="Warp 11 12 Custom_WTDR_Cave"/>
    </properties>
   </object>
   <object id="2" name="TileData" x="32" y="64" width="16" height="16">
    <properties>
-    <property name="Action" value="Warp 12 12 Custom_Tarniyar_Cave"/>
+    <property name="Action" value="Warp 12 12 Custom_WTDR_Cave"/>
    </properties>
   </object>
   <object id="3" name="TileData" x="32" y="96" width="16" height="16">

@@ -139,7 +139,7 @@
 		"FromFile": "assets/Maps/MapPatches/Interchange.tmx",
 		"ToArea": { "X": 20, "Y": 0, "Width": 11, "Height": 1 },
 		"When": {
-			"HasMod |contains=XxHarvzBackxX.DowntownZuzuCP": true
+			"HasMod |contains=DTZ.DowntownZuzuCP": true
 		}
 	},
 	/* { // This patch adds a new Minecart track to the Ridgeside Villages Minecarts Cave that takes you to the cave in the Ghost Town.
@@ -429,7 +429,7 @@
 			"28 -1 Custom_DTZ_ZuzuCityFreeway 28 35"
 		],
 		"When": {
-			"HasMod": "XxHarvzBackxX.DowntownZuzuCP"
+			"HasMod": "DTZ.DowntownZuzuCP"
 		}
 	},
 	{ // Adds warps to Downtown Zuzu, but only if the Downtown Zuzu mod is installed.
@@ -447,7 +447,7 @@
 			"28 36 Custom_WTDR_Interchange 28 1"
 		],
 		"When": {
-			"HasMod": "XxHarvzBackxX.DowntownZuzuCP"
+			"HasMod": "DTZ.DowntownZuzuCP"
 		}
 	},
 	{ //Adds Vanilla Warps for Tunnel if Stardew Expansion Redux is not installed.
