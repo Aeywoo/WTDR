@@ -420,13 +420,13 @@
 		"Action": "EditMap",
 		"Target": "Maps/Custom_WTDR_Interchange",
 		"AddWarps": [
-			"22 -1 Custom_DTZ_ZuzuCityFreeway 22 35",
-			"23 -1 Custom_DTZ_ZuzuCityFreeway 23 35",
-			"24 -1 Custom_DTZ_ZuzuCityFreeway 24 35",
-			"25 -1 Custom_DTZ_ZuzuCityFreeway 25 35",
-			"26 -1 Custom_DTZ_ZuzuCityFreeway 26 35",
-			"27 -1 Custom_DTZ_ZuzuCityFreeway 27 35",
-			"28 -1 Custom_DTZ_ZuzuCityFreeway 28 35"
+			"22 -1 Custom_DTZ_ZuzuCityFreeway1 22 35",
+			"23 -1 Custom_DTZ_ZuzuCityFreeway1 23 35",
+			"24 -1 Custom_DTZ_ZuzuCityFreeway1 24 35",
+			"25 -1 Custom_DTZ_ZuzuCityFreeway1 25 35",
+			"26 -1 Custom_DTZ_ZuzuCityFreeway1 26 35",
+			"27 -1 Custom_DTZ_ZuzuCityFreeway1 27 35",
+			"28 -1 Custom_DTZ_ZuzuCityFreeway1 28 35"
 		],
 		"When": {
 			"HasMod": "DTZ.DowntownZuzuCP"
@@ -434,7 +434,7 @@
 	},
 	{ // Adds warps to Downtown Zuzu, but only if the Downtown Zuzu mod is installed.
 		"Action": "EditMap",
-		"Target": "Maps/Custom_DTZ_ZuzuCityFreeway",
+		"Target": "Maps/Custom_DTZ_ZuzuCityFreeway1",
 		"AddWarps": [
 			"20 36 Custom_WTDR_Interchange 20 1",
 			"21 36 Custom_WTDR_Interchange 22 1",

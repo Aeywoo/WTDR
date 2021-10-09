@@ -1,7 +1,7 @@
 ﻿{
 	"Name": "[PFM] Walk to the Desert Redux",
 	"Author": "Tarniyar & Aeywoo",
-	"Version": "1.2.7",
+	"Version": "1.2.8",
 	"Description": "Adds the ability to produce extra artisan goods from the machines.",
 	"UniqueID": "Tarniyar.PFM.WalkToDesert",
 	"MinimumApiVersion": "3.0.0",
