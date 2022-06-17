@@ -1,60 +1,62 @@
 {
-	"ForageSpawnEnabled": true,
-	"LargeObjectSpawnEnabled": true,
-	"OreSpawnEnabled": true,
-	"MonsterSpawnEnabled": true,
-	"Forage_Spawn_Settings": {
-	"Areas": [
-	{
-		"SpringItemIndex": [
-			"Cherry",
-			"Apricot"
-		],
-		"SummerItemIndex": [
-			"Orange",
-			"Peach",
-			"Banana",
-			"Papaya"
-		],
-		"FallItemIndex": [
-			"Pomegranate",
-			"Apple",
-			"Granny Smith Apple",
-			"Persimmon"
-		],
-		"WinterItemIndex": [
-			"Crystal Fruit"
-		],
-		"UniqueAreaID": "OldOrchard",
-		"MapName": "Custom_WTDR_ForestRoad",
-		"MinimumSpawnsPerDay": -1,
-		"MaximumSpawnsPerDay": 2,
-		"IncludeTerrainTypes": [],
-		"ExcludeTerrainTypes": [],
-		"IncludeCoordinates": [
-		"5,6/11,10"
-		],
-		"ExcludeCoordinates": [],
-		"StrictTileChecking": "Maximum",
-		"SpawnTiming": {
-		"StartTime": 600,
-		"EndTime": 600,
-		"MinimumTimeBetweenSpawns": 10,
-		"MaximumSimultaneousSpawns": null,
-		"OnlySpawnIfAPlayerIsPresent": false,
-		"SpawnSound": ""
-	},
-	"ExtraConditions": {
-		"Years": [],
-		"Seasons": [],
-		"Days": [],
-		"WeatherYesterday": [],
-		"WeatherToday": [],
-		"WeatherTomorrow": [],
-		"LimitedNumberOfSpawns": null
-	},
-		"DaysUntilSpawnsExpire": 2
-	},
+  "ForageSpawnEnabled": true,
+  "LargeObjectSpawnEnabled": true,
+  "OreSpawnEnabled": true,
+  "MonsterSpawnEnabled": true,
+  "Forage_Spawn_Settings": {
+    "Areas": [
+      {
+        "SpringItemIndex": [
+          "Cherry",
+          "Apricot"
+        ],
+        "SummerItemIndex": [
+          "Orange",
+          "Peach",
+          "Banana",
+          "Papaya"
+        ],
+        "FallItemIndex": [
+          "Pomegranate",
+          "Apple",
+          "Granny Smith Apple",
+          "Persimmon"
+        ],
+        "WinterItemIndex": [
+          "Crystal Fruit"
+        ],
+        "UniqueAreaID": "OldOrchard",
+        "MapName": "Custom_WTDR_ForestRoad",
+        "MinimumSpawnsPerDay": -1,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "5,6/11,10"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 2
+      },
       {
         "SpringItemIndex": [
           "Blue Easter Egg",
@@ -94,6 +96,8 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
@@ -136,6 +140,8 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
@@ -177,6 +183,8 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
@@ -219,6 +227,8 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
@@ -260,6 +270,8 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
@@ -301,6 +313,8 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
@@ -342,6 +356,8 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
@@ -383,6 +399,8 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
@@ -436,6 +454,8 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
@@ -479,6 +499,8 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
@@ -522,6 +544,8 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
@@ -569,6 +593,8 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
@@ -620,6 +646,8 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
@@ -670,6 +698,8 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
@@ -722,6 +752,8 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
@@ -787,6 +819,8 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": 1
         },
         "DaysUntilSpawnsExpire": null
@@ -826,6 +860,8 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
@@ -861,6 +897,8 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
@@ -930,24 +968,24 @@
     "Areas": [
       {
         "MonsterTypes": [
-		  {
-			"MonsterName": "Green Slime",
-			"Settings": {
-			  "HP": 20
-			}
-		  },
-		  {
-			"MonsterName": "Blue Slime",
-			"Settings": {
-			  "HP": 30
-			}
-		  },
-		  {
-			"MonsterName": "Red Slime",
-			"Settings": {
-			  "HP": 40
-			}
-		  },
+          {
+            "MonsterName": "Green Slime",
+            "Settings": {
+              "HP": 20
+            }
+          },
+          {
+            "MonsterName": "Blue Slime",
+            "Settings": {
+              "HP": 30
+            }
+          },
+          {
+            "MonsterName": "Red Slime",
+            "Settings": {
+              "HP": 40
+            }
+          },
           {
             "MonsterName": "Wilderness Golem",
             "Settings": {
@@ -987,30 +1025,32 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
       },
       {
         "MonsterTypes": [
-		  {
-			"MonsterName": "Green Slime",
-			"Settings": {
-			  "HP": 20
-			}
-		  },
-		  {
-			"MonsterName": "Blue Slime",
-			"Settings": {
-			  "HP": 30
-			}
-		  },
-		  {
-			"MonsterName": "Red Slime",
-			"Settings": {
-			  "HP": 40
-			}
-		  },
+          {
+            "MonsterName": "Green Slime",
+            "Settings": {
+              "HP": 20
+            }
+          },
+          {
+            "MonsterName": "Blue Slime",
+            "Settings": {
+              "HP": 30
+            }
+          },
+          {
+            "MonsterName": "Red Slime",
+            "Settings": {
+              "HP": 40
+            }
+          },
           {
             "MonsterName": "Duggy",
             "Settings": {
@@ -1062,30 +1102,32 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
       },
       {
         "MonsterTypes": [
-		  {
-			"MonsterName": "Green Slime",
-			"Settings": {
-			  "HP": 20
-			}
-		  },
-		  {
-			"MonsterName": "Blue Slime",
-			"Settings": {
-			  "HP": 30
-			}
-		  },
-		  {
-			"MonsterName": "Red Slime",
-			"Settings": {
-			  "HP": 40
-			}
-		  },
+          {
+            "MonsterName": "Green Slime",
+            "Settings": {
+              "HP": 20
+            }
+          },
+          {
+            "MonsterName": "Blue Slime",
+            "Settings": {
+              "HP": 30
+            }
+          },
+          {
+            "MonsterName": "Red Slime",
+            "Settings": {
+              "HP": 40
+            }
+          },
           {
             "MonsterName": "Duggy",
             "Settings": {
@@ -1137,6 +1179,8 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
@@ -1208,6 +1252,8 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
@@ -1279,6 +1325,8 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
