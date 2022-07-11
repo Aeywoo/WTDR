@@ -1,8 +1,8 @@
 ﻿{
 	"Name": "[STF] Walk to the Desert Redux Shops",
 	"Author": "Tarniyar & Aeywoo",
-	"Version": "1.3.0-alpha",
-	"Description": "Adds NPC Shops to the Walk to the Desert Mod.",
+	"Version": "1.3.0-beta",
+	"Description": "Adds NPC Shops to the Walk to the Desert Redux Mod.",
 	"UniqueID": "Tarniyar.STF.WalkToDesert",
 	"UpdateKeys": [ "Nexus:???" ],
 	"MinimumApiVersion": "2.0",

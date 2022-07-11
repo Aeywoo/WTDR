@@ -1,7 +1,7 @@
 {
 	"Name": "[JA] Walk to the Desert Redux",
 	"Author": "Tarniyar & Aeywoo",
-	"Version": "1.3.0-alpha",
+	"Version": "1.3.0-beta",
 	"UniqueID": "Tarniyar.JA.WalktoDesert",
 	"UpdateKeys": [ "Nexus:???" ],
 	"ContentPackFor": {
@@ -14,7 +14,7 @@
 		},
 		// Fixes Item ID Collisions
 		{
-			"UniqueID": "MoreFish",    // CP only mod
+			"UniqueID": "MoreFish", // CP only mod
 			"IsRequired": false
 		}
 	]

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.0" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="13" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="3">
+<map version="1.8" tiledversion="1.8.6" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="13" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="3">
  <properties>
   <property name="AmbientLight" value="125 125 125"/>
   <property name="Warp" value="4 7 Custom_WTDR_GhostTown 55 24"/>

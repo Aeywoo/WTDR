@@ -18,7 +18,7 @@
         "Attack": 3,
         "Duration": 260,
     },
-    "Price": 360,
+    "Price": 7500,
     "IsColored": false,
 	"GiftTastes":
     {
@@ -29,5 +29,4 @@
 		"Hate": ["Alex", "Caroline", "Clint", "Dwarf", "Evelyn", "Harvey", "Jodi", "Kent", "Lewis", "Pam", "Penny", "Pierre", "Shane", "Haley", "Jas", "Vincent"]
     },
     "Recipe": null
-   
 }
