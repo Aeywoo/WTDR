@@ -1,0 +1,32 @@
+{
+    "Name": "Ghostly Wine",
+    "Description": "The smell is strangely enticing.",
+    "Category": "ArtisanGoods",
+    "Edibility": 40,
+	"EdibleIsDrink": true,
+    "EdibleBuffs":
+    {
+        "Farming": 0,
+        "Fishing": 0,
+        "Mining": 0,
+        "Luck": 3,
+        "Foraging": 0,
+        "MaxStamina": 0,
+        "MagnetRadius": 32,
+        "Speed": 0,
+        "Defense": 0,
+        "Attack": 3,
+        "Duration": 260
+    },
+    "Price": 7500,
+    "IsColored": false,
+	"GiftTastes":
+    {
+        "Love": ["PickledPete"],
+        "Like": ["Emily", "Krobus", "Sebastian", "Wizard"],
+        "Neutral": ["Sandy", "Linus", "Leah", "Abigail", "Sam", "Willy"],
+		"Dislike": ["Elliott", "Maru", "Robin", "Demetrius", "George", "Gus", "Marnie"],
+		"Hate": ["Alex", "Caroline", "Clint", "Dwarf", "Evelyn", "Harvey", "Jodi", "Kent", "Lewis", "Pam", "Penny", "Pierre", "Shane", "Haley", "Jas", "Vincent"]
+    },
+    "Recipe": null
+}

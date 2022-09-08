@@ -1,0 +1,4 @@
+{ 
+	// Ghost Shop Events
+	"13730004/t 2000 2600": "XOR/4 7/farmer 4 6 0/skippable/pause 1500/emote farmer 40/faceDirection farmer 1/pause 1000/faceDirection farmer 3/pause 1000/move farmer 1 0 1/move farmer 0 -1 0/pause 500/addTemporaryActor PickledPete 16 32 7 4 2/pause 300/jump farmer 8/move farmer 0 1 0/emote PickledPete 8/pause 1000/emote farmer 8/speak PickledPete \"Are you looking for something?#$b#Or someone?#$b#Nobody here but me though.\"/move farmer 0 -1 0/emote farmer 8/speak PickledPete \"Folks call me Pickled Pete.#$b#I can't remember why.\"/emote PickledPete 28/pause 1000/move PickledPete -5 0 2/speak PickledPete \"Want to buy something while you're here? I've got...#$b#...#$b#Well, there's not much left. But it's the best I've got.\"/end dialogue PickledPete \"It's hard to make a living when you're dead.\""
+}
