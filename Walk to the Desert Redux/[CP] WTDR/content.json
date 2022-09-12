@@ -272,7 +272,7 @@
 					},
 					"Layer": "Back",
 					"SetProperties": {
-						"TouchAction": "Warp Custom_WTDR_ForestRoad 9 1",
+						"TouchAction": "Warp Custom_WTDR_ForestRoad 9 1"
 					}
 				},
 				{
@@ -282,7 +282,7 @@
 					},
 					"Layer": "Back",
 					"SetProperties": {
-						"TouchAction": "Warp Custom_WTDR_ForestRoad 9 1",
+						"TouchAction": "Warp Custom_WTDR_ForestRoad 9 1"
 					}
 				},
 				{
@@ -292,7 +292,7 @@
 					},
 					"Layer": "Back",
 					"SetProperties": {
-						"TouchAction": "Warp Custom_WTDR_ForestRoad 10 1",
+						"TouchAction": "Warp Custom_WTDR_ForestRoad 10 1"
 					}
 				}
 			]
@@ -689,128 +689,38 @@
 			"LogName": "Adds a warp from the Ghost Town Map to the Ghost Town Cave",
 			"Action": "EditMap",
 			"Target": "Maps/Custom_WTDR_GhostTown",
-			"MapTiles": [
-				{
-					"Position": {
-						"X": 50,
-						"Y": 4
-					},
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Custom_WTDR_Cave 12 17"
-					}
-				}
+			"AddWarps": [
+				"50 4 Custom_WTDR_Cave 12 17"
 			]
 		},
 		{
 			"LogName": "Adds a warp from the Ghost Shop to the Ghost Town",
 			"Action": "EditMap",
 			"Target": "Maps/Custom_WTDR_GhostShop",
-			"MapTiles": [
-				{
-					"Position": {
-						"X": 4,
-						"Y": 8
-					},
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Custom_WTDR_GhostTown 55 24"
-					}
-				}
+			"AddWarps": [
+				"4 8 Custom_WTDR_GhostTown 55 24"
 			]
 		},
 		{
 			"LogName": "Adds a warp from the Ghost Town to the Ghost Shop",
 			"Action": "EditMap",
 			"Target": "Maps/Custom_WTDR_Cave",
-			"MapTiles": [
-				{
-					"Position": {
-						"X": 12,
-						"Y": 18
-					},
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Custom_WTDR_GhostTown 50 6"
-					}
-				}
+			"AddWarps": [
+				"12 18 Custom_WTDR_GhostTown 50 6"
 			]
 		},
 		{
 			"LogName": "If SVE is loaded, then load modified warp values for the Desert Map",
 			"Action": "EditMap",
 			"Target": "Maps/Desert",
-			"MapTiles": [
-				{
-					"Position": {
-						"X": 59,
-						"Y": 23
-					},
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Custom_WTDR_GhostTown 1 33"
-					}
-				},
-				{
-					"Position": {
-						"X": 59,
-						"Y": 24
-					},
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Custom_WTDR_GhostTown 1 34"
-					}
-				},
-				{
-					"Position": {
-						"X": 59,
-						"Y": 25
-					},
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Custom_WTDR_GhostTown 1 35"
-					}
-				},
-				{
-					"Position": {
-						"X": 59,
-						"Y": 26
-					},
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Custom_WTDR_GhostTown 1 36"
-					}
-				},
-				{
-					"Position": {
-						"X": 59,
-						"Y": 27
-					},
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Custom_WTDR_GhostTown 1 37"
-					}
-				},
-				{
-					"Position": {
-						"X": 59,
-						"Y": 28
-					},
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Custom_WTDR_GhostTown 1 38"
-					}
-				},
-				{
-					"Position": {
-						"X": 59,
-						"Y": 29
-					},
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Custom_WTDR_GhostTown 1 39"
-					}
-				}
+			"AddWarps": [
+				"59 23 Custom_WTDR_GhostTown 1 33",
+				"59 24 Custom_WTDR_GhostTown 1 34",
+				"59 25 Custom_WTDR_GhostTown 1 35",
+				"59 26 Custom_WTDR_GhostTown 1 36",
+				"59 27 Custom_WTDR_GhostTown 1 37",
+				"59 28 Custom_WTDR_GhostTown 1 38",
+				"59 29 Custom_WTDR_GhostTown 1 38"
 			],
 			"When": {
 				"HasMod": "FlashShifter.StardewValleyExpandedALL"
@@ -820,67 +730,13 @@
 			"LogName": "If SVE is loaded, then load modified warp values for the Ghost Town Map",
 			"Action": "EditMap",
 			"Target": "Maps/Custom_WTDR_GhostTown",
-			"MapTiles": [
-				{
-					"Position": {
-						"X": 0,
-						"Y": 33
-					},
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Desert 59 24"
-					}
-				},
-				{
-					"Position": {
-						"X": 0,
-						"Y": 34
-					},
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Desert 59 25"
-					}
-				},
-				{
-					"Position": {
-						"X": 0,
-						"Y": 35
-					},
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Desert 59 26"
-					}
-				},
-				{
-					"Position": {
-						"X": 0,
-						"Y": 36
-					},
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Desert 59 27"
-					}
-				},
-				{
-					"Position": {
-						"X": 0,
-						"Y": 37
-					},
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Desert 59 28"
-					}
-				},
-				{
-					"Position": {
-						"X": 0,
-						"Y": 38
-					},
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Desert 59 29"
-					}
-				}
+			"AddWarps": [
+				"0 33 Desert 58 23",
+				"0 34 Desert 58 24",
+				"0 35 Desert 58 25",
+				"0 36 Desert 58 26",
+				"0 37 Desert 58 27",
+				"0 38 Desert 58 28"
 			],
 			"When": {
 				"HasMod": "FlashShifter.StardewValleyExpandedALL"
@@ -1266,47 +1122,13 @@
 			"LogName": "Adds Vanilla Warps for Tunnel if Stardew Expansion Redux is not installed",
 			"Action": "EditMap",
 			"Target": "Maps/Tunnel",
-			"MapTiles": [
-				{
-					"Position": {
-						"X": 0,
-						"Y": 11
-					},
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Custom_WTDR_ForestRoad 59 18"
-					}
-				},
-				{
-					"Position": {
-						"X": 0,
-						"Y": 10
-					},
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Custom_WTDR_ForestRoad 59 17"
-					}
-				},
-				{
-					"Position": {
-						"X": 0,
-						"Y": 9
-					},
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Custom_WTDR_ForestRoad 59 16"
-					}
-				},
-				{
-					"Position": {
-						"X": 0,
-						"Y": 8
-					},
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Custom_WTDR_ForestRoad 59 15"
-					}
-				}
+			"AddWarps": [
+				"0 7 Custom_WTDR_ForestRoad 58 14",
+				"0 8 Custom_WTDR_ForestRoad 58 15",
+				"0 9 Custom_WTDR_ForestRoad 58 16",
+				"0 10 Custom_WTDR_ForestRoad 58 17",
+				"0 11 Custom_WTDR_ForestRoad 58 18",
+				"0 12 Custom_WTDR_ForestRoad 58 18"
 			],
 			"When": {
 				"HasMod |contains=Pillow.StardewExpansion.CP": false
@@ -1316,47 +1138,13 @@
 			"LogName": "Adds Vanilla Warps for ForestRoad if Stardew Expansion Redux is not installed",
 			"Action": "EditMap",
 			"Target": "Maps/Custom_WTDR_ForestRoad",
-			"MapTiles": [
-				{
-					"Position": {
-						"X": 59,
-						"Y": 18
-					},
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Tunnel 1 11"
-					}
-				},
-				{
-					"Position": {
-						"X": 59,
-						"Y": 17
-					},
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Tunnel 1 10"
-					}
-				},
-				{
-					"Position": {
-						"X": 59,
-						"Y": 16
-					},
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Tunnel 1 9"
-					}
-				},
-				{
-					"Position": {
-						"X": 59,
-						"Y": 15
-					},
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Tunnel 1 8"
-					}
-				}
+			"AddWarps": [
+				"59 14 Tunnel 1 7",
+				"59 15 Tunnel 1 8",
+				"59 16 Tunnel 1 9",
+				"59 17 Tunnel 1 10",
+				"59 18 Tunnel 1 11",
+				"59 18 Tunnel 1 12"
 			],
 			"When": {
 				"HasMod |contains=Pillow.StardewExpansion.CP": false
@@ -1613,7 +1401,7 @@
 		{
 			"LogName": "PickledPete's AntiSocial Flag",
 			"Action": "EditData",
-			"When": { "HasSeenEvent |contains=13730004": true },
+			"When": { "HasSeenEvent |contains=13730004": false },
 			"Target": "Data/AntiSocialNPCs",
 			"Entries": {
 				"PickledPete": "true"
@@ -1667,7 +1455,7 @@
 			"FromFile": "assets/NPCs/events/GhostShop.json"
 		},
 		
-		// Events
+		// Sandy Events
 		{
 			"Action": "Include",
 			"FromFile": "assets/SandyEvents.json"

@@ -2,6 +2,7 @@
 <map version="1.8" tiledversion="1.8.6" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="13" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="1">
 	<properties>
 		<property name="AmbientLight" value="100 100 100"/>
+		<property name="Warp" value="7 7 Custom_WTDR_GhostShop 7 4"/>
 	</properties>
 	<tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
 		<image source="paths" width="64" height="144"/>
