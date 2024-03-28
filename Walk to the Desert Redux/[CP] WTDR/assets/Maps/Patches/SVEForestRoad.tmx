@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.0" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="18" height="30" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="2">
+<map version="1.8" tiledversion="1.8.6" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="18" height="30" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="2">
  <tileset firstgid="1" name="outdoors" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
   <image source="spring_outdoorsTileSheet" width="400" height="1264"/>
   <tile id="150">
@@ -939,7 +939,6 @@
 352,352,352,352,352,352,352,352,352,352,352,330,352,352,352,352,352,352
 </data>
  </layer>
- <objectgroup id="2" name="Back"/>
  <layer id="3" name="Buildings" width="18" height="30">
   <data encoding="csv">
 519,2013,448,519,2013,519,373,519,2045,493,494,493,494,493,494,493,494,495,
@@ -974,7 +973,6 @@
 352,352,352,352,352,352,352,352,352,352,352,330,352,352,352,352,352,352
 </data>
  </layer>
- <objectgroup id="4" name="Buildings"/>
  <layer id="5" name="Front" width="18" height="30">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -1009,7 +1007,6 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup id="6" name="Front"/>
  <layer id="7" name="Paths" width="18" height="30">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -1044,7 +1041,6 @@
 1998,1994,1990,0,0,1990,1991,0,0,0,0,0,1990,0,0,0,0,1991
 </data>
  </layer>
- <objectgroup id="8" name="Paths"/>
  <layer id="9" name="AlwaysFront" width="18" height="30">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,32,33,34,35,
@@ -1079,5 +1075,9 @@
 1069,1070,1071,947,997,1066,1067,1069,1070,1069,1070,1071,947,947,947,972,947,947
 </data>
  </layer>
+ <objectgroup id="2" name="Back"/>
+ <objectgroup id="4" name="Buildings"/>
+ <objectgroup id="6" name="Front"/>
+ <objectgroup id="8" name="Paths"/>
  <objectgroup id="10" name="AlwaysFront"/>
 </map>

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.6" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="13" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="3">
+<map version="1.8" tiledversion="1.8.6" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="13" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="4">
  <properties>
   <property name="AmbientLight" value="125 125 125"/>
   <property name="Music" value="echos"/>
+  <property name="Warp" value="4 8 Tarniyar.CP.WalkToDesert_Ghost_Town 55 24"/>
  </properties>
  <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
   <image source="paths" width="64" height="144"/>
@@ -23,6 +24,7 @@
 0,0,0,0,50,0,0,0,0,0,0,0,0
 </data>
  </layer>
+ <objectgroup id="2" name="Back"/>
  <layer id="9" name="Back2" width="13" height="9">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -36,6 +38,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
+ <objectgroup id="10" name="Back2"/>
  <layer id="3" name="Buildings" width="13" height="9">
   <data encoding="csv">
 80,80,80,80,80,80,80,80,80,80,80,80,80,
@@ -49,6 +52,18 @@
 80,80,80,80,0,80,80,80,80,80,80,80,80
 </data>
  </layer>
+ <objectgroup id="4" name="Buildings">
+  <object id="1" name="TileData" x="112" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;GhostShop.1&quot;"/>
+   </properties>
+  </object>
+  <object id="2" name="TileData" x="32" y="80" width="16" height="16">
+   <properties>
+    <property name="Action" value="OpenShop Tarniyar.CP.WalkToDesert_WTDRGhostShop"/>
+   </properties>
+  </object>
+ </objectgroup>
  <layer id="5" name="Front" width="13" height="9">
   <data encoding="csv">
 80,159,160,160,160,160,160,160,160,160,160,123,80,
@@ -62,6 +77,7 @@
 80,80,80,80,80,80,80,80,80,80,80,80,80
 </data>
  </layer>
+ <objectgroup id="6" name="Front"/>
  <layer id="7" name="Paths" width="13" height="9">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -75,21 +91,5 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup id="2" name="Back"/>
- <objectgroup id="10" name="Back2"/>
- <objectgroup id="4" name="Buildings">
-  <object id="1" name="TileData" x="112" y="48" width="16" height="16">
-   <properties>
-    <property name="Action" value="Message &quot;GhostShop.1&quot;"/>
-   </properties>
-  </object>
-  <object id="2" name="TileData" x="32" y="80" width="16" height="16">
-   <properties>
-    <property name="Action" value=""/>
-    <property name="Shop" value="WTDRGhostShop"/>
-   </properties>
-  </object>
- </objectgroup>
- <objectgroup id="6" name="Front"/>
  <objectgroup id="8" name="Paths"/>
 </map>
