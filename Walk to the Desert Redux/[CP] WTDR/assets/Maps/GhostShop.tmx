@@ -5,79 +5,64 @@
   <property name="Music" value="echos"/>
   <property name="Warp" value="4 8 Tarniyar.CP.WalkToDesert_Ghost_Town 55 24"/>
  </properties>
- <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
-  <image source="paths" width="64" height="144"/>
+ <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
  </tileset>
- <tileset firstgid="37" name="z_ghostshoptiles" tilewidth="16" tileheight="16" tilecount="176" columns="11">
+ <tileset firstgid="65" name="z_ghostshoptiles" tilewidth="16" tileheight="16" tilecount="176" columns="11">
   <image source="z_ghostshoptiles" width="176" height="256"/>
  </tileset>
  <layer id="1" name="Back" width="13" height="9">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,81,82,83,84,85,86,87,88,89,90,91,0,
-0,92,93,94,95,96,97,98,99,100,101,102,0,
-0,103,104,105,106,107,108,109,110,111,112,113,0,
-0,37,38,39,40,41,42,43,44,45,46,47,0,
-0,48,49,50,51,52,53,54,55,56,57,58,0,
-0,59,60,61,62,63,64,65,66,67,68,69,0,
-0,70,71,72,73,74,75,76,77,78,79,80,0,
-0,0,0,0,50,0,0,0,0,0,0,0,0
+0,109,110,111,112,113,114,115,116,117,118,119,0,
+0,120,121,122,123,124,125,126,127,128,129,130,0,
+0,131,132,133,134,135,136,137,138,139,140,141,0,
+0,65,66,67,68,69,70,71,72,73,74,75,0,
+0,76,77,78,79,80,81,82,83,84,85,86,0,
+0,87,88,89,90,91,92,93,94,95,96,97,0,
+0,98,99,100,101,102,103,104,105,106,107,108,0,
+0,0,0,0,78,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup id="2" name="Back"/>
- <layer id="9" name="Back2" width="13" height="9">
+ <layer id="9" name="Back1" width="13" height="9">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,115,116,0,0,0,0,0,
+0,0,0,0,0,0,143,144,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup id="10" name="Back2"/>
  <layer id="3" name="Buildings" width="13" height="9">
   <data encoding="csv">
-80,80,80,80,80,80,80,80,80,80,80,80,80,
-80,0,0,0,0,0,0,0,0,0,0,0,80,
-80,92,0,0,0,0,0,98,0,0,0,102,80,
-80,103,104,105,106,107,108,109,110,111,112,113,80,
-80,114,0,0,0,0,0,0,136,137,138,124,80,
-80,150,151,152,153,0,0,0,0,0,0,0,80,
-80,0,0,0,0,0,0,0,0,0,0,0,80,
-80,80,80,80,0,80,80,80,80,80,80,80,80,
-80,80,80,80,0,80,80,80,80,80,80,80,80
+108,108,108,108,108,108,108,108,108,108,108,108,108,
+108,0,0,0,0,0,0,0,0,0,0,0,108,
+108,120,0,0,0,0,0,126,0,0,0,130,108,
+108,131,132,133,134,135,136,137,138,139,140,141,108,
+108,142,0,0,0,0,0,0,164,165,166,152,108,
+108,178,179,180,181,0,0,0,0,0,0,0,108,
+108,0,0,0,0,0,0,0,0,0,0,0,108,
+108,108,108,108,0,108,108,108,108,108,108,108,108,
+108,108,108,108,0,108,108,108,108,108,108,108,108
 </data>
  </layer>
- <objectgroup id="4" name="Buildings">
-  <object id="1" name="TileData" x="112" y="48" width="16" height="16">
-   <properties>
-    <property name="Action" value="Message &quot;GhostShop.1&quot;"/>
-   </properties>
-  </object>
-  <object id="2" name="TileData" x="32" y="80" width="16" height="16">
-   <properties>
-    <property name="Action" value="OpenShop Tarniyar.CP.WalkToDesert_WTDRGhostShop"/>
-   </properties>
-  </object>
- </objectgroup>
  <layer id="5" name="Front" width="13" height="9">
   <data encoding="csv">
-80,159,160,160,160,160,160,160,160,160,160,123,80,
-169,170,0,117,118,119,120,0,121,122,0,134,135,
-147,0,0,128,129,130,131,0,132,133,0,0,146,
-147,0,0,0,0,0,0,0,125,126,127,0,146,
-147,139,140,141,142,0,0,0,0,0,0,0,146,
-147,0,0,0,0,0,0,0,0,0,0,0,146,
-148,149,143,144,0,145,143,143,143,143,143,161,162,
-80,80,80,155,143,156,80,80,80,80,80,80,80,
-80,80,80,80,80,80,80,80,80,80,80,80,80
+108,187,188,188,188,188,188,188,188,188,188,151,108,
+197,198,0,145,146,147,148,0,149,150,0,162,163,
+175,0,0,156,157,158,159,0,160,161,0,0,174,
+175,0,0,0,0,0,0,0,153,154,155,0,174,
+175,167,168,169,170,0,0,0,0,0,0,0,174,
+175,0,0,0,0,0,0,0,0,0,0,0,174,
+176,177,171,172,0,173,171,171,171,171,171,189,190,
+108,108,108,183,171,184,108,108,108,108,108,108,108,
+108,108,108,108,108,108,108,108,108,108,108,108,108
 </data>
  </layer>
- <objectgroup id="6" name="Front"/>
  <layer id="7" name="Paths" width="13" height="9">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -91,5 +76,20 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
+ <objectgroup id="2" name="Back"/>
+ <objectgroup id="10" name="Back2"/>
+ <objectgroup id="4" name="Buildings">
+  <object id="1" name="TileData" x="112" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;GhostShop.1&quot;"/>
+   </properties>
+  </object>
+  <object id="2" name="TileData" x="32" y="80" width="16" height="16">
+   <properties>
+    <property name="Action" value="OpenShop Tarniyar.CP.WalkToDesert_WTDRGhostShop none 2000 2330 2 4 1 1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="Front"/>
  <objectgroup id="8" name="Paths"/>
 </map>

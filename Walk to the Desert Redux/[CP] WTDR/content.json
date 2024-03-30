@@ -105,7 +105,66 @@
 				"{{ModId}}_Meadow": {
 					"DefaultArrivalTile": { "X": 11, "Y": 11 },
 					"CreateOnLoad": { "MapPath": "Maps/{{ModId}}_Meadow" },
-					"FormerLocationNames": [ "Custom_Tarniyar_Meadow", "Meadow" ]
+					"FormerLocationNames": [ "Custom_WTDR_Meadow", "Meadow" ],
+					"ArtifactSpots": [
+						{
+							"ItemId": "(O){{ModId}}_Giant_Old_Coin",
+							"Chance": 0.5,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"Precedence": 0
+						},
+						{
+							"ItemId": "(O){{ModId}}_Old_Coin",
+							"Chance": 0.3,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"Precedence": 0
+						},
+						{
+							"ItemId": "(O)770",
+							"Chance": 0.25,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"Precedence": 0
+						},
+						{
+							"ItemId": "(O)390",
+							"Chance": 0.25,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"Precedence": 0
+						},
+						{
+							"ItemId": "(O)330",
+							"Chance": 1,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"Precedence": 0
+						}
+					],
+					"Forage": [
+						{
+							"Condition": "LOCATION_SEASON Here spring",
+							"ItemId": "(O)22",
+							"Chance": 0.5
+						},
+						{
+							"Condition": "LOCATION_SEASON Here summer",
+							"ItemId": "(O)402",
+							"Chance": 0.5
+						},
+						{
+							"Condition": "LOCATION_SEASON Here fall",
+							"ItemId": "(O)408",
+							"Chance": 0.5
+						},
+						{
+							"Condition": "LOCATION_SEASON Here winter",
+							"ItemId": "(O)283",
+							"Chance": 0.5
+						}
+					]
 				}
 			}
 		},
@@ -122,7 +181,66 @@
 				"{{ModId}}_Forest_Road": {
 					"DefaultArrivalTile": { "X": 20, "Y": 13 },
 					"CreateOnLoad": { "MapPath": "Maps/{{ModId}}_Forest_Road" },
-					"FormerLocationNames": [ "Custom_WTDR_ForestRoad", "ForestRoad" ]
+					"FormerLocationNames": [ "Custom_WTDR_ForestRoad", "ForestRoad" ],
+					"ArtifactSpots": [
+						{
+							"ItemId": "(O){{ModId}}_Giant_Old_Coin",
+							"Chance": 0.5,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"Precedence": 0
+						},
+						{
+							"ItemId": "(O){{ModId}}_Old_Coin",
+							"Chance": 0.3,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"Precedence": 0
+						},
+						{
+							"ItemId": "(O)770",
+							"Chance": 0.25,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"Precedence": 0
+						},
+						{
+							"ItemId": "(O)390",
+							"Chance": 0.25,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"Precedence": 0
+						},
+						{
+							"ItemId": "(O)330",
+							"Chance": 1,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"Precedence": 0
+						}
+					],
+					"Forage": [
+						{
+							"Condition": "LOCATION_SEASON Here spring",
+							"ItemId": "(O)22",
+							"Chance": 0.5
+						},
+						{
+							"Condition": "LOCATION_SEASON Here summer",
+							"ItemId": "(O)402",
+							"Chance": 0.5
+						},
+						{
+							"Condition": "LOCATION_SEASON Here fall",
+							"ItemId": "(O)408",
+							"Chance": 0.5
+						},
+						{
+							"Condition": "LOCATION_SEASON Here winter",
+							"ItemId": "(O)283",
+							"Chance": 0.5
+						}
+					]
 				}
 			}
 		},
@@ -139,7 +257,66 @@
 				"{{ModId}}_Winding_Road": {
 					"DefaultArrivalTile": { "X": 8, "Y": 83 },
 					"CreateOnLoad": { "MapPath": "Maps/{{ModId}}_Winding_Road" },
-					"FormerLocationNames": [ "Custom_WTDR_WindingRoad", "WindingRoad" ]
+					"FormerLocationNames": [ "Custom_WTDR_WindingRoad", "WindingRoad" ],
+					"ArtifactSpots": [
+						{
+							"ItemId": "(O){{ModId}}_Giant_Old_Coin",
+							"Chance": 0.5,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"Precedence": 0
+						},
+						{
+							"ItemId": "(O){{ModId}}_Old_Coin",
+							"Chance": 0.3,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"Precedence": 0
+						},
+						{
+							"ItemId": "(O)770",
+							"Chance": 0.25,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"Precedence": 0
+						},
+						{
+							"ItemId": "(O)390",
+							"Chance": 0.25,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"Precedence": 0
+						},
+						{
+							"ItemId": "(O)330",
+							"Chance": 1,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"Precedence": 0
+						}
+					],
+					"Forage": [
+						{
+							"Condition": "LOCATION_SEASON Here spring",
+							"ItemId": "(O)22",
+							"Chance": 0.5
+						},
+						{
+							"Condition": "LOCATION_SEASON Here summer",
+							"ItemId": "(O)402",
+							"Chance": 0.5
+						},
+						{
+							"Condition": "LOCATION_SEASON Here fall",
+							"ItemId": "(O)408",
+							"Chance": 0.5
+						},
+						{
+							"Condition": "LOCATION_SEASON Here winter",
+							"ItemId": "(O)283",
+							"Chance": 0.5
+						}
+					]
 				}
 			}
 		},
@@ -156,7 +333,66 @@
 				"{{ModId}}_Interchange": {
 					"DefaultArrivalTile": { "X": 18, "Y": 34 },
 					"CreateOnLoad": { "MapPath": "Maps/{{ModId}}_Interchange" },
-					"FormerLocationNames": [ "Custom_WTDR_Interchange", "Interchange" ]
+					"FormerLocationNames": [ "Custom_WTDR_Interchange", "Interchange" ],
+					"ArtifactSpots": [
+						{
+							"ItemId": "(O){{ModId}}_Giant_Old_Coin",
+							"Chance": 0.5,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"Precedence": 0
+						},
+						{
+							"ItemId": "(O){{ModId}}_Old_Coin",
+							"Chance": 0.3,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"Precedence": 0
+						},
+						{
+							"ItemId": "(O)770",
+							"Chance": 0.25,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"Precedence": 0
+						},
+						{
+							"ItemId": "(O)390",
+							"Chance": 0.25,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"Precedence": 0
+						},
+						{
+							"ItemId": "(O)330",
+							"Chance": 1,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"Precedence": 0
+						}
+					],
+					"Forage": [
+						{
+							"Condition": "LOCATION_SEASON Here spring",
+							"ItemId": "(O)22",
+							"Chance": 0.5
+						},
+						{
+							"Condition": "LOCATION_SEASON Here summer",
+							"ItemId": "(O)402",
+							"Chance": 0.5
+						},
+						{
+							"Condition": "LOCATION_SEASON Here fall",
+							"ItemId": "(O)408",
+							"Chance": 0.5
+						},
+						{
+							"Condition": "LOCATION_SEASON Here winter",
+							"ItemId": "(O)283",
+							"Chance": 0.5
+						}
+					]
 				}
 			}
 		},
@@ -173,7 +409,23 @@
 				"{{ModId}}_Ghost_Town": {
 					"DefaultArrivalTile": { "X": 28, "Y": 32 },
 					"CreateOnLoad": { "MapPath": "Maps/{{ModId}}_Ghost_Town" },
-					"FormerLocationNames": [ "Custom_WTDR_GhostTown", "GhostTown" ]
+					"FormerLocationNames": [ "Custom_WTDR_GhostTown", "GhostTown" ],
+					"ArtifactSpots": [
+						{
+							"ItemId": "(O){{ModId}}_Giant_Old_Coin",
+							"Chance": 0.5,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"Precedence": 0
+						},
+						{
+							"ItemId": "(O){{ModId}}_Old_Coin",
+							"Chance": 0.3,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"Precedence": 0
+						}
+					]
 				}
 			}
 		},
@@ -207,7 +459,7 @@
 				"{{ModId}}_Pete_Hidden": {
 					"DefaultArrivalTile": { "X": 7, "Y": 5 },
 					"CreateOnLoad": { "MapPath": "Maps/{{ModId}}_Pete_Hidden" },
-					"FormerLocationNames": [ "Custom_WTDR_Pete_Hidden", "PeteHidden" ]
+					"FormerLocationNames": [ "Custom_WTDR_PeteHidden", "PeteHidden" ]
 				}
 			}
 		},
@@ -667,28 +919,28 @@
 					"Position": { "X": 0, "Y": 36 },
 					"Layer": "Back",
 					"SetProperties": {
-						"TouchAction": "Warp {{ModId}}_Ghost_Town 68 45"
+						"TouchAction": "Warp {{ModId}}_Ghost_Town 68 46"
 					}
 				},
 				{
 					"Position": { "X": 0, "Y": 37 },
 					"Layer": "Back",
 					"SetProperties": {
-						"TouchAction": "Warp {{ModId}}_Ghost_Town 68 45"
+						"TouchAction": "Warp {{ModId}}_Ghost_Town 68 47"
 					}
 				},
 				{
 					"Position": { "X": 0, "Y": 38 },
 					"Layer": "Back",
 					"SetProperties": {
-						"TouchAction": "Warp {{ModId}}_Ghost_Town 68 45"
+						"TouchAction": "Warp {{ModId}}_Ghost_Town 68 48"
 					}
 				},
 				{
 					"Position": { "X": 0, "Y": 39 },
 					"Layer": "Back",
 					"SetProperties": {
-						"TouchAction": "Warp {{ModId}}_Ghost_Town 68 45"
+						"TouchAction": "Warp {{ModId}}_Ghost_Town 68 49"
 					}
 				}
 			]
@@ -1214,7 +1466,7 @@
 					"HarvestMaxStack": 1,
 					"HarvestMaxIncreasePerFarmingLevel": 25,
 					"ExtraHarvestChance": 0,
-					"Texture": "Mods/{{ModId}}/Crops",
+					"Texture": "Mods\\{{ModId}}\\Crops",
 					"SpriteIndex": 0
 				}
 			}
@@ -1283,8 +1535,35 @@
 			}
 		},
 		
-		// Quest Data
+		// Migrating the WTDR Items in Save Data from pre-SDV 1.5.6 (WTDR 1.1.2 - 1.3.1) to the new SDV 1.6 (WTDR 1.3.2+) Item IDs
+		// 3009 was Eerie Plant Seeds, 3010 was Ghost Berry, 3011 was Ghostly Wine, 3012 was Giant Old Coin and 3016 was Old Coin
+		{
+			"LogName": "Migrating pre-SDV 1.5.6 WTDR items to the new SDV 1.6 format.",
+			"Target": "Data/TriggerActions",
+			"Action": "EditData",
+			"Entries": {
+				"{{ModId}}_MigrateIds": {
+					"Id": "{{ModId}}_MigrateIds",
+					"Trigger": "DayStarted",
+					"Actions": [
+						'Pathoschild.ContentPatcher_MigrateIds Items (O)3009 (O){{ModId}}_Eerie_Plant_Seeds (O)3010 (O){{ModId}}_Ghost_Berry (O)3011 (O){{ModId}}_Ghostly_Wine (O)3012 (O){{ModId}}_Giant_Old_Coin (O)3016 (O){{ModId}}_Old_Coin'
+					],
+					"HostOnly": true
+				}
+			}
+		},
 		
+		// Quest Data
+		{
+			"Action": "EditData",
+			"Target": "Data/Quests",
+			"Entries": {
+				"1373001": "ItemDelivery/Ghost Berry/The Wizard wants to study a Ghost Berry. Don't ask why./Bring the Wizard a Ghost Berry./Wizard {{ModId}}_Ghost_Berry/-1/500/-1/true/Ah, fascinating. The magical potential of this fruit is incredible! You've done well, @. You have my gratitude. Now, let me work in peace.",
+				"1373002": "ItemDelivery/Refined Quartz Request/Hephaestus needs 10 refined quartz for his work./Bring Hephaestus 10 refined quartz./Hephaestus 338 10/-1/2000/-1/true/Thank you, @! These look perfect!$h#$b#I appreciate you taking the time to help me out.$0",
+				"1373003": "ItemDelivery/Slime Request/Hephaestus needs 50 slime for his work./Bring Hephaestus 50 slime./Hephaestus 766 50/-1/1000/-1/true/Thank you, @! These look nice and juicy.$h#$b#I appreciate you taking the time to help me out.$0",
+				"1373004": "ItemDelivery/Iridium Bar Request/Hephaestus needs 5 iridium bars for his work./Bring Hephaestus 5 iridium bars./Hephaestus 337 5/-1/25000/-1/true/Thank you, @! I knew I could count on you!$h#$b#You are a true friend.$0"
+			}
+		},
 		
 		// Map Strings
 		{
@@ -1298,7 +1577,8 @@
 				"GhostTown.1": "DANGER!",
 				"GhostTown.2": "DO NOT ENTER!",
 				"GhostTown.3": "This building collapsed a long time ago, it doesn't look safe to enter.",
-				"GhostTown.4": "The door is locked, an eerie voice whispers \"Future Update.\"",
+				"GhostTown.4": "The door is jammed shut, the house has shifted over time and has become unstable, despite its lack of major damage.",
+				"GhostTown.5": "The door is locked, an eerie voice whispers \"Future Update.\"",
 				"GhostShop.1": "The door is locked, and the doorknob is covered in sticky spiderwebs, Eugh.",
 				"GhostShop.2": "Pickled Pete: Won't you buy some of my wares?",
 				"Horsepath.1": "Horses are prohibited to enter the tunnel!^Tractors are prohibited to enter the tunnel!",
