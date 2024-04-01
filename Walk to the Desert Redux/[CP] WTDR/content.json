@@ -532,7 +532,7 @@
 			]
 		},
 		{
-			"LogName": "Applies a map edit to remove the invisible wall on the Winding Road map that goes into the garden village mod.",
+			"LogName": "Applies a map edit to remove the invisible wall on the Winding Road map that goes into the Garden Village mod.",
 			"Action": "EditMap",
 			"Target": "Maps/{{ModId}}_Winding_Road",
 			"FromFile": "assets/maps/patches/WindingRoad.tmx",
@@ -542,13 +542,43 @@
 			}
 		},
 		{
+			"LogName": "Applies a map edit to remove the invisible wall on the top of the Interchange map that goes into the Downtown Zuzu mod.",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Interchange",
+			"FromFile": "assets/maps/patches/Interchange.tmx",
+			"ToArea": { "X": 20, "Y": 0, "Width": 11, "Height": 1 },
+			"When": {
+				"HasMod": "DTZ.DowntownZuzuCP"
+			}
+		},
+		{
+			"LogName": "Applies a map edit to remove part of the invisible wall on the bottom of the Freeway (1) Transition map that goes into the Interchange map.",
+			"Action": "EditMap",
+			"Target": "Maps/Custom_DTZ_ZuzuCityFreeway1",
+			"FromFile": "assets/maps/patches/DZInterchange.tmx",
+			"ToArea": { "X": 22, "Y": 42, "Width": 7, "Height": 1 },
+			"When": {
+				"HasMod": "DTZ.DowntownZuzuCP"
+			}
+		},
+		{
 			"LogName": "Applies a map edit to remove the invisible wall on the Desert map that will be going into the Ghost Town map.",
 			"Action": "EditMap",
 			"Target": "Maps/Desert",
 			"FromFile": "assets/maps/patches/Desert.tmx",
 			"ToArea": { "X": 49, "Y": 24, "Width": 1, "Height": 6 },
 			"When": {
-				"HasMod |contains=Flashshifter.StardewValleyExpandedALL": false
+				"HasMod |contains=Flashshifter.StardewValleyExpandedCP": false
+			}
+		},
+		{
+			"LogName": "Applies a map edit to remove the invisible wall on the Desert map if the Stardew Valley Expanded mod is installed.",
+			"Action": "EditMap",
+			"Target": "Maps/Desert",
+			"FromFile": "assets/maps/patches/SDVDesert.tmx",
+			"ToArea": { "X": 59, "Y": 24, "Width": 1, "Height": 6 },
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
 			}
 		},
 		
@@ -618,11 +648,7 @@
 						"TouchAction": "Warp {{ModId}}_Forest_Road 58 18"
 					}
 				}
-			],
-			"When": {
-				"HasMod |contains=Pillow.StardewExpansion.CP": false,
-				"HasMod |contains=Fostoria.Stoffton": false
-			}
+			]
 		},
 		{
 			"LogName": "Adds warps from the Forest Road map to the Tunnel map if the mods Fostoria or Tego's Stardew Expansion Redux aren't installed",
@@ -671,11 +697,7 @@
 						"TouchAction": "Warp Tunnel 1 12"
 					}
 				}
-			],
-			"When": {
-				"HasMod |contains=Pillow.StardewExpansion.CP": false,
-				"HasMod |contains=Fostoria.Stoffton": false
-			}
+			]
 		},
 		
 		// Adding Regular Map Warps
@@ -946,6 +968,124 @@
 			]
 		},
 		{
+			"LogName": "Adds warps from the Interchange map to the Freeway (1) Transition map if the Downtown Zuzu mod is installed.",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Interchange",
+			"MapTiles": [
+				{
+					"Position": { "X": 22, "Y": 0 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Custom_DTZ_ZuzuCityFreeway1 22 41"
+					}
+				},
+				{
+					"Position": { "X": 23, "Y": 0 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Custom_DTZ_ZuzuCityFreeway1 23 41"
+					}
+				},
+				{
+					"Position": { "X": 24, "Y": 0 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Custom_DTZ_ZuzuCityFreeway1 24 41"
+					}
+				},
+				{
+					"Position": { "X": 25, "Y": 0 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Custom_DTZ_ZuzuCityFreeway1 25 41"
+					}
+				},
+				{
+					"Position": { "X": 26, "Y": 0 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Custom_DTZ_ZuzuCityFreeway1 26 41"
+					}
+				},
+				{
+					"Position": { "X": 27, "Y": 0 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Custom_DTZ_ZuzuCityFreeway1 27 41"
+					}
+				},
+				{
+					"Position": { "X": 28, "Y": 0 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Custom_DTZ_ZuzuCityFreeway1 28 41"
+					}
+				}
+			],
+			"When": {
+				"HasMod": "DTZ.DowntownZuzuCP"
+			}
+		},
+		{
+			"LogName": "Adds warps from the Freeway (1) Transition to the Interchange map if the Downtown Zuzu mod is installed.",
+			"Action": "EditMap",
+			"Target": "Maps/Custom_DTZ_ZuzuCityFreeway1",
+			"MapTiles": [
+				{
+					"Position": { "X": 22, "Y": 42 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Interchange 22 1"
+					}
+				},
+				{
+					"Position": { "X": 23, "Y": 42 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Interchange 23 1"
+					}
+				},
+				{
+					"Position": { "X": 24, "Y": 42 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Interchange 24 1"
+					}
+				},
+				{
+					"Position": { "X": 25, "Y": 42 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Interchange 25 1"
+					}
+				},
+				{
+					"Position": { "X": 26, "Y": 42 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Interchange 26 1"
+					}
+				},
+				{
+					"Position": { "X": 27, "Y": 42 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Interchange 27 1"
+					}
+				},
+				{
+					"Position": { "X": 28, "Y": 42 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Interchange 28 1"
+					}
+				}
+			],
+			"When": {
+				"HasMod": "DTZ.DowntownZuzuCP"
+			}
+		},
+		{
 			"LogName": "Adds warps from the Ghost Town map to the Interchange map.",
 			"Action": "EditMap",
 			"Target": "Maps/{{ModId}}_Ghost_Town",
@@ -1078,7 +1218,59 @@
 				}
 			],
 			"When": {
-				"HasMod |contains=FlashShifter.StardewValleyExpandedALL": false
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+		{
+			"LogName": "Adds warps from the Ghost Town map to the Desert map if Stardew Vallet Expanded is installed.",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Ghost_Town",
+			"MapTiles": [
+				{
+					"Position": { "X": 0, "Y": 33 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Desert 58 24"
+					}
+				},
+				{
+					"Position": { "X": 0, "Y": 34 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Desert 58 25"
+					}
+				},
+				{
+					"Position": { "X": 0, "Y": 35 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Desert 58 26"
+					}
+				},
+				{
+					"Position": { "X": 0, "Y": 36 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Desert 58 27"
+					}
+				},
+				{
+					"Position": { "X": 0, "Y": 37 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Desert 58 28"
+					}
+				},
+				{
+					"Position": { "X": 0, "Y": 38 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Desert 58 29"
+					}
+				}
+			],
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
 			}
 		},
 		{
@@ -1130,7 +1322,59 @@
 				}
 			],
 			"When": {
-				"HasMod |contains=FlashShifter.StardewValleyExpandedALL": false
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+		{
+			"LogName": "Adds warps from the Desert map to the Ghost Town map if Stardew Valley Expanded is installed.",
+			"Action": "EditMap",
+			"Target": "Maps/Desert",
+			"MapTiles": [
+				{
+					"Position": { "X": 59, "Y": 24 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Ghost_Town 1 33"
+					}
+				},
+				{
+					"Position": { "X": 59, "Y": 25 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Ghost_Town 1 34"
+					}
+				},
+				{
+					"Position": { "X": 59, "Y": 26 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Ghost_Town 1 35"
+					}
+				},
+				{
+					"Position": { "X": 59, "Y": 27 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Ghost_Town 1 36"
+					}
+				},
+				{
+					"Position": { "X": 59, "Y": 28 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Ghost_Town 1 37"
+					}
+				},
+				{
+					"Position": { "X": 59, "Y": 29 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Ghost_Town 1 38"
+					}
+				}
+			],
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
 			}
 		},
 		{
@@ -1486,8 +1730,15 @@
 				"Tarniyar.CP.WalkToDesert_WTDRGhostShop": {
 					"Owners": [
 						{
-							"Name": "PickledPete",
-							"Condition": "TIME 2000 2330",
+							"Condition": "TIME 600 2000",
+							"Portrait": null,
+							"Dialogues": null,
+							"ClosedMessage": "Come back later...",
+							"Id": "{{ModId}}_WTDRShop_Closed",
+							"Name": "None"
+						},
+						{
+							"Condition": "!TIME 600 2000",
 							"Dialogues": [
 								{
 									"Id": "{{ModId}}_Rainy",
@@ -1498,12 +1749,10 @@
 									"Id": "{{ModId}}_Default",
 									"Dialogue": "Come to peruse my wares?"
 								}
-							]
-						},
-						{
-							"Id": "{{ModId}}_Closed",
-							"Name": "None",
-							"ClosedMessage": "Come back later..."
+							],
+							"ClosedMessage": null,
+							"Id": "{{ModId}}_WTDRShop_Open",
+							"Name": "PickledPete"
 						}
 					],
 					"Items": [
@@ -1513,8 +1762,7 @@
 							"Price": 0,
 							"TradeItemId": "{{ModId}}_Old_Coin",
 							"TradeItemAmount": 1,
-							"AvailableStock": 10,
-							"AvailableStockLimit": "Player"
+							"AvailableStock": 10
 						},
 						{
 							"Id": "{{ModId}}_Old_Coin",
@@ -1522,8 +1770,7 @@
 							"Price": 0,
 							"TradeItemId": "{{ModId}}_Slime_Cheese",
 							"TradeItemAmount": 1,
-							"AvailableStock": 1,
-							"AvailableStockLimit": "Player"
+							"AvailableStock": 1
 						}
 					],
 					"SalableItemTags": [
@@ -1536,7 +1783,6 @@
 		},
 		
 		// Migrating the WTDR Items in Save Data from pre-SDV 1.5.6 (WTDR 1.1.2 - 1.3.1) to the new SDV 1.6 (WTDR 1.3.2+) Item IDs
-		// 3009 was Eerie Plant Seeds, 3010 was Ghost Berry, 3011 was Ghostly Wine, 3012 was Giant Old Coin and 3016 was Old Coin
 		{
 			"LogName": "Migrating pre-SDV 1.5.6 WTDR items to the new SDV 1.6 format.",
 			"Target": "Data/TriggerActions",
@@ -1546,7 +1792,7 @@
 					"Id": "{{ModId}}_MigrateIds",
 					"Trigger": "DayStarted",
 					"Actions": [
-						'Pathoschild.ContentPatcher_MigrateIds Items (O)3009 (O){{ModId}}_Eerie_Plant_Seeds (O)3010 (O){{ModId}}_Ghost_Berry (O)3011 (O){{ModId}}_Ghostly_Wine (O)3012 (O){{ModId}}_Giant_Old_Coin (O)3016 (O){{ModId}}_Old_Coin'
+						'Pathoschild.ContentPatcher_MigrateIds Items "JsonAssets:objects:Eerie Seeds" (O){{ModId}}_Eerie_Plant_Seeds "JsonAssets:objects:Ghost Berry" (O){{ModId}}_Ghost_Berry "JsonAssets:objects:Ghostly Wine" (O){{ModId}}_Ghostly_Wine "JsonAssets:objects:Giant Old Coin" (O){{ModId}}_Giant_Old_Coin "JsonAssets:objects:Old Coin" (O){{ModId}}_Old_Coin'
 					],
 					"HostOnly": true
 				}
@@ -1571,8 +1817,8 @@
 			"Target": "Strings/StringsFromMaps",
 			"Entries": {
 				"Interchange.1": "You don't see any reason to visit Zuzu City right now, maybe next time?",
-				"Interchange.2": "` Highway 5 to Zuzu City",
-				"Interchange.3": "` Highway 5 to Zuuz City",
+				"Interchange.2": "` Highway 5 to Zuzu City^` Glacier Outpost^@ Calico Desert",
+				"Interchange.3": "` Highway 5 to Zuuz City^> Glacier Outpost",
 				"Interchange.4": "The road was destroyed by an avalanche, this will take quite a lot of time to clear.",
 				"GhostTown.1": "DANGER!",
 				"GhostTown.2": "DO NOT ENTER!",

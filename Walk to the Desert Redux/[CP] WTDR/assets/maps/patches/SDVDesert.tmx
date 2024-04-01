@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.6" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="1" height="6" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="6">
+<map version="1.8" tiledversion="1.8.6" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="1" height="6" tilewidth="16" tileheight="16" infinite="0" nextlayerid="16" nextobjectid="6">
  <properties>
+  <property name="LocationContext" value="Desert"/>
   <property name="Outdoors" value="T"/>
-  <property name="Spring_Objects" value="T"/>
-  <property name="Summer_Objects" value="T"/>
-  <property name="Fall_Objects" value="T"/>
-  <property name="Winter_Objects" value="T"/>
+  <property name="SeasonOverride" value="summer"/>
  </properties>
  <tileset firstgid="1" name="desert-new" tilewidth="16" tileheight="16" tilecount="368" columns="16">
   <image source="DesertTiles" width="256" height="368"/>
@@ -237,20 +235,10 @@
 0,
 0,
 0,
-0
+86
 </data>
  </layer>
  <layer id="3" name="Front" width="1" height="6">
-  <data encoding="csv">
-0,
-0,
-0,
-0,
-102,
-66
-</data>
- </layer>
- <layer id="4" name="Paths" width="1" height="6">
   <data encoding="csv">
 0,
 0,
@@ -264,15 +252,25 @@
   <data encoding="csv">
 0,
 0,
+115,
+131,
+147,
+113
+</data>
+ </layer>
+ <layer id="4" name="Paths" width="1" height="6">
+  <data encoding="csv">
 0,
-114,
-130,
-146
+0,
+0,
+0,
+0,
+0
 </data>
  </layer>
  <objectgroup id="6" name="Back"/>
  <objectgroup id="7" name="Buildings"/>
  <objectgroup id="8" name="Front"/>
- <objectgroup id="9" name="Paths"/>
  <objectgroup id="10" name="AlwaysFront"/>
+ <objectgroup id="9" name="Paths"/>
 </map>

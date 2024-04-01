@@ -15,16 +15,12 @@
 	},
 	"Dependencies": [
 		{
+			"UniqueID": "Pathoschild.ContentPatcher",
+			"IsRequired": true
+		},
+		{
 			"UniqueID": "Esca.FarmTypeManager",
-			"IsRequired": false
-		},
-		{
-			"UniqueID": "Cherry.ShopTileFramework",
-			"IsRequired": false
-		},
-		{
-			"UniqueID": "spacechase0.SpaceCore",
-			"IsRequired": false
+			"IsRequired": true
 		}
 	]
 }

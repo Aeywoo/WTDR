@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.6" orientation="orthogonal" renderorder="right-down" width="7" height="1" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="9">
+ <properties>
+  <property name="Light" value="37 25 4"/>
+  <property name="LocationContext" value="ZuzuCity"/>
+  <property name="Music" value=""/>
+  <property name="Outdoors" value="T"/>
+  <property name="Warp" value="39 30 Custom_DTZ_GasStation 1 26 39 31 Custom_DTZ_GasStation 1 26 39 32 Custom_DTZ_GasStation 1 26 39 33 Custom_DTZ_GasStation 1 26 39 34 Custom_DTZ_GasStation 1 26 39 35 Custom_DTZ_GasStation 1 26 39 36 Custom_DTZ_GasStation 1 26 39 37 Custom_DTZ_GasStation 1 26 39 38 Custom_DTZ_GasStation 1 26 39 39 Custom_DTZ_GasStation 1 26 39 40 Custom_DTZ_GasStation 1 26 22 0 Custom_DTZ_ZuzuCityOasis1 39 45 23 0 Custom_DTZ_ZuzuCityOasis1 39 45 24 0 Custom_DTZ_ZuzuCityOasis1 39 45 25 0 Custom_DTZ_ZuzuCityOasis1 39 45 26 0 Custom_DTZ_ZuzuCityOasis1 39 45 27 0 Custom_DTZ_ZuzuCityOasis1 39 45 28 0 Custom_DTZ_ZuzuCityOasis1 39 45 0 28 Custom_DTZ_Forest2 102 29 0 29 Custom_DTZ_Forest2 102 29 0 30 Custom_DTZ_Forest2 102 29"/>
+ </properties>
+ <tileset firstgid="1" name="spring_outdoorsTileSheet" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+  <image source="spring_outdoorsTileSheet" width="400" height="1264"/>
+  <tile id="150">
+   <animation>
+    <frame tileid="150" duration="200"/>
+    <frame tileid="420" duration="200"/>
+    <frame tileid="421" duration="200"/>
+    <frame tileid="422" duration="200"/>
+    <frame tileid="423" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="151">
+   <animation>
+    <frame tileid="151" duration="1000"/>
+    <frame tileid="152" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="1030">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="1054">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="1056">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="1082">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="1976" name="spring_extra3" tilewidth="16" tileheight="16" tilecount="10000" columns="100">
+  <image source="spring_extra3.png" width="1600" height="1600"/>
+  <tile id="0">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="100">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="200">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="201">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="305">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="306">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="307">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="407">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="700">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="701">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="702">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="11976" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+ </tileset>
+ <layer id="1" name="Back" width="7" height="1">
+  <data encoding="csv">
+11604,1055,1055,2677,1055,1055,11603
+</data>
+ </layer>
+ <layer id="3" name="Buildings" width="7" height="1">
+  <data encoding="csv">
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="5" name="Paths" width="7" height="1">
+  <data encoding="csv">
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="7" name="Front" width="7" height="1">
+  <data encoding="csv">
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="9" name="AlwaysFront" width="7" height="1">
+  <data encoding="csv">
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <objectgroup id="4" name="Buildings"/>
+ <objectgroup id="6" name="Paths"/>
+ <objectgroup id="8" name="Front"/>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>
