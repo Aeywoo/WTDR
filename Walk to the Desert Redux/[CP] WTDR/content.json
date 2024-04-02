@@ -1874,9 +1874,9 @@
 						{
 							"Id": "{{ModId}}_Old_Coin",
 							"ItemId": "(O){{ModId}}_Old_Coin",
-							"Price": 0,
-							"TradeItemId": "{{ModId}}_Slime_Cheese",
-							"TradeItemAmount": 1,
+							"Price": 120, // 0,
+							// "TradeItemId": "{{ModId}}_Slime_Cheese",
+							// "TradeItemAmount": 1,
 							"AvailableStock": 1
 						}
 					],
