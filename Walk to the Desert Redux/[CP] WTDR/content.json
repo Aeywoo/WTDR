@@ -487,7 +487,7 @@
 			"Action": "EditMap",
 			"Target": "Maps/BusStop",
 			"FromFile": "assets/maps/patches/BusStop.tmx",
-			"ToArea": { "X": 20, "Y": 18, "Width": 5, "Height": 5 },
+			"ToArea": { "X": 19, "Y": 18, "Width": 5, "Height": 5 },
 			"When": {
 				"HasMod |contains=livipup.busstopsignmovedonetileup": false
 			}
@@ -539,6 +539,16 @@
 			"ToArea": { "X": 0, "Y": 81, "Width": 1, "Height": 5 },
 			"When": {
 				"HasMod": "Tarniyar.CP.GardenVillage"
+			}
+		},
+		{
+			"LogName": "Applies a map edit to remove the invisible wall on the Winding Road map that goes into the Ridgeside Village mod.",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Winding_Road",
+			"FromFile": "assets/maps/patches/WindingRoadRSV.tmx",
+			"ToArea": { "X": 0, "Y": 17, "Width": 1, "Height": 5 },
+			"When": {
+				"HasMod": "Rafseazz.RSVCP"
 			}
 		},
 		{
@@ -749,6 +759,13 @@
 					}
 				},
 				{
+					"Position": { "X": 53, "Y": 13 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Backwoods 30 24"
+					}
+				},
+				{
 					"Position": { "X": 0, "Y": 18 },
 					"Layer": "Back",
 					"SetProperties": {
@@ -875,6 +892,96 @@
 					}
 				}
 			]
+		},
+		{
+			"LogName": "Adds warps from the Winding Road to the RSV Road map if the Ridgeside Village mod is installed.",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Winding_Road",
+			"MapTiles": [
+				{
+					"Position": { "X": 0, "Y": 17 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Custom_Ridgeside_RSVRoad 52 24"
+					}
+				},
+				{
+					"Position": { "X": 0, "Y": 18 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Custom_Ridgeside_RSVRoad 52 25"
+					}
+				},
+				{
+					"Position": { "X": 0, "Y": 19 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Custom_Ridgeside_RSVRoad 52 26"
+					}
+				},
+				{
+					"Position": { "X": 0, "Y": 20 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Custom_Ridgeside_RSVRoad 52 27"
+					}
+				},
+				{
+					"Position": { "X": 0, "Y": 21 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Custom_Ridgeside_RSVRoad 52 28"
+					}
+				}
+			],
+			"When": {
+				"HasMod": "Rafseazz.RSVCP"
+			}
+		},
+		{
+			"LogName": "Adds warps from the RSV Road map to the Winding Road map if the Ridgeside Village mod is installed.",
+			"Action": "EditMap",
+			"Target": "Maps/Custom_Ridgeside_RSVRoad",
+			"MapTiles": [
+				{
+					"Position": { "X": 53, "Y": 24 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Winding_Road 1 17"
+					}
+				},
+				{
+					"Position": { "X": 53, "Y": 25 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Winding_Road 1 18"
+					}
+				},
+				{
+					"Position": { "X": 53, "Y": 26 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Winding_Road 1 19"
+					}
+				},
+				{
+					"Position": { "X": 53, "Y": 27 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Winding_Road 1 20"
+					}
+				},
+				{
+					"Position": { "X": 53, "Y": 28 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Winding_Road 1 21"
+					}
+				}
+			],
+			"When": {
+				"HasMod": "Rafseazz.RSVCP"
+			}
 		},
 		{
 			"LogName": "Adds warps from the Interchange map to the Winding Road map.",
