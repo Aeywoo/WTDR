@@ -481,7 +481,7 @@
 			}
 		},
 		
-		// Custom Map Patches
+		// Custom Map Patches and Tile Changes/Removals
 		{
 			"LogName": "Moves the sign on the BusStop map one tile up on the y axis",
 			"Action": "EditMap",
@@ -541,54 +541,249 @@
 				"HasMod": "Tarniyar.CP.GardenVillage"
 			}
 		},
+		//{
+		//	"LogName": "Applies a map edit to remove the invisible wall on the Winding Road map that goes into the Ridgeside Village mod.",
+		//	"Action": "EditMap",
+		//	"Target": "Maps/{{ModId}}_Winding_Road",
+		//	"FromFile": "assets/maps/patches/WindingRoadRSV.tmx",
+		//	"ToArea": { "X": 0, "Y": 17, "Width": 1, "Height": 5 },
+		//	"When": {
+		//		"HasMod": "Rafseazz.RSVCP"
+		//	}
+		//},
 		{
-			"LogName": "Applies a map edit to remove the invisible wall on the Winding Road map that goes into the Ridgeside Village mod.",
+			"LogName": "Applies a map edit to remove five tiles from the invisible wall on the top left of the map if the Ridgeside Village mod is installed.",
 			"Action": "EditMap",
-			"Target": "Maps/{{ModId}}_Winding_Road",
-			"FromFile": "assets/maps/patches/WindingRoadRSV.tmx",
-			"ToArea": { "X": 0, "Y": 17, "Width": 1, "Height": 5 },
+			"Target": "{{ModId}}_Winding_Road",
+			"MapTiles": [
+				{
+					"Position": { "X": 0, "Y": 17 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 0, "Y": 18 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 0, "Y": 19 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 0, "Y": 20 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 0, "Y": 21 },
+					"Layer": "Buildings",
+					"Remove": true
+				}
+			],
 			"When": {
 				"HasMod": "Rafseazz.RSVCP"
 			}
 		},
+		//{
+		//	"LogName": "Applies a map edit to remove the invisible wall on the top of the Interchange map that goes into the Downtown Zuzu mod.",
+		//	"Action": "EditMap",
+		//	"Target": "Maps/{{ModId}}_Interchange",
+		//	"FromFile": "assets/maps/patches/Interchange.tmx",
+		//	"ToArea": { "X": 20, "Y": 0, "Width": 11, "Height": 1 },
+		//	"When": {
+		//		"HasMod": "DTZ.DowntownZuzuCP"
+		//	}
+		//},
 		{
-			"LogName": "Applies a map edit to remove the invisible wall on the top of the Interchange map that goes into the Downtown Zuzu mod.",
+			"LogName": "Applies a map edit to remove seven tiles on the top of the Interchange map if the Downtown Zuzu map is installed.",
 			"Action": "EditMap",
 			"Target": "Maps/{{ModId}}_Interchange",
-			"FromFile": "assets/maps/patches/Interchange.tmx",
-			"ToArea": { "X": 20, "Y": 0, "Width": 11, "Height": 1 },
+			"MapTiles": [
+				{
+					"Position": { "X": 22, "Y": 0 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 23, "Y": 0 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 24, "Y": 0 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 25, "Y": 0 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 26, "Y": 0 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 27, "Y": 0 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 28, "Y": 0 },
+					"Layer": "Buildings",
+					"Remove": true
+				}
+			],
 			"When": {
 				"HasMod": "DTZ.DowntownZuzuCP"
 			}
 		},
+		//{
+		//	"LogName": "Applies a map edit to remove the invisible wall on the Desert map that will be going into the Ghost Town map.",
+		//	"Action": "EditMap",
+		//	"Target": "Maps/Desert",
+		//	"FromFile": "assets/maps/patches/Desert.tmx",
+		//	"ToArea": { "X": 49, "Y": 24, "Width": 1, "Height": 6 },
+		//	"When": {
+		//		"HasMod |contains=Flashshifter.StardewValleyExpandedCP": false
+		//	}
+		//},
 		{
-			"LogName": "Applies a map edit to remove part of the invisible wall on the bottom of the Freeway (1) Transition map that goes into the Interchange map.",
-			"Action": "EditMap",
-			"Target": "Maps/Custom_DTZ_ZuzuCityFreeway1",
-			"FromFile": "assets/maps/patches/DZInterchange.tmx",
-			"ToArea": { "X": 22, "Y": 42, "Width": 7, "Height": 1 },
-			"When": {
-				"HasMod": "DTZ.DowntownZuzuCP"
-			}
-		},
-		{
-			"LogName": "Applies a map edit to remove the invisible wall on the Desert map that will be going into the Ghost Town map.",
-			"Action": "EditMap",
-			"Target": "Maps/Desert",
-			"FromFile": "assets/maps/patches/Desert.tmx",
-			"ToArea": { "X": 49, "Y": 24, "Width": 1, "Height": 6 },
-			"When": {
-				"HasMod |contains=Flashshifter.StardewValleyExpandedCP": false
-			}
-		},
-		{
-			"LogName": "Applies a map edit to remove the invisible wall on the Desert map if the Stardew Valley Expanded mod is installed.",
+			"LogName": "Applies a map edit to remove six tiles from the invisible wall on the right side of the Desert map.",
 			"Action": "EditMap",
 			"Target": "Maps/Desert",
-			"FromFile": "assets/maps/patches/SDVDesert.tmx",
-			"ToArea": { "X": 59, "Y": 24, "Width": 1, "Height": 6 },
+			"MapTiles": [
+				{
+					"Position": { "X": 49, "Y": 24 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 49, "Y": 25 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 49, "Y": 26 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 49, "Y": 27 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 49, "Y": 28 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 49, "Y": 29 },
+					"Layer": "Buildings",
+					"Remove": true
+				}
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+		//{
+		//	"LogName": "Applies a map edit to remove the invisible wall on the Desert map if the Stardew Valley Expanded mod is installed.",
+		//	"Action": "EditMap",
+		//	"Target": "Maps/Desert",
+		//	"FromFile": "assets/maps/patches/SDVDesert.tmx",
+		//	"ToArea": { "X": 59, "Y": 24, "Width": 1, "Height": 6 },
+		//	"When": {
+		//		"HasMod": "FlashShifter.StardewValleyExpandedCP"
+		//	}
+		//},
+		{
+			"LogName": "Applies a map edit to remove six tiles from the invisible wall on the right side of the Desert map if the Stardew Valley Expanded mod is installed.",
+			"Action": "EditMap",
+			"Target": "Maps/Desert",
+			"MapTiles": [
+				{
+					"Position": { "X": 59, "Y": 24 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 59, "Y": 25 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 59, "Y": 26 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 59, "Y": 27 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 59, "Y": 28 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 59, "Y": 29 },
+					"Layer": "Buildings",
+					"Remove": true
+				}
+			],
 			"When": {
 				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		{
+			"LogName": "Applies a map edit to remove seven tiles on the bottom of the Downtown Zuzu Freeway Transition map if the Downtown Zuzu mod is installed.",
+			"Action": "EditMap",
+			"Target": "Maps/Custom_DTZ_ZuzuCityFreeway1",
+			"MapTiles": [
+				{
+					"Position": { "X": 22, "Y": 42 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 23, "Y": 42 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 24, "Y": 42 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 25, "Y": 42 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 26, "Y": 42 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 27, "Y": 42 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 28, "Y": 42 },
+					"Layer": "Buildings",
+					"Remove": true
+				}
+			],
+			"When": {
+				"HasMod": "DTZ.DowntownZuzuCP"
 			}
 		},
 		
@@ -1654,18 +1849,6 @@
 			"Target": "Characters/schedules/PickledPete",
 			"FromFile": "assets/npcs/pickledpete/schedule.json"
 		},
-		//{ This is broken, thanks SDV 1.6
-			//"LogName": "Edits PickledPete's schedule if you've seen the intro event.",
-			//"Action": "EditData",
-			//"Target": "Characters/schedules/PickledPete",
-			//"Entries": {
-			//	"spring": "610 Tarniyar.CP.WalkToDesert_Pete_Hidden 7 5 2/2000 Tarniyar.CP.WalkToDesert_Ghost_Shop 2 4 2/2330 Tarniyar.CP.WalkToDesert_Ghost_Town 42 11 0"
-			//},
-			//"When": {
-			//	"HasSeenEvent": "13730004"
-			//},
-			//"Update": "OnTimeChange"
-		//},
 		{
 			"LogName": "Loads the Pickled Pete event in the Ghost Shop map.",
 			"Action": "Load",
@@ -1906,6 +2089,9 @@
 			}
 		},
 		
+		// Mail Data
+		
+		
 		// Quest Data
 		{
 			"Action": "EditData",
@@ -1925,7 +2111,7 @@
 			"Entries": {
 				"Interchange.1": "You don't see any reason to visit Zuzu City right now, maybe next time?",
 				"Interchange.2": "` Highway 5 to Zuzu City^` Glacier Outpost^@ Calico Desert",
-				"Interchange.3": "` Highway 5 to Zuuz City^> Glacier Outpost",
+				"Interchange.3": "` Highway 5 to Zuzu City^> Glacier Outpost",
 				"Interchange.4": "The road was destroyed by an avalanche, this will take quite a lot of time to clear.",
 				"GhostTown.1": "DANGER!",
 				"GhostTown.2": "DO NOT ENTER!",
