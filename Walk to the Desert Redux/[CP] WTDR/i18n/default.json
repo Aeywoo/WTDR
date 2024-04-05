@@ -1,0 +1,90 @@
+{
+	// NPC Names
+	"NPC.Name.PickledPete": "Pickled Pete",
+	"NPC.Gifts.PickledPete.Love": "For me? Really? Aw, thank you so much!",
+	"NPC.Gifts.PickledPete.Like": "Thank you very kindly.",
+	"NPC.Gifts.PickledPete.Dislike": "I'm not complaining, but what am I supposed to do with this?",
+	"NPC.Gifts.PickledPete.Hate": "I think... I think I need a drink after this.",
+	"NPC.Gifts.PickledPete.Neutral": "Thanks, I guess.",
+	"NPC.Dialogue.PickledPete.Sun": "Why did you come?",
+	"NPC.Dialogue.PickledPete.Mon": "I'm so thirsty.",
+	"NPC.Dialogue.PickledPete.Tue": "I found this. It made me think of you. [170]#$e#I'm sure you'll find a use for it.",
+	"NPC.Dialogue.PickledPete.Wed": "I will outlast this building. Once it falls, I will still remain.",
+	"NPC.Dialogue.PickledPete.Thu": "Happy Friday.#$e#It's not...?#$e#Oh, who cares anyway.",
+	"NPC.Dialogue.PickledPete.Fri": "Do you know your path?#$e#If you don't know where you're going, you'll never know when you get there.",
+	"NPC.Dialogue.PickledPete.Sat": "What year is it again?#$e#You sure? That doesn't sound right.",
+	"NPC.Dialogue.PickledPete.Thu.Summer": "The land gasps in the heat.",
+	"NPC.Dialogue.PickledPete.Fri.Winter": "Do you feel the cold?#$e#I can't feel anything anymore.",
+	"NPC.Dialogue.PickledPete.Sat.Fall": "Change is in the air.",
+	
+	// Event 1373001 (ItemDelivery: Hephaestus Ghost Berry)
+	"Quests.1373001.Title": "Ghost Berry",
+	"Quests.1373001.Details": "The Wizard wants to study a Ghost Berry. Don't ask why.",
+	"Quests.1373001.Hint": "Bring the Wizard a Ghost Berry.",
+	"Quests.1373001.Reaction": "Ah, fascinating. The magical potential of this fruit is incredible! You've done well, @. You have my gratitude. Now, let me work in peace.",
+	// Event 1373002 (ItemDelivery:Hephaestus Refined Quartz)
+	"Quests.1373002.Title": "Refined Quartz Request",
+	"Quests.1373002.Details": "Hephaestus needs 10 refined quartz for his work.",
+	"Quests.1373002.Hint": "Bring Hephaestus 10 refined quartz.",
+	"Quests.1373002.Reaction": "Thank you, @! These look perfect!$h#$b#I appreciate you taking the time to help me out.$0",
+	// Event 1373003 (ItemDelivery:Hephaestus Slime Request)
+	"Quests.1373003.Title": "Slime Request",
+	"Quests.1373003.Details": "Hephaestus needs 50 slime for his work.",
+	"Quests.1373003.Hint": "Bring Hephaestus 50 slime.",
+	"Quests.1373003.Reaction": "Thank you, @! These look nice and juicy.$h#$b#I appreciate you taking the time to help me out.$0",
+	// Event 1373004 (ItemDelivery: Hephaestus Iridium Bar)
+	"Quests.1373004.Title": "Iridium Bar Request",
+	"Quests.1373004.Details": "Hephaestus needs 5 iridium bars for his work.",
+	"Quests.1373004.Hint": "Bring Hephaestus 5 iridium bars.",
+	"Quests.1373004.Reaction": "Thank you, @! I knew I could count on you!$h#$b#You are a true friend.$0",
+	
+	// NPC Events
+	"Quests.13730004.1": "Are you looking for something?#$b#Or someone?#$b#Nobody here but me though.",
+	"Quests.13730004.2": "Folks call me Pickled Pete.#$b#I can't remember why.",
+	"Quests.13730004.3": "Want to buy something while you're here? I've got...#$b#...#$b#Well, there's not much left. But it's the best I've got",
+	"Quests.13730004.4": "It's hard to make a living when you're dead.",
+	
+	// Sandy's Event
+	"Events.SandyEvent.Mon": "$d bus#Hello hello, sweetie! I'm so glad that bus is working again! It's been hard to stay in business.#Hello hello, sweetie! I'm so glad you're willing to make the long trip out here! It's been hard to stay in business.",
+	"Events.SandyEvent.Mon2": "Hey, sweetie, how's the farm?#$e#Let me guess. You're here to buy a whole bunch of seeds... right, sweetie?$h",
+	
+	// Shop Strings
+	"Shops.WTDRShop.Closed": "Come back later...",
+	"Shops.WTDRShop.Dialogue": "Come to peruse my wares?",
+	"Shops.WTDRShop.Dialogue.Rainy": "In the rain, everything is washed away.",
+	
+	// Map Strings (Text Tiles)
+	"MapStrings.Interchange.1": "You don't see any reason to visit Zuzu City right now, maybe next time?",
+	"MapStrings.Interchange.2": "` Highway 5 to Zuzu City^` Glacier Outpost^@ Calico Desert",
+	"MapStrings.Interchange.3": "` Highway 5 to Zuzu City^> Glacier Outpost",
+	"MapStrings.Interchange.4": "The road was destroyed by an avalanche, this will take quite a lot of time to clear.",
+	"MapStrings.GhostTown.1": "DANGER!",
+	"MapStrings.GhostTown.2": "DO NOT ENTER!",
+	"MapStrings.GhostTown.3": "This building collapsed a long time ago, it doesn't look safe to enter.",
+	"MapStrings.GhostTown.4": "The door is jammed shut, the house has shifted over time and has become unstable, despite its lack of major damage.",
+	"MapStrings.GhostTown.5": "The door is locked, an eerie voice whispers \"Future Update.\"",
+	"MapStrings.GhostShop.1": "The door is locked, and the doorknob is covered in sticky spiderwebs, Eugh.",
+	"MapStrings.GhostShop.2": "Pickled Pete: Won't you buy some of my wares?",
+	"MapStrings.HorsePath.1": "Horses are prohibited to enter the tunnel!^Tractors are prohibited to enter the tunnel!",
+	"MapStrings.HorsePath.2": "@ Horse and Tractor path this way.",
+	"MapStrings.HorsePath.3": "> Horse and Tractor path this way.",
+	"MapStrings.WindingRoad.1": "` Highway 5 to Zuzu City^@ Garden Village^> Pelican Town",
+	"MapStrings.WindingRoad.2": "` Highway 5 to Zuzu City^@ Ridgeside Village",
+	"MapStrings.WindingRoad.3": "Due to an unfortunate set of events and seaside erosion, the road has fallen into the sea, I hope they get around to fixing it someday.",
+	"MapStrings.WindingRoad.4": "Several downed powerlines, fallen trees and emergency vehicles block your path, you make a wise decision to not proceed.",
+	"MapStrings.Cave.1": "For some reason, this door is painted on to the wall. Who would do such a thing?",
+	"MapStrings.Cave.2": "It's a pile of bones.^ Wait, where did the skulls go?",
+	"MapStrings.Cave.3": "This is a hole, do not jump into it. Random holes are not to be triffled with.",
+	"MapStrings.Cave.4": "This appears to be a crude joke about a persons mother, but some of the joke has erroded away. You know who else-",
+	"MapStrings.Cave.5": "An old rusty minecart, the rusty inscription on it reads \"Ridgeside Village\", the way it came from appears to have collapsed.",
+	
+	// Object Names and Descriptions
+	"Objects.EeriePlantSeeds.Name": "Eerie Plant Seeds",
+	"Objects.ErriePlantSeeds.Desc": "Are you sure these will grow? It probably doesn't matter when you plant them",
+	"Objects.GhostBerry.Name": "Ghost Berry",
+	"Objects.GhostBerry.Desc": "This eerie fruit seems like it doesn't belong in our world",
+	"Objects.GiantOldCoin.Name": "Giant Old Coin",
+	"Objects.GiantOldCoin.Desc": "This coin is huge! What a lucky find!",
+	"Objects.OldCoin.Name": "Old Coin",
+	"Objects.OldCoin.Desc": "Just because it's old doesn't mean it's valuable",
+}

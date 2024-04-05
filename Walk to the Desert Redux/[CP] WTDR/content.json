@@ -532,27 +532,42 @@
 			]
 		},
 		{
-			"LogName": "Applies a map edit to remove the invisible wall on the Winding Road map that goes into the Garden Village mod.",
+			"LogName": "Applies a map edit to remove five tiles from the invisible wall on the bottom left of the Winding Road map if the Garden Village mod is installed.",
 			"Action": "EditMap",
-			"Target": "Maps/{{ModId}}_Winding_Road",
-			"FromFile": "assets/maps/patches/WindingRoad.tmx",
-			"ToArea": { "X": 0, "Y": 81, "Width": 1, "Height": 5 },
+			"Target": "{{ModId}}_Winding_Road",
+			"MapTiles": [
+				{
+					"Position": { "X": 0, "Y": 81 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 0, "Y": 82 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 0, "Y": 83 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 0, "Y": 84 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 0, "Y": 85 },
+					"Layer": "Buildings",
+					"Remove": true
+				}
+			],
 			"When": {
 				"HasMod": "Tarniyar.CP.GardenVillage"
 			}
 		},
-		//{
-		//	"LogName": "Applies a map edit to remove the invisible wall on the Winding Road map that goes into the Ridgeside Village mod.",
-		//	"Action": "EditMap",
-		//	"Target": "Maps/{{ModId}}_Winding_Road",
-		//	"FromFile": "assets/maps/patches/WindingRoadRSV.tmx",
-		//	"ToArea": { "X": 0, "Y": 17, "Width": 1, "Height": 5 },
-		//	"When": {
-		//		"HasMod": "Rafseazz.RSVCP"
-		//	}
-		//},
 		{
-			"LogName": "Applies a map edit to remove five tiles from the invisible wall on the top left of the map if the Ridgeside Village mod is installed.",
+			"LogName": "Applies a map edit to remove five tiles from the invisible wall on the top left of the Winding Road map if the Ridgeside Village mod is installed.",
 			"Action": "EditMap",
 			"Target": "{{ModId}}_Winding_Road",
 			"MapTiles": [
@@ -586,16 +601,6 @@
 				"HasMod": "Rafseazz.RSVCP"
 			}
 		},
-		//{
-		//	"LogName": "Applies a map edit to remove the invisible wall on the top of the Interchange map that goes into the Downtown Zuzu mod.",
-		//	"Action": "EditMap",
-		//	"Target": "Maps/{{ModId}}_Interchange",
-		//	"FromFile": "assets/maps/patches/Interchange.tmx",
-		//	"ToArea": { "X": 20, "Y": 0, "Width": 11, "Height": 1 },
-		//	"When": {
-		//		"HasMod": "DTZ.DowntownZuzuCP"
-		//	}
-		//},
 		{
 			"LogName": "Applies a map edit to remove seven tiles on the top of the Interchange map if the Downtown Zuzu map is installed.",
 			"Action": "EditMap",
@@ -641,16 +646,6 @@
 				"HasMod": "DTZ.DowntownZuzuCP"
 			}
 		},
-		//{
-		//	"LogName": "Applies a map edit to remove the invisible wall on the Desert map that will be going into the Ghost Town map.",
-		//	"Action": "EditMap",
-		//	"Target": "Maps/Desert",
-		//	"FromFile": "assets/maps/patches/Desert.tmx",
-		//	"ToArea": { "X": 49, "Y": 24, "Width": 1, "Height": 6 },
-		//	"When": {
-		//		"HasMod |contains=Flashshifter.StardewValleyExpandedCP": false
-		//	}
-		//},
 		{
 			"LogName": "Applies a map edit to remove six tiles from the invisible wall on the right side of the Desert map.",
 			"Action": "EditMap",
@@ -691,16 +686,6 @@
 				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
 			}
 		},
-		//{
-		//	"LogName": "Applies a map edit to remove the invisible wall on the Desert map if the Stardew Valley Expanded mod is installed.",
-		//	"Action": "EditMap",
-		//	"Target": "Maps/Desert",
-		//	"FromFile": "assets/maps/patches/SDVDesert.tmx",
-		//	"ToArea": { "X": 59, "Y": 24, "Width": 1, "Height": 6 },
-		//	"When": {
-		//		"HasMod": "FlashShifter.StardewValleyExpandedCP"
-		//	}
-		//},
 		{
 			"LogName": "Applies a map edit to remove six tiles from the invisible wall on the right side of the Desert map if the Stardew Valley Expanded mod is installed.",
 			"Action": "EditMap",
@@ -1457,20 +1442,6 @@
 				}
 			]
 		},
-		//{
-		//	"LogName": "Adds a warp from the Ghost Shop map to the Ghost Town map.",
-		//	"Action": "EditMap",
-		//	"Target": "Maps/{{ModId}}_Ghost_Shop",
-		//	"MapTiles": [
-		//		{
-		//			"Position": { "X": 4, "Y": 8 },
-		//			"Layer": "Back",
-		//			"SetProperties": {
-		//				"TouchAction": "Warp {{ModId}}_Ghost_Town 55 24"
-		//			}
-		//		}
-		//	]
-		//},
 		{
 			"LogName": "Adds warps from the Ghost Town map to the Desert map if Stardew Vallet Expanded is not installed.",
 			"Action": "EditMap",
@@ -1777,7 +1748,7 @@
 			"Target": "Data/Characters",
 			"Entries": {
 				"PickledPete": {
-					"DisplayName": "Pickled Pete",
+					"DisplayName": "{{i18n:NPC.Name.PickledPete}}",
 					"Language": "Default",
 					"Gender": "Male",
 					"Age": "Adult",
@@ -1822,7 +1793,7 @@
 			"Action": "EditData",
 			"Target": "Data/NPCGiftTastes",
 			"Entries": {
-				"PickledPete": "For me? Really? Aw, thank you so much!/303 348/Thank you very kindly./308 346/O'm not complaining, but what am I supposed to do with this?/72 74/I think... I need a drink./373 446/Thanks, I guess./-7 -75 -79 -80 -81/"
+				"PickledPete": "{{i18n:NPC.Gifts.PickledPete.Love}}/303 348/{{i18n:NPC.Gifts.PickledPete.Like}}/308 346/{{i18n:NPC.Gifts.PickledPete.Dislike}}/72 74/{{i18n:NPC.Gifts.PickledPete.Hate}}/373 446/{{i18n:NPC.Gifts.PickledPete.Neutral}}/-7 -75 -79 -80 -81/"
 			}
 		},
 		{
@@ -1865,14 +1836,14 @@
 			"Action": "EditData",
 			"Target": "Characters/Dialogue/Sandy",
 			"Entries": {
-				"Mon": "$d bus#Hello hello, sweetie! I'm so glad that bus is working again! It's been hard to stay in business.#Hello hello, sweetie! I'm so glad you're willing to make the long trip out here! It's been hard to stay in business.",
+				"Mon": "{{i18n:Events.SandyEvent.Mon}}",
 			}
 		},
 		{
 			"Action": "EditData",
 			"Target": "Characters/Dialogue/Sandy",
 			"Entries": {
-				"Mon2": "Hey, sweetie, how's the farm?#$e#Let me guess. You're here to buy a whole bunch of seeds... right, sweetie?$h",
+				"Mon2": "{{i18n:Events.SandyEvent.Mon2}}",
 			}
 		},
 		
@@ -1886,8 +1857,8 @@
 			// Eerie Plant Seeds
 				"{{ModId}}_Eerie_Plant_Seeds": {
 					"Name": "{{ModId}}_Eerie_Plant_Seeds",
-					"Displayname": "Eerie Plant Seeds",
-					"Description": "Are you sure these will grow? It probably doesn't matter when you plant them.",
+					"Displayname": "{{i18n:Objects.EeriePlantSeeds.Name}}",
+					"Description": "{{i18n:Objects.EeriePlantSeeds.Desc}}",
 					"Type": "Seeds",
 					"Category": -74,
 					"Price": 0,
@@ -1898,8 +1869,8 @@
 				// Ghost Berry
 				"{{ModId}}_Ghost_Berry": {
 					"Name": "{{ModId}}_Ghost_Berry",
-					"Displayname": "Ghost Berry",
-					"Description": "This eerie fruit seems like it doesn't belong in our world.",
+					"Displayname": "{{i18n:Objects.GhostBerry.Name}}",
+					"Description": "{{i18n:Objects.GhostBerry.Desc}}",
 					"Type": "Fruit",
 					"Category": -79,
 					"Price": 0,
@@ -1908,22 +1879,22 @@
 					"Edibility": 30
 				},
 				// Ghostly Wine
-				"{{ModId}}_Ghostly_Wine": {
-					"Name": "{{ModId}}_Ghostly_Wine",
-					"Displayname": "Ghostly Wine",
-					"Description": "The smell is strangely enticing.",
-					"Type": "ArtisanGoods",
-					"Category": -26,
-					"Price": 0,
-					"Texture": "Mods/{{ModId}}/Objects",
-					"SpriteIndex": 1,
-					"Edibility": 40
-				},
+				//"{{ModId}}_Ghostly_Wine": {
+				//	"Name": "{{ModId}}_Ghostly_Wine",
+				//	"Displayname": "Ghostly Wine",
+				//	"Description": "The smell is strangely enticing.",
+				//	"Type": "ArtisanGoods",
+				//	"Category": -26,
+				//	"Price": 0,
+				//	"Texture": "Mods/{{ModId}}/Objects",
+				//	"SpriteIndex": 1,
+				//	"Edibility": 40
+				//},
 				// Giant Old Coin
 				"{{ModId}}_Giant_Old_Coin": {
 					"Name": "{{ModId}}_Giant_Old_Coin",
-					"Displayname": "Giant Old Coin",
-					"Description": "This coin is huge! What a lucky find!",
+					"Displayname": "{{i18n:Objects.GiantOldCoin.Name}}",
+					"Description": "{{i18n:Objects.GiantOldCoin.Desc}}",
 					"Type": "Arch",
 					"Category": -12,
 					"Price": 0,
@@ -1934,8 +1905,8 @@
 				// Old Coin
 				"{{ModId}}_Old_Coin": {
 					"Name": "{{ModId}}_Old_Coin",
-					"Displayname": "Old Coin",
-					"Description": "Just because it's old doesn't mean it's valuable",
+					"Displayname": "{{i18n:Objects.OldCoin.Name}}",
+					"Description": "{{i18n:Objects.OldCoin.Desc}}",
 					"Type": "Arch",
 					"Category": -12,
 					"Price": 0,
@@ -2023,7 +1994,7 @@
 							"Condition": "TIME 600 2000",
 							"Portrait": null,
 							"Dialogues": null,
-							"ClosedMessage": "Come back later...",
+							"ClosedMessage": "{{i18n:Shops.WTDRShop.Closed}}",
 							"Id": "{{ModId}}_WTDRShop_Closed",
 							"Name": "None"
 						},
@@ -2033,11 +2004,11 @@
 								{
 									"Id": "{{ModId}}_Rainy",
 									"Condition": "WEATHER {{ModId}}_Ghost_Town Rain",
-									"Dialogue": "In the rain, everything is washed away."
+									"Dialogue": "{{i18n:Shops.WTDRShop.Dialogue.Rainy}}"
 								},
 								{
 									"Id": "{{ModId}}_Default",
-									"Dialogue": "Come to peruse my wares?"
+									"Dialogue": "{{i18n:Shops.WTDRShop.Dialogue}}"
 								}
 							],
 							"ClosedMessage": null,
@@ -2097,10 +2068,10 @@
 			"Action": "EditData",
 			"Target": "Data/Quests",
 			"Entries": {
-				"1373001": "ItemDelivery/Ghost Berry/The Wizard wants to study a Ghost Berry. Don't ask why./Bring the Wizard a Ghost Berry./Wizard {{ModId}}_Ghost_Berry/-1/500/-1/true/Ah, fascinating. The magical potential of this fruit is incredible! You've done well, @. You have my gratitude. Now, let me work in peace.",
-				"1373002": "ItemDelivery/Refined Quartz Request/Hephaestus needs 10 refined quartz for his work./Bring Hephaestus 10 refined quartz./Hephaestus 338 10/-1/2000/-1/true/Thank you, @! These look perfect!$h#$b#I appreciate you taking the time to help me out.$0",
-				"1373003": "ItemDelivery/Slime Request/Hephaestus needs 50 slime for his work./Bring Hephaestus 50 slime./Hephaestus 766 50/-1/1000/-1/true/Thank you, @! These look nice and juicy.$h#$b#I appreciate you taking the time to help me out.$0",
-				"1373004": "ItemDelivery/Iridium Bar Request/Hephaestus needs 5 iridium bars for his work./Bring Hephaestus 5 iridium bars./Hephaestus 337 5/-1/25000/-1/true/Thank you, @! I knew I could count on you!$h#$b#You are a true friend.$0"
+				"1373001": "ItemDelivery/{{i18n:Quests.1373001.Title}}/{{i18n:Quests.1373001.Details}}/{{i18n:Quests.1373001.Hint}}/Wizard {{ModId}}_Ghost_Berry/-1/500/-1/true/{{i18n:Quests.1373001.Reaction}}",
+				"1373002": "ItemDelivery/{{i18n:Quests.1373002.Title}}/{{i18n:Quests.1373002.Details}}/{{i18n:Quests.1373002.Hint}}/Hephaestus 338 10/-1/2000/-1/true/{{i18n:Quests.1373002.Reaction}}",
+				"1373003": "ItemDelivery/{{i18n:Quests.1373003.Title}}/{{i18n:Quests.1373003.Details}}/{{i18n:Quests.1373003.Hint}}/Hephaestus 766 50/-1/1000/-1/true/{{i18n:Quests.1373003.Reaction}}",
+				"1373004": "ItemDelivery/{{i18n:Quests.1373004.Title}}/{{i18n:Quests.1373004.Details}}/{{i18n:Quests.1373004.Hint}}/Hephaestus 337 5/-1/25000/-1/true/{{i18n:Quests.1373004.Reaction}}"
 			}
 		},
 		
@@ -2109,29 +2080,29 @@
 			"Action": "EditData",
 			"Target": "Strings/StringsFromMaps",
 			"Entries": {
-				"Interchange.1": "You don't see any reason to visit Zuzu City right now, maybe next time?",
-				"Interchange.2": "` Highway 5 to Zuzu City^` Glacier Outpost^@ Calico Desert",
-				"Interchange.3": "` Highway 5 to Zuzu City^> Glacier Outpost",
-				"Interchange.4": "The road was destroyed by an avalanche, this will take quite a lot of time to clear.",
-				"GhostTown.1": "DANGER!",
-				"GhostTown.2": "DO NOT ENTER!",
-				"GhostTown.3": "This building collapsed a long time ago, it doesn't look safe to enter.",
-				"GhostTown.4": "The door is jammed shut, the house has shifted over time and has become unstable, despite its lack of major damage.",
-				"GhostTown.5": "The door is locked, an eerie voice whispers \"Future Update.\"",
-				"GhostShop.1": "The door is locked, and the doorknob is covered in sticky spiderwebs, Eugh.",
-				"GhostShop.2": "Pickled Pete: Won't you buy some of my wares?",
-				"Horsepath.1": "Horses are prohibited to enter the tunnel!^Tractors are prohibited to enter the tunnel!",
-				"Horsepath.2": "@ Horse and Tractor path this way.",
-				"Horsepath.3": "> Horse and Tractor path this way.",
-				"Winding.1": "` Highway 5 to Zuzu City^@ Garden Village^> Pelican Town",
-				"Winding.2": "` Highway 5 to Zuzu City^@ Ridgeside Village",
-				"Winding.3": "Due to an unfortunate set of events and seaside erosion, the road has fallen into the sea, I hope they get around to fixing it someday.",
-				"Winding.4": "Several downed powerlines, fallen trees and emergency vehicles block your path, you make a wise decision to not proceed.",
-				"Cave.1": "For some reason, this door is painted on to the wall. Who would do such a thing?",
-				"Cave.2": "It's a pile of bones, where did the skulls go?",
-				"Cave.3": "This is a hole, do not jump into it. Random holes are not to be triffled with.",
-				"Cave.4": "This appears to be a crude joke about another persons mother, but some of the joke has erroded away. You know who else-",
-				"Cave.5": "An old rusty minecart, the rusty inscription on it reads \"Ridgeside Village\", the way it came from appears to have collapsed."
+				"Interchange.1": "{{i18n:MapStrings.Interchange.1}}",
+				"Interchange.2": "{{i18n:MapStrings.Interchange.2}}",
+				"Interchange.3": "{{i18n:MapStrings.Interchange.3}}",
+				"Interchange.4": "{{i18n:MapStrings.Interchange.4}}",
+				"GhostTown.1": "{{i18n:MapStrings.GhostTown.1}}",
+				"GhostTown.2": "{{i18n:MapStrings.GhostTown.2}}",
+				"GhostTown.3": "{{i18n:MapStrings.GhostTown.3}}",
+				"GhostTown.4": "{{i18n:MapStrings.GhostTown.4}}",
+				"GhostTown.5": "{{i18n:MapStrings.GhostTown.5}}",
+				"GhostShop.1": "{{i18n:MapStrings.GhostShop.1}}",
+				"GhostShop.2": "{{i18n:MapStrings.GhostShop.2}}",
+				"Horsepath.1": "{{i18n:MapStrings.HorsePath.1}}",
+				"Horsepath.2": "{{i18n:MapStrings.HorsePath.2}}",
+				"Horsepath.3": "{{i18n:MapStrings.HorsePath.3}}",
+				"WindingRoad.1": "{{i18n:MapStrings.WindingRoad.1}}",
+				"WindingRoad.2": "{{i18n:MapStrings.WindingRoad.2}}",
+				"WindingRoad.3": "{{i18n:MapStrings.WindingRoad.3}}",
+				"WindingRoad.4": "{{i18n:MapStrings.WindingRoad.4}}",
+				"Cave.1": "{{i18n:MapStrings.Cave.1}}",
+				"Cave.2": "{{i18n:MapStrings.Cave.2}}",
+				"Cave.3": "{{i18n:MapStrings.Cave.3}}",
+				"Cave.4": "{{i18n:MapStrings.Cave.4}}",
+				"Cave.5": "{{i18n:MapStrings.Cave.5}}"
 			}
 		}
 	]
