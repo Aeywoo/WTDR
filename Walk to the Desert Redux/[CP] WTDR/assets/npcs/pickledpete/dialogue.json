@@ -1,12 +1,1 @@
-{
-	"winter_Fri": "{{i18n:NPC.Dialogue.PickledPete.Fri.Winter}}",
-	"fall_Sat": "{{i18n:NPC.Dialogue.PickledPete.Sat.Fall}}",
-	"summer_Thu": "{{i18n:NPC.Dialogue.PickledPete.Thu.Summer}}",
-	"Sun": "{{i18n:NPC.Dialogue.PickledPete.Sun}}",
-	"Mon": "{{i18n:NPC.Dialogue.PickledPete.Mon}}",
-	"Tue": "{{i18n:NPC.Dialogue.PickledPete.Tue}}",
-	"Wed": "{{i18n:NPC.Dialogue.PickledPete.Wed}}",
-	"Thu": "{{i18n:NPC.Dialogue.PickledPete.Thu}}",
-	"Fri": "{{i18n:NPC.Dialogue.PickledPete.Fri}}",
-	"Sat": "{{i18n:NPC.Dialogue.PickledPete.Sat}}"
-}
+{}

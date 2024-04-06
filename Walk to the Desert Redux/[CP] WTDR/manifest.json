@@ -21,6 +21,10 @@
 		{
 			"UniqueID": "Esca.FarmTypeManager",
 			"IsRequired": true
+		},
+		{
+			"UniqueID": "DIGUS.MailFrameworkMod",
+			"IsRequired": true
 		}
 	]
 }

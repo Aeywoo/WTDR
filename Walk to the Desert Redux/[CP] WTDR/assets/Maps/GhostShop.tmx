@@ -3,6 +3,7 @@
  <properties>
   <property name="AmbientLight" value="125 125 125"/>
   <property name="Music" value="echos"/>
+  <property name="NPCWarp" value="1 4 Tarniyar.CP.WalkToDesert_Pete_Hidden 5 6"/>
   <property name="Warp" value="4 8 Tarniyar.CP.WalkToDesert_Ghost_Town 55 24"/>
  </properties>
  <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
@@ -30,7 +31,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,142,0,0,0,0,0,0,0,0,0,152,0,
 0,0,0,0,0,0,143,144,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -43,7 +44,7 @@
 108,0,0,0,0,0,0,0,0,0,0,0,108,
 108,120,0,0,0,0,0,126,0,0,0,130,108,
 108,131,132,133,134,135,136,137,138,139,140,141,108,
-108,142,0,0,0,0,0,0,164,165,166,152,108,
+108,0,0,0,0,0,0,0,164,165,166,0,108,
 108,178,179,180,181,0,0,0,0,0,0,0,108,
 108,0,0,0,0,0,0,0,0,0,0,0,108,
 108,108,108,108,0,108,108,108,108,108,108,108,108,
@@ -87,11 +88,6 @@
   <object id="2" name="TileData" x="32" y="80" width="16" height="16">
    <properties>
     <property name="Action" value="OpenShop Tarniyar.CP.WalkToDesert_WTDRGhostShop none 2000 2330 2 4 1 1"/>
-   </properties>
-  </object>
-  <object id="3" name="TileData" x="112" y="48" width="16" height="16">
-   <properties>
-    <property name="NPCWarp" value="Tarniyar.CP.WalkToDesert 7 7"/>
    </properties>
   </object>
  </objectgroup>
