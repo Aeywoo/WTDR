@@ -23,8 +23,8 @@
 			"IsRequired": true
 		},
 		{
-			"UniqueID": "DIGUS.MailFrameworkMod",
-			"IsRequired": true
+			"UniqueID": "Tarniyar.CP.GardenVillage",
+			"IsRequired": false
 		}
 	]
 }

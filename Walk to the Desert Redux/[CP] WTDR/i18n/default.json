@@ -63,6 +63,10 @@
 	"Shops.WTDRShop.Dialogue": "Come to peruse my wares?",
 	"Shops.WTDRShop.Dialogue.Rainy": "In the rain, everything is washed away.",
 	
+	// Mail Strings
+	"Mail.GhostBerry.Wizard.1": "@-^I've heard rumors that you successfully grew a \"Ghost Berry.\" I would be most interested to study such a fruit.^Please provide me with a suitable specimen at your earliest convenience.^ -M. Rasmodius, Wizard",
+	"Mail.GhostBerry.Wizard.2": "Ghost Berry for the Wizard",
+	
 	// Map Strings (Text Tiles)
 	"MapStrings.Interchange.1": "You don't see any reason to visit Zuzu City right now, maybe next time?",
 	"MapStrings.Interchange.2": "` Highway 5 to Zuzu City^` Glacier Outpost^@ Calico Desert",

@@ -2104,15 +2104,30 @@
 			}
 		},
 		
-		// Mail Data
-		//{
-		//	"LogName": "",
-		//	"Action": "EditData",
-		//	"Target": "Data/Mail",
-		//	"Entries": {
-		//		"ghostberry.text": "@-^I've heard rumors that you successfully grew a \"Ghost Berry.\" I would be most interested to study such a fruit.^Please provide me with a suitable specimen at your earliest convenience.^ -M. Rasmodius, Wizard%item quest 1373001 %%[#]Ghost Berry for the Wizard"
-		//	}
-		//},
+		// Mail Data (Thanks Pathoschild)
+		{
+			"Action": "EditData",
+			"Target": "Data/Mail",
+			"Entries": {
+				"Tarniyar.CP.WalkToDesert_Ghost_Berry": "{{i18n:Mail.GhostBerry.Wizard.1}}%item quest 1373001 %%[#]{{i18n:Mail.GhostBerry.Wizard.2}}"
+			}
+		},
+
+		// Adding the Trigger to Send the Mail
+		{
+			"Action": "EditData",
+			"Target": "Data/TriggerActions",
+			"Entries": {
+				"{{ModId}}_SendGhostBerryMail": {
+					"Id": "{{ModId}}_SendGhostBerryMail",
+					"Trigger": "DayStarted",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Current (O){{ModId}}_Ghost_Berry",
+					"Actions": [
+						"AddMail Current {{ModId}}_Ghost_Berry"
+					]
+				}
+			}
+		},
 		
 		// Quest Data
 		{
