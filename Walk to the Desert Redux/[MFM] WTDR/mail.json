@@ -1,0 +1,16 @@
+[
+	{
+		"Id": "wtd.ghostberry",
+		"Text": "ghostberry.text",
+		"WhichBG": 2,
+		"TextColor": 4,
+		"Repeatable": false,
+		"CollectionConditions": [
+			{ 
+				"Collection": "Shipped",
+				"Name": "Tarniyar.CP.WalkToDesert_Ghost_Berry",
+				"Amount": 1
+			}
+		]
+	}
+]

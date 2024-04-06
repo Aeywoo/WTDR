@@ -534,7 +534,7 @@
 		{
 			"LogName": "Applies a map edit to remove five tiles from the invisible wall on the bottom left of the Winding Road map if the Garden Village mod is installed.",
 			"Action": "EditMap",
-			"Target": "{{ModId}}_Winding_Road",
+			"Target": "Maps/{{ModId}}_Winding_Road",
 			"MapTiles": [
 				{
 					"Position": { "X": 0, "Y": 81 },
@@ -569,7 +569,7 @@
 		{
 			"LogName": "Applies a map edit to remove five tiles from the invisible wall on the top left of the Winding Road map if the Ridgeside Village mod is installed.",
 			"Action": "EditMap",
-			"Target": "{{ModId}}_Winding_Road",
+			"Target": "Maps/{{ModId}}_Winding_Road",
 			"MapTiles": [
 				{
 					"Position": { "X": 0, "Y": 17 },
@@ -720,6 +720,12 @@
 					"Position": { "X": 59, "Y": 29 },
 					"Layer": "Buildings",
 					"Remove": true
+				},
+				{
+					"Position": { "X": 59, "Y": 29 },
+					"Layer": "Front",
+					"SetTilesheet": "desert-new",
+					"SetIndex": "85"
 				}
 			],
 			"When": {
@@ -1821,10 +1827,18 @@
 			"FromFile": "assets/npcs/pickledpete/schedule.json"
 		},
 		{
-			"LogName": "Loads the Pickled Pete event in the Ghost Shop map.",
+			"LogName": "Loads a blank json file to setup the Pickled Pete event.",
 			"Action": "Load",
 			"Target": "Data/Events/{{ModId}}_Ghost_Shop",
 			"FromFile": "assets/npcs/pickledpete/events.json"
+		},
+		{
+			"LogName": "Edits a custom Pickled Pete event in the Ghost Shop map.",
+			"Action": "EditData",
+			"Target": "Data/Events/Tarniyar.CP.WalkToDesert_Ghost_Shop",
+			"Entries": {
+				"13730004/t 2000 2600": "XOR/4 7/farmer 4 6 0/skippable/pause 1500/emote farmer 40/faceDirection farmer 1/pause 1000/faceDirection farmer 3/pause 1000/move farmer 1 0 1/move farmer 0 -1 0/pause 500/addTemporaryActor PickledPete 16 32 7 4 2/pause 300/jump farmer 8/move farmer 0 1 0/emote PickledPete 8/pause 1000/emote farmer 8/speak PickledPete \"{{i18n:Events.13730004.1}}\"/move farmer 0 -1 0/emote farmer 8/speak PickledPete \"{{i18n:Events.13730004.2}}\"/emote PickledPete 28/pause 1000/move PickledPete -5 0 2/speak PickledPete \"{{i18n:Events.13730004.3}}\"/end dialogue PickledPete \"{{i18n:Events.13730004.4}}\""
+			}
 		},
 		
 		// Custom Sandy Event
@@ -1916,7 +1930,11 @@
 				}
 			}
 		},
+		
 		/// Adding the NPC Gift Tastes
+		// NPCGIftTastes has a weird system when it comes to defining Love, Like, Dislike, Hate and Neutral
+		// 1, 	 3,    5, 		7, 	  9
+		// Love, Like, Dislike, Hate, Neutral
 		{
 			"LogName": "Adding custom items to NPCGiftTastes for all vanilla NPCs and PickledPete.",
 			"Action": "EditData",
@@ -1924,31 +1942,31 @@
 			"TextOperations": [
 				{
 					"Operation": "Append",
-					"Target": [ "Entries", "Universal_" ],
+					"Target": [ "Fields", "Leah", 5 ],
 					"Value": "{{ModId}}_Eerie_Plant_Seeds",
 					"Delimiter": " "
 				},
 				{
 					"Operation": "Append",
-					"Target": [ "Entries", "Universal_" ],
+					"Target": [ "Fields", "Leah", 1 ],
 					"Value": "{{ModId}}_Ghost_Berry",
 					"Delimiter": " "
 				},
 				{
 					"Operation": "Append",
-					"Target": [ "Entries", "Universal_" ],
+					"Target": [ "Fields", "Leah", 1 ],
 					"Value": "{{ModId}}_Ghostly_Wine",
 					"Delimiter": " "
 				},
 				{
 					"Operation": "Append",
-					"Target": [ "Entries", "Universal_" ],
+					"Target": [ "Fields", "Leah", 7 ],
 					"Value": "{{ModId}}_Giant_Old_Coin",
 					"Delimiter": " "
 				},
 				{
 					"Operation": "Append",
-					"Target": [ "Entries", "Universal_" ],
+					"Target": [ "Fields", "Leah", 7 ],
 					"Value": "{{ModId}}_Old_Coin",
 					"Delimiter": " "
 				}
@@ -2029,7 +2047,7 @@
 							"Id": "{{ModId}}_Old_Coin",
 							"ItemId": "(O){{ModId}}_Old_Coin",
 							"Price": 120, // 0,
-							// "TradeItemId": "{{ModId}}_Slime_Cheese",
+							// "TradeItemId": "Tarniyar.CP.GardenVillage_Slime_Cheese",
 							// "TradeItemAmount": 1,
 							"AvailableStock": 1
 						}
@@ -2046,8 +2064,8 @@
 		// Migrating the WTDR Items in Save Data from pre-SDV 1.5.6 (WTDR 1.1.2 - 1.3.1) to the new SDV 1.6 (WTDR 1.3.2+) Item IDs
 		{
 			"LogName": "Migrating pre-SDV 1.5.6 WTDR items to the new SDV 1.6 format.",
-			"Target": "Data/TriggerActions",
 			"Action": "EditData",
+			"Target": "Data/TriggerActions",
 			"Entries": {
 				"{{ModId}}_MigrateIds": {
 					"Id": "{{ModId}}_MigrateIds",
@@ -2061,7 +2079,14 @@
 		},
 		
 		// Mail Data
-		
+		//{
+		//	"LogName": "",
+		//	"Action": "EditData",
+		//	"Target": "Data/Mail",
+		//	"Entries": {
+		//		"ghostberry.text": "@-^I've heard rumors that you successfully grew a \"Ghost Berry.\" I would be most interested to study such a fruit.^Please provide me with a suitable specimen at your earliest convenience.^ -M. Rasmodius, Wizard%item quest 1373001 %%[#]Ghost Berry for the Wizard"
+		//	}
+		//},
 		
 		// Quest Data
 		{

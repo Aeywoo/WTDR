@@ -39,14 +39,24 @@
 	"Quests.1373004.Reaction": "Thank you, @! I knew I could count on you!$h#$b#You are a true friend.$0",
 	
 	// NPC Events
-	"Quests.13730004.1": "Are you looking for something?#$b#Or someone?#$b#Nobody here but me though.",
-	"Quests.13730004.2": "Folks call me Pickled Pete.#$b#I can't remember why.",
-	"Quests.13730004.3": "Want to buy something while you're here? I've got...#$b#...#$b#Well, there's not much left. But it's the best I've got",
-	"Quests.13730004.4": "It's hard to make a living when you're dead.",
+	"Events.13730004.1": "Are you looking for something?#$b#Or someone?#$b#Nobody here but me though.",
+	"Events.13730004.2": "Folks call me Pickled Pete.#$b#I can't remember why.",
+	"Events.13730004.3": "Want to buy something while you're here? I've got...#$b#...#$b#Well, there's not much left. But it's the best I've got",
+	"Events.13730004.4": "It's hard to make a living when you're dead.",
 	
 	// Sandy's Event
 	"Events.SandyEvent.Mon": "$d bus#Hello hello, sweetie! I'm so glad that bus is working again! It's been hard to stay in business.#Hello hello, sweetie! I'm so glad you're willing to make the long trip out here! It's been hard to stay in business.",
 	"Events.SandyEvent.Mon2": "Hey, sweetie, how's the farm?#$e#Let me guess. You're here to buy a whole bunch of seeds... right, sweetie?$h",
+	
+	"Events.SandyIntro.1": "A... customer?",
+	"Events.SandyIntro.2": "Hi! Welcome to 'Sandy's Oasis'!#$b#Hey, you look just like the new farmer that Emily wrote to me about!#$b#Then... the bus line to Stardew Valley is back in service!$h#$b#Oh, I'm so happy!$h",
+	"Events.SandyIntro.3": "Please visit again soon, I get so bored out here.",
+	
+	"Events.13730001.1": "A... customer?",
+	"Events.13730001.2": "Hi! Welcome to 'Sandy's Oasis'!#$b#Hey, you look just like the new farmer that Emily wrote to me about!#$b#Then... the bus line to Stardew Valley is back in service?$h#$b#It's not? You mean... you walked the whole way?!$s",
+	"Events.13730001.3": "You must be thirsty! Here, have some ice cold milk. [184]#$b#Tasty, huh?$h#$b#You take care of yourself now!\"/emote Sandy 32/end dialogue Sandy \"Please visit again soon, I get so bored out here.",
+	"Events.13730002.1": "Oh! You're out late today!#$b#Not that I'm unhappy to see you, of course.$h#$b#Just be careful if you decide to go wandering over by the Ghost Town.$0#$b#The desert sun keeps the ghosts underground during the day. But after dark, they start coming out in droves!",
+	"Events.13730002.2": "Just promise me you'll be careful. Okay, sweetie?$h",
 	
 	// Shop Strings
 	"Shops.WTDRShop.Closed": "Come back later...",
