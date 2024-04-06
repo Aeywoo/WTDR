@@ -1912,7 +1912,7 @@
 					"Description": "{{i18n:Objects.GhostBerry.Desc}}",
 					"Type": "Fruit",
 					"Category": -79,
-					"Price": 1000,
+					"Price": 800,
 					"Texture": "Mods/{{ModId}}/Objects",
 					"SpriteIndex": 2,
 					"Edibility": 30,
