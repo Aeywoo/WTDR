@@ -14,6 +14,7 @@
 			"Default": "Orange"
 		}
 	},
+	
 	"DynamicTokens": [
 		{
 			"Name": "recolor",
@@ -23,7 +24,7 @@
 			"Name": "recolor",
 			"Value": "earthy",
 			"When": {
-				"HasMod": "DaisyNeko.EarthyRecolour"
+				"HasMod": "DaisyNiko.EarthyRecolour"
 			}
 		},
 		{
@@ -55,15 +56,16 @@
 			}
 		}
 	],
+	
 	"Changes": [
-		// Load the Tilesheets
+		// Loading the Tilesheets
 		{
 			"Action": "Load",
 			"Target": "Maps/desert_z_roads, Maps/fall_z_wtd_tilesheet, Maps/spring_z_wtd_tilesheet, Maps/summer_z_wtd_tilesheet, Maps/winter_z_wtd_tilesheet, Maps/z_ghostshoptiles, Maps/z_ghosttown_tilesheet, Maps/z_mine_desert",
 			"FromFile": "assets/recolors/{{recolor}}/{{TargetWithoutPath}}.png"
 		},
 		
-		// Edit certain Tilesheets for Recolors
+		// Re-Color Seasonal Variants
 		{
 			"Action": "EditImage",
 			"Target": "Maps/fall_z_wtd_tilesheet",
@@ -487,7 +489,7 @@
 			"Action": "EditMap",
 			"Target": "Maps/BusStop",
 			"FromFile": "assets/maps/patches/BusStop.tmx",
-			"ToArea": { "X": 19, "Y": 18, "Width": 5, "Height": 5 },
+			"ToArea": { "X": 21, "Y": 20, "Width": 1, "Height": 3 },
 			"When": {
 				"HasMod |contains=livipup.busstopsignmovedonetileup": false
 			}
@@ -497,7 +499,7 @@
 			"Action": "EditMap",
 			"Target": "Maps/Backwoods",
 			"FromFile": "assets/maps/patches/Backwoods.tmx",
-			"ToArea": { "X": 24, "Y": 20, "Width": 13, "Height": 9 },
+			"ToArea": { "X": 24, "Y": 20, "Width": 11, "Height": 9 },
 			"When": {
 				"HasMod |contains=Pillow.StardewExpansion.CP": false
 			}
@@ -1794,14 +1796,14 @@
 				}
 			}
 		},
-		{
-			"LogName": "Sets up the Pickled Pete NPC Gift Tastes.",
-			"Action": "EditData",
-			"Target": "Data/NPCGiftTastes",
-			"Entries": {
-				"PickledPete": "{{i18n:NPC.Gifts.PickledPete.Love}}/303 348/{{i18n:NPC.Gifts.PickledPete.Like}}/308 346/{{i18n:NPC.Gifts.PickledPete.Dislike}}/72 74/{{i18n:NPC.Gifts.PickledPete.Hate}}/373 446/{{i18n:NPC.Gifts.PickledPete.Neutral}}/-7 -75 -79 -80 -81/"
-			}
-		},
+		//{
+		//	"LogName": "Sets up the Pickled Pete NPC Gift Tastes.",
+		//	"Action": "EditData",
+		//	"Target": "Data/NPCGiftTastes",
+		//	"Entries": {
+		//		"PickledPete": "{{i18n:NPC.Gifts.PickledPete.Love}}/303 348/{{i18n:NPC.Gifts.PickledPete.Like}}/308 346/{{i18n:NPC.Gifts.PickledPete.Dislike}}/72 74/{{i18n:NPC.Gifts.PickledPete.Hate}}/373 446/{{i18n:NPC.Gifts.PickledPete.Neutral}}/-7 -75 -79 -80 -81/"
+		//	}
+		//},
 		{
 			"LogName": "Loads the Pickled Pete NPC Sprites.",
 			"Action": "Load",
@@ -1860,7 +1862,7 @@
 		{
 			"LogName": "Edits a custom Pickled Pete event in the Ghost Shop map.",
 			"Action": "EditData",
-			"Target": "Data/Events/Tarniyar.CP.WalkToDesert_Ghost_Shop",
+			"Target": "Data/Events/{{ModId}}_Ghost_Shop",
 			"Entries": {
 				"13730004/t 2000 2600": "XOR/4 7/farmer 4 6 0/skippable/pause 1500/emote farmer 40/faceDirection farmer 1/pause 1000/faceDirection farmer 3/pause 1000/move farmer 1 0 1/move farmer 0 -1 0/pause 500/addTemporaryActor PickledPete 16 32 7 4 2/pause 300/jump farmer 8/move farmer 0 1 0/emote PickledPete 8/pause 1000/emote farmer 8/speak PickledPete \"{{i18n:Events.13730004.1}}\"/move farmer 0 -1 0/emote farmer 8/speak PickledPete \"{{i18n:Events.13730004.2}}\"/emote PickledPete 28/pause 1000/move PickledPete -5 0 2/speak PickledPete \"{{i18n:Events.13730004.3}}\"/end dialogue PickledPete \"{{i18n:Events.13730004.4}}\""
 			}
@@ -1915,7 +1917,7 @@
 					"Price": 800,
 					"Texture": "Mods/{{ModId}}/Objects",
 					"SpriteIndex": 2,
-					"Edibility": 30,
+					"Edibility": 40,
 					"ContextTags": [ "color_cyan" ]
 				},
 				// Ghostly Wine
