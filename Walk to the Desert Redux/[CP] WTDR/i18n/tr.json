@@ -1,0 +1,104 @@
+{ // Turkish Translation by: halifemuhsin
+	// NPC Names
+	"NPC.Name.PickledPete": "Turşu Pete",
+	"NPC.Gifts.PickledPete.Love": "Benim için mi? Gerçekten mi? Çok teşekkür ederim!",
+	"NPC.Gifts.PickledPete.Like": "Çok teşekkür ederim.",
+	"NPC.Gifts.PickledPete.Dislike": "Şikayet etmiyorum ama bununla ne yapacağım?",
+	"NPC.Gifts.PickledPete.Hate": "Sanırım... Sanırım bundan sonra bir içkiye ihtiyacım var.",
+	"NPC.Gifts.PickledPete.Neutral": "Teşekkürler, sanırım.",
+	"NPC.Dialogue.PickledPete.Sun": "Neden geldin?",
+	"NPC.Dialogue.PickledPete.Mon": "Çok susadım.",
+	"NPC.Dialogue.PickledPete.Tue": "Bunu buldum. Bana seni hatırlattı. [170]#$e#Eminim bir işe yarayacaktır.",
+	"NPC.Dialogue.PickledPete.Wed": "Bu binadan daha uzun ömürlü olacağım. O yıkıldığında, ben yine de hayatta olacağım.",
+	"NPC.Dialogue.PickledPete.Thu": "Mutlu cumalar.#$e#Öyle değil miydi?#$e#Oh, kimin umurunda.",
+	"NPC.Dialogue.PickledPete.Fri": "Yolunu biliyor musun?#$e#Gittiğiniz yeri bilmiyorsanız, oraya ne zaman varacağınızı da asla bilemezsiniz.",
+	"NPC.Dialogue.PickledPete.Sat": "Hangi yıldayız?#$e#Emin misin? Bu kulağa doğru gelmiyor.",
+	"NPC.Dialogue.PickledPete.Thu.Summer": "Toprak sıcaktan soluk soluğa kalıyor.",
+	"NPC.Dialogue.PickledPete.Fri.Winter": "Soğuğu hissediyor musun?#$e#Artık hiçbir şey hissedemiyorum.",
+	"NPC.Dialogue.PickledPete.Sat.Fall": "Havada bir değişiklik var.",
+	
+	// Event 1373001 (ItemDelivery: Hephaestus Ghost Berry)
+	"Quests.1373001.Title": "Hayalet Böğürtlen",
+	"Quests.1373001.Details": "Büyücü bir Hayalet Böğürtlen üzerinde çalışmak istiyor. Nedenini sorma.",
+	"Quests.1373001.Hint": "Büyücüye bir Hayalet Böğürtlen götürün.",
+	"Quests.1373001.Reaction": "Büyüleyici. Bu meyvenin büyülü potansiyeli inanılmaz! İyi iş çıkardınız, @. Sana minnettarım. Şimdi, izin verin rahat rahat çalışayım.",
+	// Event 1373002 (ItemDelivery: Hephaestus Refined Quartz)
+	"Quests.1373002.Title": "İşlenmiş Kuvars Talebi",
+	"Quests.1373002.Details": "Hephaestus'un çalışmaları için 10 adet işlenmiş kuvarsa ihtiyacı var.",
+	"Quests.1373002.Hint": "Hephaestus'a 10 adet işlenmiş kuvars götür.",
+	"Quests.1373002.Reaction": "Teşekkür ederim, @! Bunlar mükemmel görünüyor!$h#$b#Bana yardım etmek için zaman ayırdığın için minnettarım.$0",
+	// Event 1373003 (ItemDelivery: Hephaestus Slime Request)
+	"Quests.1373003.Title": "Balçıkça Talebi",
+	"Quests.1373003.Details": "Hephaestus'un çalışması için 50 balçıkçaya ihtiyacı var.",
+	"Quests.1373003.Hint": "Hephaestus'a 50 balçıkça getirin.",
+	"Quests.1373003.Reaction": "Teşekkür ederim, @! Bunlar güzel ve sulu görünüyor.$h#$b#Bana yardım etmek için vakit ayırdığın için minnettarım.$0",
+	// Event 1373004 (ItemDelivery: Hephaestus Iridium Bar)
+	"Quests.1373004.Title": "İridyum Bar Talebi",
+	"Quests.1373004.Details": "Hephaestus'un işi için 5 iridyum külçesine ihtiyacı var.",
+	"Quests.1373004.Hint": "Hephaestus'a 5 iridyum külçesi getirin.",
+	"Quests.1373004.Reaction": "Teşekkür ederim, @! Sana güvenebileceğimi biliyordum!$h#$b#Sen gerçek bir dostsun.$0",
+	
+	// NPC Events
+	"Events.13730004.1": "Bir şey mi arıyorsun?#$b#Ya da birini?#$b#Gerçi burada benden başka kimse yok.",
+	"Events.13730004.2": "İnsanlar bana Turşu Pete der.#$b#Nedenini hatırlamıyorum.",
+	"Events.13730004.3": "Hazır buradayken bir şeyler almak ister misin? Bende...#$b#...#$b#Pek bir şey kalmadı. Ama elimdekilerin en iyisi bu.",
+	"Events.13730004.4": "Ölüyken geçinmek zordur.",
+	
+	// Sandy's Event
+	"Events.SandyEvent.Mon": "$d bus#Merhaba, tatlım! Otobüsün tekrar çalışmaya başlamasına çok sevindim! İşe ara vermek oldukça zordu.#Merhaba tatlım! Buraya kadar uzun bir yolculuk yapmak istemene çok sevindim! İş dünyasında kalmak zor oldu.",
+	"Events.SandyEvent.Mon2": "Hey, tatlım, çiftlik nasıl?#$e#Dur tahmin edeyim. Bir sürü tohum almak için buradasın, değil mi tatlım?$h",
+	
+	"Events.SandyIntro.1": "Bir... müşteri?",
+	"Events.SandyIntro.2": "Merhaba! Sandy'nin Vahası'na hoş geldiniz!#$b#Hey, tıpkı Emily'nin bana yazdığı yeni çiftçiye benziyorsun!#$b#Öyleyse... Yıldızçiyi Vadisi'ne giden otobüs hattı yeniden hizmete girdi!$h#$b#Çok mutlu oldum!$h",
+	"Events.SandyIntro.3": "Lütfen yakında tekrar ziyaret edin, burada çok sıkılıyorum.",
+	
+	"Events.13730001.1": "Bir... müşteri?",
+	"Events.13730001.2": "Merhaba! Sandy'nin Vahası'na hoş geldiniz!#$b#Hey, tıpkı Emily'nin bana yazdığı yeni çiftçiye benziyorsun!#$b#Öyleyse... Yıldızçiyi Vadisi'ne giden otobüs hattı yeniden hizmete girdi!$h#$b#Öyle değil mi? Yani... bütün yolu yürüdün mü?!$s",
+	"Events.13730001.3": "Susamış olmalısın! Al, biraz buz gibi süt iç. [184]#$b#Lezzetli, değil mi?$h#$b#Kendine dikkat et!\"/emote Sandy 32/end dialogue Sandy \"Lütfen yakında tekrar ziyaret edin, burada çok sıkılıyorum.",
+	"Events.13730002.1": "Oh! Bugün geç çıktın!#$b#Seni görmekten mutsuz olduğumdan değil elbette.$h#$b#Hayalet Kasaba'da dolaşmaya karar verirseniz dikkatli olun.$0#$b#Çöldeki güneş, hayaletleri gün boyunca yeraltında tutar. Ama hava karardıktan sonra sürüler halinde ortaya çıkmaya başlarlar!",
+	"Events.13730002.2": "Sadece dikkatli olacağına söz ver. Tamam mı, tatlım?$h",
+	
+	// Shop Strings
+	"Shops.WTDRShop.Closed": "Daha sonra gel.",
+	"Shops.WTDRShop.Dialogue": "Mallarımı incelemeye mi geldin?",
+	"Shops.WTDRShop.Dialogue.Rainy": "Yağmurda her şey yıkanır.",
+	
+	// Mail Strings
+	"Mail.GhostBerry.Wizard.1": "@-^Duyduğuma göre başarılı bir şekilde \"Hayalet Böğürtlen.\" yetiştirmişsin Böyle bir meyveyi incelemek çok ilgimi çekerdi.^Lütfen en kısa zamanda bana uygun bir örnek gönderin.^ -M. Rasmodius, Büyücü",
+	"Mail.GhostBerry.Wizard.2": "Büyücü için Hayalet Böğürtlen",
+	
+	// Map Strings (Text Tiles)
+	"MapStrings.Interchange.1": "Şu anda Zuzu Şehrini ziyaret etmek için bir neden göremiyorsunuz, belki bir dahaki sefere?",
+	"MapStrings.Interchange.2": "` Zuzu Şehrine giden 5. Otoyol^` Buzul Karakolu^@ Patisko Çölü",
+	"MapStrings.Interchange.3": "` Zuzu Şehrine giden 5. Otoyol^> Buzul Karakolu",
+	"MapStrings.Interchange.4": "Yol bir çığ nedeniyle tahrip olmuştur, bunun temizlenmesi oldukça zaman alacaktır.",
+	"MapStrings.GhostTown.1": "TEHLİKE!",
+	"MapStrings.GhostTown.2": "GİRMEYİN!",
+	"MapStrings.GhostTown.3": "Bu bina uzun zaman önce çökmüş, girmek güvenli görünmüyor.",
+	"MapStrings.GhostTown.4": "Kapı kilitlenmiş, ev zaman içinde yamulmuş ve büyük bir hasarı olmamasına rağmen dayanıksız hale gelmiştir.",
+	"MapStrings.GhostTown.5": "Kapı kilitli, ürkütücü bir ses fısıldıyor \"Gelecek Güncelleme.\"",
+	"MapStrings.GhostShop.1": "Kapı kilitli ve kapı kolu yapışkan örümcek ağlarıyla kaplı, Iyy.",
+	"MapStrings.GhostShop.2": "Turşu Pete: Mallarımdan biraz almaz mısın?",
+	"MapStrings.HorsePath.1": "Atların tünele girmesi yasaktır!^Traktörlerin tünele girmesi yasaktır!",
+	"MapStrings.HorsePath.2": "@ At ve traktör yolu bu tarafta.",
+	"MapStrings.HorsePath.3": "> At ve traktör yolu bu tarafta.",
+	"MapStrings.WindingRoad.1": "` Zuzu Şehrine giden 5. Otoyol^@ Bahçe Köyü^> Pelikan Kasabası",
+	"MapStrings.WindingRoad.2": "` Zuzu Şehrine giden 5. Otoyol^@ Tepeyanı Köyü",
+	"MapStrings.WindingRoad.3": "Talihsiz bir dizi olay ve deniz kenarındaki erozyon nedeniyle yol deniz seviyesine düşmüş durumda, umarım bir gün onarırlar.",
+	"MapStrings.WindingRoad.4": "Devrilmiş birkaç elektrik hattı, devrilmiş ağaçlar ve acil durum araçları yolunuzu kesiyor, ilerlememek için akıllıca bir karar veriyorsunuz.",
+	"MapStrings.Cave.1": "Nedense bu kapı duvara boyanmış. Kim böyle bir şey yapar ki?",
+	"MapStrings.Cave.2": "Bir yığın kemik.^ Bekle, kafatasları nereye gitti?",
+	"MapStrings.Cave.3": "Bu bir delik, içine atlamayın. Rastgele delikler hafife alınmamalıdır.",
+	"MapStrings.Cave.4": "Bu, bir kişinin annesiyle ilgili kaba bir şaka gibi görünüyor, ancak şakanın bir kısmı silinip gitmiş. Başka kim var biliyor musun-",
+	"MapStrings.Cave.5": "Eski, paslı bir maden arabası, üzerindeki paslı yazıda şöyle yazıyor \"Tepeyanı Köyü\", geldiği yol çökmüş gibi görünüyor.",
+	
+	// Object Names and Descriptions
+	"Objects.EeriePlantSeeds.Name": "Ürkütücü Bitki Tohumları",
+	"Objects.EeriePlantSeeds.Desc": "Bunların büyüyeceğinden emin misin? Muhtemelen ne zaman ekildiğinin bir önemi yoktur.",
+	"Objects.GhostBerry.Name": "Hayalet Böğürtlen",
+	"Objects.GhostBerry.Desc": "Bu ürkütücü meyve bizim dünyamıza ait değilmiş gibi görünüyor",
+	"Objects.GiantOldCoin.Name": "Eski Dev Sikke",
+	"Objects.GiantOldCoin.Desc": "Bu sikke kocaman! Ne güzel bir buluş!",
+	"Objects.OldCoin.Name": "Eski Sikke",
+	"Objects.OldCoin.Desc": "Eski olması değerli olduğu anlamına gelmez",
+}

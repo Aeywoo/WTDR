@@ -1,0 +1,104 @@
+{ // Spanish Translation by: ArazRed
+	// NPC Names
+	"NPC.Name.PickledPete": "Pete Escabeche",
+	"NPC.Gifts.PickledPete.Love": "¿Para mí? ¿De verdad? ¡Oh, muchas gracias!",
+	"NPC.Gifts.PickledPete.Like": "Gracias, eres muy amable.",
+	"NPC.Gifts.PickledPete.Dislike": "No es que me queje, pero... ¿qué quieres que haga con esto?",
+	"NPC.Gifts.PickledPete.Hate": "Creo... creo que necesito un trago después de esto.",
+	"NPC.Gifts.PickledPete.Neutral": "Gracias, supongo...",
+	"NPC.Dialogue.PickledPete.Sun": "¿Por qué has venido?",
+	"NPC.Dialogue.PickledPete.Mon": "Tengo tanta sed.",
+	"NPC.Dialogue.PickledPete.Tue": "He encontrado esto. Me recordó a ti. [170]#$e#Estoy seguro de que le encontrarás algún uso.",
+	"NPC.Dialogue.PickledPete.Wed": "Sobreviviré a este edificio. Una vez que se derrumbe, yo seguiré aquí.",
+	"NPC.Dialogue.PickledPete.Thu": "Feliz viernes.#$e#¿No lo es?#$e#Oh, a quién le importa de todas formas.",
+	"NPC.Dialogue.PickledPete.Fri": "¿Conoces tu camino?#$e#Si no sabes a dónde vas, no sabrás nunca si has llegado.",
+	"NPC.Dialogue.PickledPete.Sat": "Recuérdame, ¿en qué año estamos?#$e#¿Estás seguro? Es como que... algo no está bien.",
+	"NPC.Dialogue.PickledPete.Thu.Summer": "La tierra jadea con el calor.",
+	"NPC.Dialogue.PickledPete.Fri.Winter": "¿Puedes sentir el frío?#$e#Yo ya no puedo sentir nada más.",
+	"NPC.Dialogue.PickledPete.Sat.Fall": "El cambio está en el aire.",
+	
+	// Event 1373001 (ItemDelivery: Hephaestus Ghost Berry)
+	"Quests.1373001.Title": "Baya Fantasma",
+	"Quests.1373001.Details": "El Mago quiere estudiar una Baya Fantasma. No preguntes por qué.",
+	"Quests.1373001.Hint": "Llévale al Mago una Baya Fantasma.",
+	"Quests.1373001.Reaction": "Oh, fascinante. ¡El potencial mágico de esta fruta es increíble! Lo has hecho bien, @. Tienes mi gratitud. Ahora, déjame trabajar tranquilo.",
+	// Event 1373002 (ItemDelivery: Hephaestus Refined Quartz)
+	"Quests.1373002.Title": "Petición de Cuarzo Refinado",
+	"Quests.1373002.Details": "Hephaestus necesita 10 Cuarzos Refinados.",
+	"Quests.1373002.Hint": "Llévale Hephaestus 10 Cuarzos Refinados.",
+	"Quests.1373002.Reaction": "¡Gracias, @! ¡Son perfectos!$h#$b#Te agradezco que me hayas ayudado.$0",
+	// Event 1373003 (ItemDelivery: Hephaestus Slime Request)
+	"Quests.1373003.Title": "Petición de Babas",
+	"Quests.1373003.Details": "Hephaestus necesita 50 Babas para su investigación.",
+	"Quests.1373003.Hint": "Llévale a Hephaestus 50 Babas.",
+	"Quests.1373003.Reaction": "¡Gracias, @! ¡Están jugosas!$h#$b#Muchas gracias de nuevo por tu ayuda.$0",
+	// Event 1373004 (ItemDelivery: Hephaestus Iridium Bar)
+	"Quests.1373004.Title": "Petición de Lingote de iridio",
+	"Quests.1373004.Details": "Hephaestus necesita 5 Lingotes de iridio para su trabajo.",
+	"Quests.1373004.Hint": "Llévale a Hephaestus 5 Lingotes de iridio.",
+	"Quests.1373004.Reaction": "¡Gracias, @! ¡Sabía que podía contar contigo!$h#$b#Eres un amigo de verdad.$0",
+	
+	// NPC Events
+	"Events.13730004.1": "¿Estás buscando algo?#$b#¿O a alguien?#$b#Aquí no hay nadie excepto yo.",
+	"Events.13730004.2": "La gente me llama Pete Escabeche.#$b#No recuerdo por qué.",
+	"Events.13730004.3": "¿Quieres comprar algo ya que estás aquí? Tengo...#$b#...#$b#Bueno, no queda mucho. Pero es lo mejor que tengo.",
+	"Events.13730004.4": "Es difícil ganarse la vida cuando estás muerto.",
+	
+	// Sandy's Event
+	"Events.SandyEvent.Mon": "$d bus#¡Hola, cariño! ¡Cómo me alegro de que el bus vuelva a funcionar! Ha sido duro mantener el negocio a flote.#¡Hola, hola cariño! ¡Me alegra mucho que te hayas decidido a hacer el largo viaje hasta aquí! Ha sido duro mantener el negocio a flote.",
+	"Events.SandyEvent.Mon2": "Hey, cariño, ¿qué tal va la granja?#$e#Déjame adivinar. Estás aquí para comprar un montón de semillas... ¿a que sí, cariño?$h",
+	
+	"Events.SandyIntro.1": "Un... ¿cliente?",
+	"Events.SandyIntro.2": "¡Hola! ¡Bienvenido a el Oasis de Sandy!#$b#Uy, ¡tú debes de ser el granjero sobre el que Emily me escribió!#$b#Entonces... ¡la línea de autobús a Stardew Valley ha sido reestablecida!$h#$b#Oh, ¡que contenta estoy!$h",
+	"Events.SandyIntro.3": "Por favor, visítame pronto de nuevo, me aburro mucho por estos lares.",
+	
+	"Events.13730001.1": "Un... ¿cliente?",
+	"Events.13730001.2": "¡Hola! ¡Bienvenido a el Oasis de Sandy!#$b#Uy, ¡tú debes de ser el granjero sobre el que Emily me escribió!#$b#Entonces... ¿la línea de autobús a Stardew Valley ha sido reestablecida?$h#$b#¿No? Quieres decir... ¡¿que has venido andando hasta aquí?!$s",
+	"Events.13730001.3": "¡Debes de tener sed! Toma, un vaso de leche bien fría. [184]#$b#¿Rica, eh?$h#$b#Cuídate!\"/emote Sandy 32/end dialogue Sandy \"Por favor, visítame pronto de nuevo, me aburro mucho por estos lares",
+	"Events.13730002.1": "¡Oh, llegas tarde hoy!#$b#No es que me desagrade verte, por supuesto.$h#$b#Solo ten cuidado si decides aventurarte hasta el Pueblo Fantasma.$0#$b#El sol del desierto mantiene a los fantasmas bajo tierra durante el día. Pero cuando cae la noche, ¡comienzan a salir por doquier!",
+	"Events.13730002.2": "Solo prométeme que tendrás cuidado, ¿vale cariño?$h",
+	
+	// Shop Strings
+	"Shops.WTDRShop.Closed": "Vuelve más tarde...",
+	"Shops.WTDRShop.Dialogue": "¿Has venido a echar un vistazo?",
+	"Shops.WTDRShop.Dialogue.Rainy": "Cuando llueve, el agua se lo lleva todo...",
+	
+	// Mail Strings
+	"Mail.GhostBerry.Wizard.1": "@-^He escuchado rumores de que has conseguido cultivar una\"Baya Fantasma.\" Estaría muy interesado en estudiar esa fruta.^Por favor, provéeme con un ejemplar adecuado, en cuanto te sea posible.^ -M. Rasmodius, Mago",
+	"Mail.GhostBerry.Wizard.2": "Baya Fantasma para el Mago",
+	
+	// Map Strings (Text Tiles)
+	"MapStrings.Interchange.1": "No hay ninguna razón para visitar ciudad Zuzu ahora mismo, ¿quizás la próxima vez?",
+	"MapStrings.Interchange.2": "` Autopista 5 a Ciudad Zuzu^` Puesto avanzado del Glaciar^@ Desierto de Calico",
+	"MapStrings.Interchange.3": "` Autopista 5 a Ciudad Zuzu^> Puesto avanzado del Glaciar",
+	"MapStrings.Interchange.4": "La carretera fue destruída por una avalancha, llevará un tiempo limpiarlo todo.",
+	"MapStrings.GhostTown.1": "¡PELIGRO!",
+	"MapStrings.GhostTown.2": "¡PROHIBIDO EL PASO!",
+	"MapStrings.GhostTown.3": "Este edificio se derrumbó hace mucho tiempo, no parece que sea seguro entrar.",
+	"MapStrings.GhostTown.4": "La puerta está atrancada, la casa se ha inclinado con el tiempo y se ha vuelto inestable, a pesar de la falta de daños mayores.",
+	"MapStrings.GhostTown.5": "La puerta está cerrada con llave, una voz misteriosa susurra.\"Próxima actualización.\"",
+	"MapStrings.GhostShop.1": "La puerta está cerrada con llave, y la manilla está cubierta de telarañas pegajosas, ugh.",
+	"MapStrings.GhostShop.2": "Pete Escabeche: ¿No te quieres llevar algo?",
+	"MapStrings.HorsePath.1": "¡Los caballos tienen la entrada prohibida al túnel!^¡Los tractores tienen la entrada prohibida al túnel!",
+	"MapStrings.HorsePath.2": "@ Camino para caballos y tractores por aquí.",
+	"MapStrings.HorsePath.3": "> Camino para caballos y tractores por aquí.",
+	"MapStrings.WindingRoad.1": "` Autopista 5 a Ciudad Zuzu^@ Pueblo Jardín^> Ciudad Pelícano",
+	"MapStrings.WindingRoad.2": "` Autopista 5 a Ciudad Zuzu^@ Ridgeside Village",
+	"MapStrings.WindingRoad.3": "Debido a una serie de desafortunados eventos y erosión marítima, la carretera se ha desmoronado hacia el mar, espero que la arreglen pronto.",
+	"MapStrings.WindingRoad.4": "Varias líneas de tensión dañadas, árboles caídos y vehículos de emergencias bloquean tu camino, tomas la sabia decisión de no continuar.",
+	"MapStrings.Cave.1": "Por alguna razón, esta puerta está pintada sobre la pared. ¿Quién haría algo así?",
+	"MapStrings.Cave.2": "Es un montón de huesos.^ Un momento, ¿dónde están las calaveras?",
+	"MapStrings.Cave.3": "Esto es un agujero, no saltes en él. Los agujeros no son para jugar con ellos.",
+	"MapStrings.Cave.4": "Esto parece una broma de mal gusto sobre la madre de alguien, pero la erosión ha borrado parte de ella. ¿Sabes quién...?",
+	"MapStrings.Cave.5": "Una vieja vagoneta, la inscripción oxidada en ella dice \"Ridgeside Village\", parece que el túnel del que venía ha colapsado.",
+	
+	// Object Names and Descriptions
+	"Objects.EeriePlantSeeds.Name": "Semillas de Planta Misteriosa",
+	"Objects.EeriePlantSeeds.Desc": "¿Cómo sabemos que van a germinar? Probablemente no importa cuándo las plantes.",
+	"Objects.GhostBerry.Name": "Baya Fantasma",
+	"Objects.GhostBerry.Desc": "Esta fruta misteriosa parece algo que no pertenezca a este mundo.",
+	"Objects.GiantOldCoin.Name": "Antigua Moneda Gigante",
+	"Objects.GiantOldCoin.Desc": "¡Esta moneda es enorme! ¡Qué suerte encontrarla!",
+	"Objects.OldCoin.Name": "Moneda Antigua",
+	"Objects.OldCoin.Desc": "Solo porque sea vieja no significa que sea valiosa.",
+}
