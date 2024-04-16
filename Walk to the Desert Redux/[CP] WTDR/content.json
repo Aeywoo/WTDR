@@ -636,6 +636,41 @@
 			}
 		},
 		{
+			"LogName": "Applies a map edit to remove five tiles from the invisible wall on the bottom left of the Winding Road map if the Garden Village mod is installed.",
+			"Action": "EditMap",
+			"Target": "Maps/Custom_MainShops",
+			"MapTiles": [
+				{
+					"Position": { "X": 54, "Y": 19 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 54, "Y": 20 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 54, "Y": 21 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 54, "Y": 22 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 54, "Y": 23 },
+					"Layer": "Buildings",
+					"Remove": true
+				}
+			],
+			"When": {
+				"HasMod": "Tarniyar.CP.GardenVillage"
+			}
+		},
+		{
 			"LogName": "Applies a map edit to remove seven tiles on the top of the Interchange map if the Downtown Zuzu map is installed.",
 			"Action": "EditMap",
 			"Target": "Maps/{{ModId}}_Interchange",
@@ -1699,35 +1734,80 @@
 					"Position": { "X": 0, "Y": 81 },
 					"Layer": "Back",
 					"SetProperties": {
-						"TouchAction": "Warp Tarniyar.CP.GardenVillage_Main_Shops 53 19"
+						"TouchAction": "Warp Custom_MainShops 53 19"
 					}
 				},
 				{
 					"Position": { "X": 0, "Y": 82 },
 					"Layer": "Back",
 					"SetProperties": {
-						"TouchAction": "Warp Tarniyar.CP.GardenVillage_Main_Shops 53 20"
+						"TouchAction": "Warp Custom_MainShops 53 20"
 					}
 				},
 				{
 					"Position": { "X": 0, "Y": 83 },
 					"Layer": "Back",
 					"SetProperties": {
-						"TouchAction": "Warp Tarniyar.CP.GardenVillage_Main_Shops 53 21"
+						"TouchAction": "Warp Custom_MainShops 53 21"
 					}
 				},
 				{
 					"Position": { "X": 0, "Y": 84 },
 					"Layer": "Back",
 					"SetProperties": {
-						"TouchAction": "Warp Tarniyar.CP.GardenVillage_Main_Shops 53 22"
+						"TouchAction": "Warp Custom_MainShops 53 22"
 					}
 				},
 				{
 					"Position": { "X": 0, "Y": 85 },
 					"Layer": "Back",
 					"SetProperties": {
-						"TouchAction": "Warp Tarniyar.CP.GardenVillage_Main_Shops 53 23"
+						"TouchAction": "Warp Custom_MainShops 53 23"
+					}
+				}
+			],
+			"When": {
+				"HasMod": "Tarniyar.CP.GardenVillage"
+			}
+		},
+		{
+			"LogName": "Adds warps from the Garden Village Main Shops map to the Winding Road map if Garden village is installed.",
+			"Action": "EditMap",
+			"Target": "Maps/Custom_MainShops",
+			"MapTiles": [
+				{
+					"Position": { "X": 54, "Y": 19 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Winding_Road 1 81"
+					}
+				},
+				{
+					"Position": { "X": 54, "Y": 20 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Winding_Road 1 82"
+					}
+				},
+				{
+					"Position": { "X": 54, "Y": 21 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Winding_Road 1 83"
+					}
+				},
+				{
+					"Position": { "X": 54, "Y": 22 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Winding_Road 1 84"
+					}
+				},
+				{
+					"Position": { "X": 54, "Y": 23 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Winding_Road 1 85"
 					}
 				}
 			],
@@ -2002,7 +2082,7 @@
 					"HarvestMethod": "Scythe",
 					"HarvestMinStack": 1,
 					"HarvestMaxStack": 1,
-					"HarvestMaxIncreasePerFarmingLevel": 25,
+					"HarvestMaxIncreasePerFarmingLevel": 0,
 					"ExtraHarvestChance": 0,
 					"Texture": "Mods\\{{ModId}}\\Crops",
 					"SpriteIndex": 0
