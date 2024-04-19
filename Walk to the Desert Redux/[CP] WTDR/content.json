@@ -2031,16 +2031,10 @@
 			"Target": "Characters/Dialogue/Sandy",
 			"Entries": {
 				"Mon": "{{i18n:Events.SandyEvent.Mon}}",
+				"Mon2": "{{i18n:Events.SandyEvent.Mon2}}"
 			}
 		},
-		{
-			"Action": "EditData",
-			"Target": "Characters/Dialogue/Sandy",
-			"Entries": {
-				"Mon2": "{{i18n:Events.SandyEvent.Mon2}}",
-			}
-		},
-		
+
 		// Custom Objects
 		/// Adding the Custom Objects (Items)
 		{
