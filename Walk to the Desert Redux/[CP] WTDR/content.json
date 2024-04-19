@@ -14,7 +14,6 @@
 			"Default": "Orange"
 		}
 	},
-	
 	"DynamicTokens": [
 		{
 			"Name": "recolor",
@@ -38,14 +37,16 @@
 			"Name": "recolor",
 			"Value": "pastoral",
 			"When": {
-				"HasMod": "grapeponta.VibrantPastoralRecolor"
+				"HasMod": "grapeponta.VibrantPastoralRecolor",
+				"HasMod": "poohnhi.VPRTempFix"
 			}
 		},
 		{
 			"Name": "recolor",
 			"Value": "starblue",
 			"When": {
-				"HasMod": "Lita.StarblueValley"
+				"HasMod": "Lita.StarblueValley",
+				"HasMod": "Lita.StarblueValleyUnofficial"
 			}
 		},
 		{
@@ -56,13 +57,44 @@
 			}
 		}
 	],
-	
 	"Changes": [
 		// Loading the Tilesheets
 		{
 			"Action": "Load",
 			"Target": "Maps/desert_z_roads, Maps/fall_z_wtd_tilesheet, Maps/spring_z_wtd_tilesheet, Maps/summer_z_wtd_tilesheet, Maps/winter_z_wtd_tilesheet, Maps/z_ghostshoptiles, Maps/z_ghosttown_tilesheet, Maps/z_mine_desert",
 			"FromFile": "assets/recolors/{{recolor}}/{{TargetWithoutPath}}.png"
+		},
+		
+		// Translated Tilesheet Variants
+		{
+			"LogName": "Overlaying Road Signs with Spanish text to match the translation file.",
+			"Action": "EditImage",
+			"Target": "Maps/spring_z_wtd_tilesheet, Maps/summer_z_wtd_tilesheet, fall_z_wtd_tilesheet, winter_z_wtd_tilesheet",
+			"PatchMode": "Overlay",
+			"FromFile": "assets/tilesheets/RoadSigns-es.png",
+			"When": {
+				"Language": "es" // Spanish
+			}
+		},
+		{
+			"LogName": "Overlaying Road Signs with Portuguese text to match the translation file.",
+			"Action": "EditImage",
+			"Target": "Maps/spring_z_wtd_tilesheet, Maps/summer_z_wtd_tilesheet, fall_z_wtd_tilesheet, winter_z_wtd_tilesheet",
+			"PatchMode": "Overlay",
+			"FromFile": "assets/tilesheets/RoadSigns-pt.png",
+			"When": {
+				"Language": "pt" // Portuguese
+			}
+		},
+		{
+			"LogName": "Overlaying Road Signs with Turkish text to match the translation file.",
+			"Action": "EditImage",
+			"Target": "Maps/spring_z_wtd_tilesheet, Maps/summer_z_wtd_tilesheet, fall_z_wtd_tilesheet, winter_z_wtd_tilesheet",
+			"PatchMode": "Overlay",
+			"FromFile": "assets/tilesheets/RoadSigns-tr.png",
+			"When": {
+				"Language": "tr" // Portuguese
+			}
 		},
 		
 		// Re-Color Seasonal Variants
@@ -604,6 +636,41 @@
 			}
 		},
 		{
+			"LogName": "Applies a map edit to remove five tiles from the invisible wall on the bottom left of the Winding Road map if the Garden Village mod is installed.",
+			"Action": "EditMap",
+			"Target": "Maps/Custom_MainShops",
+			"MapTiles": [
+				{
+					"Position": { "X": 54, "Y": 19 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 54, "Y": 20 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 54, "Y": 21 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 54, "Y": 22 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 54, "Y": 23 },
+					"Layer": "Buildings",
+					"Remove": true
+				}
+			],
+			"When": {
+				"HasMod": "Tarniyar.CP.GardenVillage"
+			}
+		},
+		{
 			"LogName": "Applies a map edit to remove seven tiles on the top of the Interchange map if the Downtown Zuzu map is installed.",
 			"Action": "EditMap",
 			"Target": "Maps/{{ModId}}_Interchange",
@@ -687,6 +754,43 @@
 			"When": {
 				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
 			}
+		},
+		{
+			"LogName": "Applies a map edit to remove six tiles from the invisible wall on the right side of the Desert Festival map.",
+			"Action": "EditMap",
+			"Target": "Maps/Desert-Festival",
+			"MapTiles": [
+				{
+					"Position": { "X": 49, "Y": 24 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 49, "Y": 25 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 49, "Y": 26 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 49, "Y": 27 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 49, "Y": 28 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 49, "Y": 29 },
+					"Layer": "Buildings",
+					"Remove": true
+				}
+			]
 		},
 		{
 			"LogName": "Applies a map edit to remove six tiles from the invisible wall on the right side of the Desert map if the Stardew Valley Expanded mod is installed.",
@@ -1607,6 +1711,55 @@
 			}
 		},
 		{
+			"LogName": "Adds warps from the Desert Festival map to the Ghost Town map.",
+			"Action": "EditMap",
+			"Target": "Maps/Desert-Festival",
+			"MapTiles": [
+				{
+					"Position": { "X": 49, "Y": 24 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Ghost_Town 1 33"
+					}
+				},
+				{
+					"Position": { "X": 49, "Y": 25 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Ghost_Town 1 34"
+					}
+				},
+				{
+					"Position": { "X": 49, "Y": 26 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Ghost_Town 1 35"
+					}
+				},
+				{
+					"Position": { "X": 49, "Y": 27 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Ghost_Town 1 36"
+					}
+				},
+				{
+					"Position": { "X": 49, "Y": 28 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Ghost_Town 1 37"
+					}
+				},
+				{
+					"Position": { "X": 49, "Y": 29 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Ghost_Town 1 38"
+					}
+				}
+			]
+		},
+		{
 			"LogName": "Adds warps from the Desert map to the Ghost Town map if Stardew Valley Expanded is installed.",
 			"Action": "EditMap",
 			"Target": "Maps/Desert",
@@ -1667,35 +1820,35 @@
 					"Position": { "X": 0, "Y": 81 },
 					"Layer": "Back",
 					"SetProperties": {
-						"TouchAction": "Warp Tarniyar.CP.GardenVillage_MainShops 52 19"
+						"TouchAction": "Warp Custom_MainShops 53 19"
 					}
 				},
 				{
 					"Position": { "X": 0, "Y": 82 },
 					"Layer": "Back",
 					"SetProperties": {
-						"TouchAction": "Warp Tarniyar.CP.GardenVillage_MainShops 52 20"
+						"TouchAction": "Warp Custom_MainShops 53 20"
 					}
 				},
 				{
 					"Position": { "X": 0, "Y": 83 },
 					"Layer": "Back",
 					"SetProperties": {
-						"TouchAction": "Warp Tarniyar.CP.GardenVillage_MainShops 52 21"
+						"TouchAction": "Warp Custom_MainShops 53 21"
 					}
 				},
 				{
 					"Position": { "X": 0, "Y": 84 },
 					"Layer": "Back",
 					"SetProperties": {
-						"TouchAction": "Warp Tarniyar.CP.GardenVillage_MainShops 52 22"
+						"TouchAction": "Warp Custom_MainShops 53 22"
 					}
 				},
 				{
 					"Position": { "X": 0, "Y": 85 },
 					"Layer": "Back",
 					"SetProperties": {
-						"TouchAction": "Warp Tarniyar.CP.GardenVillage_MainShops 52 23"
+						"TouchAction": "Warp Custom_MainShops 53 23"
 					}
 				}
 			],
@@ -1706,38 +1859,38 @@
 		{
 			"LogName": "Adds warps from the Garden Village Main Shops map to the Winding Road map if Garden village is installed.",
 			"Action": "EditMap",
-			"Target": "Maps/Tarniyar.CP.GardenVillage_MainShops",
+			"Target": "Maps/Custom_MainShops",
 			"MapTiles": [
 				{
-					"Position": { "X": 53, "Y": 19 },
+					"Position": { "X": 54, "Y": 19 },
 					"Layer": "Back",
 					"SetProperties": {
 						"TouchAction": "Warp {{ModId}}_Winding_Road 1 81"
 					}
 				},
 				{
-					"Position": { "X": 53, "Y": 20 },
+					"Position": { "X": 54, "Y": 20 },
 					"Layer": "Back",
 					"SetProperties": {
 						"TouchAction": "Warp {{ModId}}_Winding_Road 1 82"
 					}
 				},
 				{
-					"Position": { "X": 53, "Y": 21 },
+					"Position": { "X": 54, "Y": 21 },
 					"Layer": "Back",
 					"SetProperties": {
 						"TouchAction": "Warp {{ModId}}_Winding_Road 1 83"
 					}
 				},
 				{
-					"Position": { "X": 53, "Y": 22 },
+					"Position": { "X": 54, "Y": 22 },
 					"Layer": "Back",
 					"SetProperties": {
 						"TouchAction": "Warp {{ModId}}_Winding_Road 1 84"
 					}
 				},
 				{
-					"Position": { "X": 53, "Y": 23 },
+					"Position": { "X": 54, "Y": 23 },
 					"Layer": "Back",
 					"SetProperties": {
 						"TouchAction": "Warp {{ModId}}_Winding_Road 1 85"
@@ -1878,16 +2031,10 @@
 			"Target": "Characters/Dialogue/Sandy",
 			"Entries": {
 				"Mon": "{{i18n:Events.SandyEvent.Mon}}",
+				"Mon2": "{{i18n:Events.SandyEvent.Mon2}}"
 			}
 		},
-		{
-			"Action": "EditData",
-			"Target": "Characters/Dialogue/Sandy",
-			"Entries": {
-				"Mon2": "{{i18n:Events.SandyEvent.Mon2}}",
-			}
-		},
-		
+
 		// Custom Objects
 		/// Adding the Custom Objects (Items)
 		{
@@ -2015,7 +2162,7 @@
 					"HarvestMethod": "Scythe",
 					"HarvestMinStack": 1,
 					"HarvestMaxStack": 1,
-					"HarvestMaxIncreasePerFarmingLevel": 25,
+					"HarvestMaxIncreasePerFarmingLevel": 0,
 					"ExtraHarvestChance": 0,
 					"Texture": "Mods\\{{ModId}}\\Crops",
 					"SpriteIndex": 0

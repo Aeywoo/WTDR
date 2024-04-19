@@ -1,4 +1,4 @@
-{
+{ // Original English Translation by: Aeywoo
 	// NPC Names
 	"NPC.Name.PickledPete": "Pickled Pete",
 	"NPC.Gifts.PickledPete.Love": "For me? Really? Aw, thank you so much!",
@@ -22,12 +22,12 @@
 	"Quests.1373001.Details": "The Wizard wants to study a Ghost Berry. Don't ask why.",
 	"Quests.1373001.Hint": "Bring the Wizard a Ghost Berry.",
 	"Quests.1373001.Reaction": "Ah, fascinating. The magical potential of this fruit is incredible! You've done well, @. You have my gratitude. Now, let me work in peace.",
-	// Event 1373002 (ItemDelivery:Hephaestus Refined Quartz)
+	// Event 1373002 (ItemDelivery: Hephaestus Refined Quartz)
 	"Quests.1373002.Title": "Refined Quartz Request",
 	"Quests.1373002.Details": "Hephaestus needs 10 refined quartz for his work.",
 	"Quests.1373002.Hint": "Bring Hephaestus 10 refined quartz.",
 	"Quests.1373002.Reaction": "Thank you, @! These look perfect!$h#$b#I appreciate you taking the time to help me out.$0",
-	// Event 1373003 (ItemDelivery:Hephaestus Slime Request)
+	// Event 1373003 (ItemDelivery: Hephaestus Slime Request)
 	"Quests.1373003.Title": "Slime Request",
 	"Quests.1373003.Details": "Hephaestus needs 50 slime for his work.",
 	"Quests.1373003.Hint": "Bring Hephaestus 50 slime.",

@@ -1,0 +1,104 @@
+{ // Japanese Translation by: mitekano23
+	// NPC Names
+	"NPC.Name.PickledPete": "ピクルスピート",
+	"NPC.Gifts.PickledPete.Love": "私のために？本当に？本当にありがとう！",
+	"NPC.Gifts.PickledPete.Like": "親切にありがとう。",
+	"NPC.Gifts.PickledPete.Dislike": "文句を言うつもりはないが、これでどうしろと言うんだ？",
+	"NPC.Gifts.PickledPete.Hate": "...この後、一杯ひっかけたくなってきたよ。",
+	"NPC.Gifts.PickledPete.Neutral": "ありがとう...",
+	"NPC.Dialogue.PickledPete.Sun": "なぜここに来たのですか？",
+	"NPC.Dialogue.PickledPete.Mon": "すごく喉が渇く。",
+	"NPC.Dialogue.PickledPete.Tue": "これを見つけたんだ。君のことを思い出したよ。[170]#$e#きっと使い道が見つかるはずだ。",
+	"NPC.Dialogue.PickledPete.Wed": "私はこの建物より長生きする。陥落しても、私は残るだろう。",
+	"NPC.Dialogue.PickledPete.Thu": "ハッピー・フライデー。#$e#いや…違うか？#$e#ああ、どうせもう関係ないことだ。",
+	"NPC.Dialogue.PickledPete.Fri": "自分の進むべき道を知っているか？?#$e#行き先がわからなければ、いつそこに着くかもわからない。",
+	"NPC.Dialogue.PickledPete.Sat": "今年は何年だっけ？#$e#おかしいな…わからない。",
+	"NPC.Dialogue.PickledPete.Thu.Summer": "暑さの中で大地は息をのむ。",
+	"NPC.Dialogue.PickledPete.Fri.Winter": "寒さを感じますか？#$e#私はもう何も感じることができない。",
+	"NPC.Dialogue.PickledPete.Sat.Fall": "空気に変わったようだね。",
+	
+	// Event 1373001 (ItemDelivery: Hephaestus Ghost Berry)
+	"Quests.1373001.Title": "ゴーストベリー",
+	"Quests.1373001.Details": "魔術師はゴーストベリーを研究したいという。理由は聞かないでほしい。",
+	"Quests.1373001.Hint": "魔術師にゴーストベリーを渡す。",
+	"Quests.1373001.Reaction": "あぁ、魅力的だ。この果実による魔法の可能性は信じられないほどだ！よくやった、@。貴殿には感謝している。我輩はこれから作業をする。",
+	// Event 1373002 (ItemDelivery: Hephaestus Refined Quartz)
+	"Quests.1373002.Title": "精錬クリスタルの依頼",
+	"Quests.1373002.Details": "ヘパイストスの仕事には10個の精錬クリスタルが必要だ。",
+	"Quests.1373002.Hint": "ヘパイストスに精錬クリスタルを10個渡す。",
+	"Quests.1373002.Reaction": "ありがとう！、@。これで完璧だ！$h#$b#時間を割いてくれて助かったよ。$0",
+	// Event 1373003 (ItemDelivery: Hephaestus Slime Request)
+	"Quests.1373003.Title": "スライムの依頼",
+	"Quests.1373003.Details": "ヘパイストスの仕事にはスライムが50個必要だ。",
+	"Quests.1373003.Hint": "ヘパイストスにスライムを50個渡す。",
+	"Quests.1373003.Reaction": "ありがとう！、@。これはジューシーでおいしそうだ。$h#$b#時間を割いてくれて助かったよ。$0",
+	// Event 1373004 (ItemDelivery: Hephaestus Iridium Bar)
+	"Quests.1373004.Title": "イリジウムののべ棒の依頼",
+	"Quests.1373004.Details": "ヘパイストスの仕事には5本のイリジウムののべ棒が必要だ。",
+	"Quests.1373004.Hint": "イリジウムののべ棒を5本渡す。",
+	"Quests.1373004.Reaction": "ありがとう！、@。あなたは頼りになると思っていたよ！$h#$b#あなたこそ親友だな。$0",
+	
+	// NPC Events
+	"Events.13730004.1": "何かお探しですか？#$b#それとも人探しかな？#$b#ここには私以外誰もいないよ。",
+	"Events.13730004.2": "私はピクルスピートです。#$b#名前の由来は思い出せない。",
+	"Events.13730004.3": "何か買いたいものはあるかな…？#$b#...#$b#取り扱いはそこまでないけどね。でも、これが今用意できるベストだ。",
+	"Events.13730004.4": "死んでからも生計を立てるのは大変だ。",
+	
+	// Sandy's Event
+	"Events.SandyEvent.Mon": "$d bus#やぁやぁ、@！バスがまた動いてくれて本当に嬉しいわ！ほんと商売を続けるのは大変だったからね。#やぁやぁ、@！遠路はるばる来てくれて本当に嬉しいわ！ほんと商売を続けるのは大変だったからね。",
+	"Events.SandyEvent.Mon2": "やぁ、@！牧場の調子はどう？#$e#当ててあげようか。タネを買いに来たんでしょ？どう？正解かしら？$h",
+	
+	"Events.SandyIntro.1": "え…お客さん？",
+	"Events.SandyIntro.2": "いらっしゃい！「サンディのオアシス」へようこそ！#$b#ねえ、あなたってひょっとして、エミリーが手紙に書いてた新しい牧場主さん？#$b#ってことは…スターデューバレーからのバス便が復旧したんだ！$h#$b#ワオ、やったあ！$h",
+	"Events.SandyIntro.3": "お願いだから近いうちにまた来てね、ここで店番するのにはもうあきあきしてるの。",
+	
+	"Events.13730001.1": "え…お客さん？",
+	"Events.13730001.2": "いらっしゃい！「サンディのオアシス」へようこそ！#$b#ねえ、あなたってひょっとして、エミリーが手紙に書いてた新しい牧場主さん？#$b#ってことは…スターデューバレーからのバス便が復旧したんだ！$h#$b#違うの？まさか...ずっと歩いてきた!?$s",
+	"Events.13730001.3": "のどが渇いたでしょう！冷たいミルクをどうぞ。[184]#$b#おいしいでしょ？$h#$b#ゆっくり体を休めるといいわ。\"/emote Sandy 32/end dialogue Sandy \"お願いだから近いうちにまた来てね、ここで店番するのにはもうあきあきしてるの。",
+	"Events.13730002.1": "あら、今日は遅いじゃない！b#もちろん、あなたに会うのが嫌なわけじゃないのよ。$h#$b#ゴーストタウンの近くに行くときは気をつけてね。$0#$b#砂漠の太陽は日中、幽霊たちを地中に閉じ込めているわ。けど、日が暮れると、彼らは大挙して現れ始めるのよ！",
+	"Events.13730002.2": "気をつけてね。約束よ？$h",
+	
+	// Shop Strings
+	"Shops.WTDRShop.Closed": "また今度...",
+	"Shops.WTDRShop.Dialogue": "私の商品を見に来たのかい？",
+	"Shops.WTDRShop.Dialogue.Rainy": "雨が降れば、すべてが洗い流される。",
+	
+	// Mail Strings
+	"Mail.GhostBerry.Wizard.1": "@へ。^ゴーストベリーの栽培に成功したと聞いたよ。あの果実を研究することにとても興味がある。^早急に適切なサンプルを提供してくれ。^ - M.ラズモディアスより",
+	"Mail.GhostBerry.Wizard.2": "魔術師のゴーストベリー",
+	
+	// Map Strings (Text Tiles)
+	"MapStrings.Interchange.1": "今ズズシティを訪れる理由が思いつかない。また別の機会にしよう。",
+	"MapStrings.Interchange.2": "`ズズシティ - 公道5号線^`グレイシャーアウトポスト^@カリコ砂漠",
+	"MapStrings.Interchange.3": "`ズズシティ - 公道5号線^>グレイシャーアウトポスト",
+	"MapStrings.Interchange.4": "雪崩で通行止めとなっており、復旧にはかなり時間がかかりそうだ。",
+	"MapStrings.GhostTown.1": "危険！",
+	"MapStrings.GhostTown.2": "立入禁止！",
+	"MapStrings.GhostTown.3": "この倒壊した古い建物は、中に入るには安全とは思えない。",
+	"MapStrings.GhostTown.4": "大きな損傷はないが、ドアは閉まりきらず、家は経年劣化でガタがきている。",
+	"MapStrings.GhostTown.5": "ドアに鍵がかかっている。不気味な声がささやく。\"今後更新予定。\"",
+	"MapStrings.GhostShop.1": "ドアに鍵がかかっている。ドアノブにはクモの巣がべったりだ。",
+	"MapStrings.GhostShop.2": "ピクルスピート：私の商品を買っていただけないでしょうか？",
+	"MapStrings.HorsePath.1": "馬はトンネルに入ることができない！^トンネル内へのトラクターの進入も禁止されている！",
+	"MapStrings.HorsePath.2": "@ 馬とトラクターの道はこっち。",
+	"MapStrings.HorsePath.3": "> 馬とトラクターの道はこっち。",
+	"MapStrings.WindingRoad.1": "`ズズシティ - 公道5号線^@ガーデンビレッジ^>ペリカンタウン",
+	"MapStrings.WindingRoad.2": "`ズズシティ - 公道5号線^@リッジサイドビレッジ",
+	"MapStrings.WindingRoad.3": "残念ながら、侵食の影響で道路は海に落ちてしまった。いつか修理されることを願っている。",
+	"MapStrings.WindingRoad.4": "倒れた電線、倒木、そして何台もの緊急車両が行く手を阻む。あなたは引き返すという賢明な判断を下した。",
+	"MapStrings.Cave.1": "ドアがある！…と思ったら壁にペイントされているだけだった。誰がこんなことをするのだろう？",
+	"MapStrings.Cave.2": "骨の山だ。^待って、ドクロはどこに行ったの？",
+	"MapStrings.Cave.3": "これはただの穴だ、飛び込むべきではない。バカなことはするなよ。",
+	"MapStrings.Cave.4": "これはある人物の母親に対する下品なジョークのように見えるが、ジョークの一部は消え失せている。誰が消したのだろうか...",
+	"MapStrings.Cave.5": "古びたトロッコがある。金属板にリッジサイドと刻まれている。道は塞がれているようだ。",
+	
+	// Object Names and Descriptions
+	"Objects.EeriePlantSeeds.Name": "不気味な植物の種",
+	"Objects.EeriePlantSeeds.Desc": "本当に成長するのだろうか？植える時期はおそらくいつでもいけそうだ。",
+	"Objects.GhostBerry.Name": "ゴーストベリー",
+	"Objects.GhostBerry.Desc": "この不気味な果実は、この世のものとは思えない。",
+	"Objects.GiantOldCoin.Name": "巨大な古銭",
+	"Objects.GiantOldCoin.Desc": "このコインは巨大だ！これを見つけられたのはラッキーだ！",
+	"Objects.OldCoin.Name": "古銭",
+	"Objects.OldCoin.Desc": "古いからといって価値があるわけではない。",
+}
