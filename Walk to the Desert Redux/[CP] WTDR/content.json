@@ -756,6 +756,43 @@
 			}
 		},
 		{
+			"LogName": "Applies a map edit to remove six tiles from the invisible wall on the right side of the Desert Festival map.",
+			"Action": "EditMap",
+			"Target": "Maps/Desert-Festival",
+			"MapTiles": [
+				{
+					"Position": { "X": 49, "Y": 24 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 49, "Y": 25 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 49, "Y": 26 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 49, "Y": 27 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 49, "Y": 28 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 49, "Y": 29 },
+					"Layer": "Buildings",
+					"Remove": true
+				}
+			]
+		},
+		{
 			"LogName": "Applies a map edit to remove six tiles from the invisible wall on the right side of the Desert map if the Stardew Valley Expanded mod is installed.",
 			"Action": "EditMap",
 			"Target": "Maps/Desert",
@@ -1672,6 +1709,55 @@
 			"When": {
 				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
 			}
+		},
+		{
+			"LogName": "Adds warps from the Desert Festival map to the Ghost Town map.",
+			"Action": "EditMap",
+			"Target": "Maps/Desert-Festival",
+			"MapTiles": [
+				{
+					"Position": { "X": 49, "Y": 24 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Ghost_Town 1 33"
+					}
+				},
+				{
+					"Position": { "X": 49, "Y": 25 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Ghost_Town 1 34"
+					}
+				},
+				{
+					"Position": { "X": 49, "Y": 26 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Ghost_Town 1 35"
+					}
+				},
+				{
+					"Position": { "X": 49, "Y": 27 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Ghost_Town 1 36"
+					}
+				},
+				{
+					"Position": { "X": 49, "Y": 28 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Ghost_Town 1 37"
+					}
+				},
+				{
+					"Position": { "X": 49, "Y": 29 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Ghost_Town 1 38"
+					}
+				}
+			]
 		},
 		{
 			"LogName": "Adds warps from the Desert map to the Ghost Town map if Stardew Valley Expanded is installed.",
