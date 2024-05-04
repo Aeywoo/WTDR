@@ -79,9 +79,8 @@
 	"MapStrings.GhostTown.5": "The door is locked, an eerie voice whispers \"Future Update.\"",
 	"MapStrings.GhostShop.1": "The door is locked, and the doorknob is covered in sticky spiderwebs, Eugh.",
 	"MapStrings.GhostShop.2": "Pickled Pete: Won't you buy some of my wares?",
-	"MapStrings.HorsePath.1": "Horses are prohibited to enter the tunnel!^Tractors are prohibited to enter the tunnel!",
-	"MapStrings.HorsePath.2": "@ Horse and Tractor path this way.",
-	"MapStrings.HorsePath.3": "> Horse and Tractor path this way.",
+	"MapStrings.HorsePath.1": "@ Horse and Tractor path this way.",
+	"MapStrings.HorsePath.2": "> Horse and Tractor path this way.",
 	"MapStrings.WindingRoad.1": "` Highway 5 to Zuzu City^@ Garden Village^> Pelican Town",
 	"MapStrings.WindingRoad.2": "` Highway 5 to Zuzu City^@ Ridgeside Village",
 	"MapStrings.WindingRoad.3": "Due to an unfortunate set of events and seaside erosion, the road has fallen into the sea, I hope they get around to fixing it someday.",
@@ -101,4 +100,28 @@
 	"Objects.GiantOldCoin.Desc": "This coin is huge! What a lucky find!",
 	"Objects.OldCoin.Name": "Old Coin",
 	"Objects.OldCoin.Desc": "Just because it's old doesn't mean it's valuable",
+	
+	// Generic Config Menu Translations
+	"config.section.RoadType.name": "Road Type",
+	"config.section.RoadType.description": "The type of roads you want enabled.",
+	"config.section.RecolourVariants.name": "Recolour Tilesheet Variants",
+	"config.section.RecolourVariants.description": "Seasonal variants offered by these supported recolour mods, you need the corresponding recolour mod installed for this to take affect.",
+	
+	"config.SquareRoads.name": "Square Roads",
+	"config.SquareRoads.description": "Enable this if you want roads with sharper corners.",
+	
+	"config.EemieFallVariant.name": "Eemie Fall Variant",
+	"config.EemieFallVariant.description": "If you chose Green or Orange tilesheets for Fall with Eemie's Recolour, do the same here.",
+	"config.EemieFallVariant.values.Green": "Green",
+	"config.EemieFallVariant.values.Orange": "Orange",
+	
+	"config.StarblueSpringVariant.name": "Starblue Spring Variant",
+	"config.StarblueSpringVariant.description": "If you chose Green or Blue tilesheets for Spring with Starblue's Recolour, do the same here.",
+	"config.StarblueSpringVariant.values.Green": "Green",
+	"config.StarblueSpringVariant.values.Blue": "Blue",
+	
+	"config.VibrantPastoralFallVariant.name": "Vibrant Pastoral Fall Variant",
+	"config.VibrantPastoralFallVariant.description": "If you chose Green or Orange tilesheets for Fall with Vibrant Pastoral's Recolour, do the same here.",
+	"config.VibrantPastoralFallVariant.values.Green": "Green",
+	"config.VibrantPastoralFallVariant.values.Orange": "Orange"
 }

@@ -6,9 +6,14 @@
  </properties>
  <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
   <image source="paths" width="64" height="256"/>
+  <tile id="35">
+   <properties>
+    <property name="GreenRain" value="asdf"/>
+   </properties>
+  </tile>
  </tileset>
- <tileset firstgid="65" name="z_ghostshoptiles" tilewidth="16" tileheight="16" tilecount="176" columns="11">
-  <image source="z_ghostshoptiles" width="176" height="256"/>
+ <tileset firstgid="65" name="z_wtd_ghostshoptiles" tilewidth="16" tileheight="16" tilecount="176" columns="11">
+  <image source="z_wtd_ghostshoptiles" width="176" height="256"/>
  </tileset>
  <layer id="1" name="Back" width="13" height="9">
   <data encoding="csv">
