@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalkToTheDesert", "WalkToTheDesert.csproj", "{FE4E09DC-E2A5-4DA1-942E-96689177B656}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE4E09DC-E2A5-4DA1-942E-96689177B656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE4E09DC-E2A5-4DA1-942E-96689177B656}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE4E09DC-E2A5-4DA1-942E-96689177B656}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE4E09DC-E2A5-4DA1-942E-96689177B656}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {52CE1803-79E5-4DE7-8385-5B92618539BE}
+	EndGlobalSection
+EndGlobal
