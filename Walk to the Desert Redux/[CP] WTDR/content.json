@@ -1120,13 +1120,6 @@
 					}
 				},
 				{
-					"Position": { "X": 53, "Y": 13 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Backwoods 30 24"
-					}
-				},
-				{
 					"Position": { "X": 0, "Y": 18 },
 					"Layer": "Back",
 					"SetProperties": {
