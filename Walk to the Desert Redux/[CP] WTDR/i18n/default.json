@@ -108,7 +108,7 @@
 	"config.section.RecolourVariants.description": "Seasonal variants offered by these supported recolour mods, you need the corresponding recolour mod installed for this to take affect.",
 	
 	"config.SquareRoads.name": "Square Roads",
-	"config.SquareRoads.description": "Enable this if you want roads with sharper corners.",
+	"config.SquareRoads.description": "Enable this if you want roads with sharper corners like other mods have for better consistency.",
 	
 	"config.EemieFallVariant.name": "Eemie Fall Variant",
 	"config.EemieFallVariant.description": "If you chose Green or Orange tilesheets for Fall with Eemie's Recolour, do the same here.",

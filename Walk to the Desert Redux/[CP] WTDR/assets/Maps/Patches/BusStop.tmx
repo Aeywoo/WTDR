@@ -4,7 +4,7 @@
   <property name="Outdoors" value="T"/>
  </properties>
  <tileset firstgid="1" name="outdoors" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
-  <image source="spring_outdoorsTileSheet.png" width="400" height="1264"/>
+  <image source="spring_outdoorsTileSheet" width="400" height="1264"/>
   <tile id="180">
    <properties>
     <property name="Spawnable" value="T"/>
@@ -23,7 +23,7 @@
   </tile>
  </tileset>
  <tileset firstgid="1976" name="Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
-  <image source="paths.png" width="64" height="256"/>
+  <image source="paths" width="64" height="256"/>
  </tileset>
  <layer id="1" name="Back" width="1" height="3">
   <data encoding="csv">

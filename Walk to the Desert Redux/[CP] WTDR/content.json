@@ -84,7 +84,7 @@
 		{
 			"LogName": "Overlaying Road Signs with Spanish text to match the translation file.",
 			"Action": "EditImage",
-			"Target": "Maps/spring_z_wtd_tilesheet, Maps/summer_z_wtd_tilesheet, fall_z_wtd_tilesheet, winter_z_wtd_tilesheet",
+			"Target": "Maps/spring_z_wtd_tilesheet, Maps/summer_z_wtd_tilesheet, Maps/fall_z_wtd_tilesheet, Maps/winter_z_wtd_tilesheet",
 			"PatchMode": "Overlay",
 			"FromFile": "assets/tilesheets/RoadSigns-es.png",
 			"When": {
@@ -92,9 +92,19 @@
 			}
 		},
 		{
+			"LogName": "Overlaying Road Signs with Spanish text to match the translation file.",
+			"Action": "EditImage",
+			"Target": "Maps/spring_z_wtd_tilesheet, Maps/summer_z_wtd_tilesheet, Maps/fall_z_wtd_tilesheet, Maps/winter_z_wtd_tilesheet",
+			"PatchMode": "Overlay",
+			"FromFile": "assets/tilesheets/RoadSigns-it.png",
+			"When": {
+				"Language": "it" // Italian
+			}
+		},
+		{
 			"LogName": "Overlaying Road Signs with Portuguese text to match the translation file.",
 			"Action": "EditImage",
-			"Target": "Maps/spring_z_wtd_tilesheet, Maps/summer_z_wtd_tilesheet, fall_z_wtd_tilesheet, winter_z_wtd_tilesheet",
+			"Target": "Maps/spring_z_wtd_tilesheet, Maps/summer_z_wtd_tilesheet, Maps/fall_z_wtd_tilesheet, Maps/winter_z_wtd_tilesheet",
 			"PatchMode": "Overlay",
 			"FromFile": "assets/tilesheets/RoadSigns-pt.png",
 			"When": {
@@ -104,11 +114,21 @@
 		{
 			"LogName": "Overlaying Road Signs with Turkish text to match the translation file.",
 			"Action": "EditImage",
-			"Target": "Maps/spring_z_wtd_tilesheet, Maps/summer_z_wtd_tilesheet, fall_z_wtd_tilesheet, winter_z_wtd_tilesheet",
+			"Target": "Maps/spring_z_wtd_tilesheet, Maps/summer_z_wtd_tilesheet, Maps/fall_z_wtd_tilesheet, Maps/winter_z_wtd_tilesheet",
 			"PatchMode": "Overlay",
 			"FromFile": "assets/tilesheets/RoadSigns-tr.png",
 			"When": {
-				"Language": "tr" // Portuguese
+				"Language": "tr" // Turkish
+			}
+		},
+		{
+			"LogName": "Overlaying Road Signs with Mandarin text to match the translation file.",
+			"Action": "EditImage",
+			"Target": "Maps/spring_z_wtd_tilesheet, Maps/summer_z_wtd_tilesheet, Maps/fall_z_wtd_tilesheet, Maps/winter_z_wtd_tilesheet",
+			"PatchMode": "Overlay",
+			"FromFile": "assets/tilesheets/RoadSigns-zh.png",
+			"When": {
+				"Language": "zh" // Mandarin (Modern)
 			}
 		},
 		
@@ -150,22 +170,34 @@
 		{
 			"Action": "Load",
 			"Target": "Maps/{{ModId}}_Forest_Road",
-			"FromFile": "assets/maps/ForestRoad.tmx"
+			"FromFile": "assets/maps/ForestRoad.tmx",
+			"When": {
+				"SquareRoads": false
+			}
 		},
 		{
 			"Action": "Load",
 			"Target": "Maps/{{ModId}}_Winding_Road",
-			"FromFile": "assets/maps/WindingRoad.tmx"
+			"FromFile": "assets/maps/WindingRoad.tmx",
+			"When": {
+				"SquareRoads": false
+			}
 		},
 		{
 			"Action": "Load",
 			"Target": "Maps/{{ModId}}_Interchange",
-			"FromFile": "assets/maps/Interchange.tmx"
+			"FromFile": "assets/maps/Interchange.tmx",
+			"When": {
+				"SquareRoads": false
+			}
 		},
 		{
 			"Action": "Load",
 			"Target": "Maps/{{ModId}}_Ghost_Town",
-			"FromFile": "assets/maps/GhostTown.tmx"
+			"FromFile": "assets/maps/GhostTown.tmx",
+			"When": {
+				"SquareRoads": false
+			}
 		},
 		{
 			"Action": "Load",
@@ -181,6 +213,39 @@
 			"Action": "Load",
 			"Target": "Maps/{{ModId}}_Cave",
 			"FromFile": "assets/maps/Cave.tmx"
+		},
+		/// Square Road Maps
+		{
+			"Action": "Load",
+			"Target": "Maps/{{ModId}}_Forest_Road",
+			"FromFile": "assets/maps/ForestRoadSquare.tmx",
+			"When": {
+				"SquareRoads": true
+			}
+		},
+		{
+			"Action": "Load",
+			"Target": "Maps/{{ModId}}_Winding_Road",
+			"FromFile": "assets/maps/WindingRoadSquare.tmx",
+			"When": {
+				"SquareRoads": true
+			}
+		},
+		{
+			"Action": "Load",
+			"Target": "Maps/{{ModId}}_Interchange",
+			"FromFile": "assets/maps/InterchangeSquare.tmx",
+			"When": {
+				"SquareRoads": true
+			}
+		},
+		{
+			"Action": "Load",
+			"Target": "Maps/{{ModId}}_Ghost_Town",
+			"FromFile": "assets/maps/GhostTownSquare.tmx",
+			"When": {
+				"SquareRoads": true
+			}
 		},
 		
 		// Adding the Map Locations
@@ -484,8 +549,10 @@
 		},
 		
 		// Map Property Changes
+		/// The included SMAPI Harmony mod in the "WalkToDesert" folder makes changes to the TreatAsOutdoors property to allow horses and tractors to travel through any TreatAsOutdoors maps.
+		/// The only other maps that use "TreatAsOutdoors" in Vanilla are BugLand, IslandNorthCave1 and Island_CaptainRoom, so this shouldn't cause any issues, however this cannot be assured for other mods.
 		{
-			"LogName": "Changing the status of the Tunnel map to Outdoors.",
+			"LogName": "Changing the status of the Tunnel map to TreatAsOutdoors.",
 			"Action": "EditMap",
 			"Target": "Maps/Tunnel",
 			"MapProperties": {
@@ -556,6 +623,7 @@
 				"HasMod |contains=Pillow.StardewExpansion.CP": false
 			}
 		},
+		// This only needs to be done because there are two specific tiles that are missing on the Tunnel map past the barrier, without doing this you can't teleport onto those tile spaces.
 		{
 			"LogName": "Applies a map edit to set two tiles on the Back layer of the Tunnel map.",
 			"Action": "EditMap",
@@ -898,24 +966,6 @@
 			}
 		},
 		
-		// Adding Regular Map Warps with Mod-compatibility
-		//{ // Sunsetting this as the DLL mod fixes the behaviour this workaround was originally made for.
-		//	"LogName": "Adds a warp from the Backwoods map to the Forest Road map for Horses and Tractors if the mods Fostoria or Tego's Stardew Expansion Redux aren't installed",
-		//	"Action": "EditMap",
-		//	"Target": "Maps/Backwoods",
-		//	"MapTiles": [
-		//		{
-		//			"Position": { "X": 30, "Y": 23 },
-		//			"Layer": "Back",
-		//			"SetProperties": {
-		//				"TouchAction": "Warp {{ModId}}_Forest_Road 50 14"
-		//			}
-		//		}
-		//	],
-		//	"When": {
-		//		"HasMod |contains=Pillow.StardewExpansion.CP, Fostoria.Stoffton": false
-		//	}
-		//},
 		{
 			"LogName": "Adds warps from the Tunnel map to the Forest Road map if the mods Fostoria or Tego's Stardew Expansion Redux aren't installed",
 			"Action": "EditMap",
@@ -2088,7 +2138,7 @@
 			"FromFile": "assets/npcs/pickledpete/events.json"
 		},
 		{
-			"LogName": "Edits a custom Pickled Pete event in the Ghost Shop map.",
+			"LogName": "Adds a custom Pickled Pete event in the Ghost Shop map.",
 			"Action": "EditData",
 			"Target": "Data/Events/{{ModId}}_Ghost_Shop",
 			"Entries": {
@@ -2159,9 +2209,9 @@
 					"Name": "{{ModId}}_Giant_Old_Coin",
 					"Displayname": "{{i18n:Objects.GiantOldCoin.Name}}",
 					"Description": "{{i18n:Objects.GiantOldCoin.Desc}}",
-					"Type": "Arch",
+					"Type": "Basic",
 					"Category": -12,
-					"Price": 80,
+					"Price": 90,
 					"Texture": "Mods/{{ModId}}/Objects",
 					"SpriteIndex": 3,
 					"Edibility": -300 // noooo don't eat my cooiiiiinnnns!!!
@@ -2171,9 +2221,9 @@
 					"Name": "{{ModId}}_Old_Coin",
 					"Displayname": "{{i18n:Objects.OldCoin.Name}}",
 					"Description": "{{i18n:Objects.OldCoin.Desc}}",
-					"Type": "Arch",
+					"Type": "Basic",
 					"Category": -12,
-					"Price": 10,
+					"Price": 80,
 					"Texture": "Mods/{{ModId}}/Objects",
 					"SpriteIndex": 4,
 					"Edibility": -300 // staahpppp!!!!
@@ -2291,7 +2341,7 @@
 							"Price": 0,
 							"TradeItemId": "{{ModId}}_Old_Coin",
 							"TradeItemAmount": 1,
-							"AvailableStock": 10
+							"AvailableStock": 12
 						},
 						{
 							"Id": "{{ModId}}_Old_Coin",
@@ -2299,7 +2349,7 @@
 							"Price": 120, // 0,
 							// "TradeItemId": "Tarniyar.CP.GardenVillage_Slime_Cheese",
 							// "TradeItemAmount": 1,
-							"AvailableStock": 1
+							"AvailableStock": 20
 						}
 					],
 					"SalableItemTags": [
