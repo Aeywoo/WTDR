@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="28" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="7">
+<map version="1.10" tiledversion="1.11.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="28" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="7">
  <properties>
   <property name="AmbientLight" value="140 140 60"/>
   <property name="Music" value="Upper_Ambient"/>
  </properties>
  <tileset firstgid="1" name="mine_desert" tilewidth="16" tileheight="16" tilecount="384" columns="16">
-  <image source="mine_desert" width="256" height="384"/>
+  <image source="Mines/mine_desert" width="256" height="384"/>
  </tileset>
  <tileset firstgid="385" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
   <image source="paths" width="64" height="256"/>
