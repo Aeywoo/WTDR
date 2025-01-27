@@ -2401,18 +2401,10 @@
 			"Action": "EditData",
 			"Target": "Data/Quests",
 			"Entries": {
-				"1373001": "ItemDelivery/{{i18n:Quests.1373001.Title}}/{{i18n:Quests.1373001.Details}}/{{i18n:Quests.1373001.Hint}}/Wizard {{ModId}}_Ghost_Berry/-1/500/-1/true/{{i18n:Quests.1373001.Reaction}}"
-			}
-		},
-		{
-			"Action": "EditData",
-			"Target": "Data/Quests",
+				"1373001": "ItemDelivery/{{i18n:Quests.1373001.Title}}/{{i18n:Quests.1373001.Details}}/{{i18n:Quests.1373001.Hint}}/Wizard {{ModId}}_Ghost_Berry/-1/500/-1/true/{{i18n:Quests.1373001.Reaction}}",
 				"1373002": "ItemDelivery/{{i18n:Quests.1373002.Title}}/{{i18n:Quests.1373002.Details}}/{{i18n:Quests.1373002.Hint}}/Hephaestus 338 10/-1/2000/-1/true/{{i18n:Quests.1373002.Reaction}}",
 				"1373003": "ItemDelivery/{{i18n:Quests.1373003.Title}}/{{i18n:Quests.1373003.Details}}/{{i18n:Quests.1373003.Hint}}/Hephaestus 766 50/-1/1000/-1/true/{{i18n:Quests.1373003.Reaction}}",
 				"1373004": "ItemDelivery/{{i18n:Quests.1373004.Title}}/{{i18n:Quests.1373004.Details}}/{{i18n:Quests.1373004.Hint}}/Hephaestus 337 5/-1/25000/-1/true/{{i18n:Quests.1373004.Reaction}}"
-			},
-			"When": {
-				"HasMod": "Tarniyar.CP.GardenVillage"
 			}
 		},
 		
