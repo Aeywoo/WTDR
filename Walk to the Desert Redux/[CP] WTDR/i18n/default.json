@@ -110,18 +110,8 @@
 	"config.SquareRoads.name": "Square Roads",
 	"config.SquareRoads.description": "Enable this if you want roads with sharper corners like other mods have for better consistency.",
 	
-	"config.EemieFallVariant.name": "Eemie Fall Variant",
-	"config.EemieFallVariant.description": "If you chose Green or Orange tilesheets for Fall with Eemie's Recolour, do the same here.",
-	"config.EemieFallVariant.values.Green": "Green",
-	"config.EemieFallVariant.values.Orange": "Orange",
-	
 	"config.StarblueSpringVariant.name": "Starblue Spring Variant",
 	"config.StarblueSpringVariant.description": "If you chose Green or Blue tilesheets for Spring with Starblue's Recolour, do the same here.",
 	"config.StarblueSpringVariant.values.Green": "Green",
 	"config.StarblueSpringVariant.values.Blue": "Blue",
-	
-	"config.VibrantPastoralFallVariant.name": "Vibrant Pastoral Fall Variant",
-	"config.VibrantPastoralFallVariant.description": "If you chose Green or Orange tilesheets for Fall with Vibrant Pastoral's Recolour, do the same here.",
-	"config.VibrantPastoralFallVariant.values.Green": "Green",
-	"config.VibrantPastoralFallVariant.values.Orange": "Orange"
 }
