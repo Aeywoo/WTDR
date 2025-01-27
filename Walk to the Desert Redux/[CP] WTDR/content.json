@@ -6,19 +6,14 @@
 			"Default": "False",
 			"Section": "RoadType"
 		},
-		"EemieFallVariant": {
-			"AllowValues": "Green, Orange",
-			"Default": "Orange",
-			"Section": "RecolourVariants"
-		},
+		//"EemieFallVariant": {
+		//	"AllowValues": "Green, Orange",
+		//	"Default": "Orange",
+		//	"Section": "RecolourVariants"
+		//},
 		"StarblueSpringVariant": {
 			"AllowValues": "Green, Blue",
 			"Default": "Blue",
-			"Section": "RecolourVariants"
-		},
-		"VibrantPastoralFallVariant": {
-			"AllowValues": "Green, Orange",
-			"Default": "Orange",
 			"Section": "RecolourVariants"
 		}
 	},
@@ -34,13 +29,14 @@
 				"HasMod": "DaisyNiko.EarthyRecolour"
 			}
 		},
-		{
-			"Name": "recolor",
-			"Value": "eemie",
-			"When": {
-				"HasMod": "minervamaga.CP.eemieMapRecolour"
-			}
-		},
+		// Mod has been delisted, can't find it anywhere
+		//{
+		//	"Name": "recolor",
+		//	"Value": "eemie",
+		//	"When": {
+		//		"HasMod": "minervamaga.CP.eemieMapRecolour"
+		//	}
+		//},
 		{
 			"Name": "recolor",
 			"Value": "pastoral",
@@ -131,22 +127,22 @@
 		},
 		
 		// Re-Color Seasonal Variants
-		{
-			"Action": "EditImage",
-			"Target": "Maps/fall_z_wtd_tilesheet",
-			"FromFile": "assets/recolors/eemie/fall_z_wtd_tilesheet-g.png",
-			"When": {
-				"recolor": "eemie",
-				"EemieFallVariant": "Green"
-			}
-		},
+		//{
+		//	"Action": "EditImage",
+		//	"Target": "Maps/fall_z_wtd_tilesheet",
+		//	"FromFile": "assets/recolors/eemie/fall_z_wtd_tilesheet-g.png",
+		//	"When": {
+		//		"recolor": "eemie",
+		//		"EemieFallVariant": "Green"
+		//	}
+		//},
 		{
 			"Action": "EditImage",
 			"Target": "Maps/spring_z_wtd_tilesheet",
-			"FromFile": "assets/recolors/eemie/spring_z_wtd_tilesheet-g.png",
+			"FromFile": "assets/recolors/starblue/spring_z_wtd_tilesheet-g.png",
 			"When": {
 				"recolor": "starblue",
-				"EemieFallVariant": "Green"
+				"StarblueSpringVariant": "Green"
 			}
 		},
 		{
@@ -154,8 +150,8 @@
 			"Target": "Maps/fall_z_wtd_tilesheet",
 			"FromFile": "assets/recolors/pastoral/fall_z_wtd_tilesheet-g.png",
 			"When": {
-				"recolor": "pastoral",
-				"EemieFallVariant": "Green"
+				"HasMod": "VibrantPastoral.C",
+				"VibrantPastoral.C/GreenFall": true
 			}
 		},
 		
