@@ -45,8 +45,7 @@
 			"Name": "recolor",
 			"Value": "pastoral",
 			"When": {
-				"HasMod": "grapeponta.VibrantPastoralRecolor",
-				"HasMod": "poohnhi.VPRTempFix"
+				"HasMod": "grapeponta.VibrantPastoralRecolor"
 			}
 		},
 		{
@@ -60,7 +59,6 @@
 			"Name": "recolor",
 			"Value": "starblue",
 			"When": {
-				"HasMod": "Lita.StarblueValley",
 				"HasMod": "Lita.StarblueValleyUnofficial"
 			}
 		},
