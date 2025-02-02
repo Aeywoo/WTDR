@@ -1,5 +1,5 @@
 {
-	"Format": "2.0.0",
+	"Format": "2.5.0",
 	"ConfigSchema": {
 		"SquareRoads": {
 			"AllowValues": "True, False",
@@ -42,13 +42,6 @@
 			"Value": "pastoral",
 			"When": {
 				"HasMod": "grapeponta.VibrantPastoralRecolor"
-			}
-		},
-		{
-			"Name": "recolor",
-			"Value": "retro",
-			"When": {
-				"HasMod": "yri.RetroRecolor"
 			}
 		},
 		{
@@ -209,14 +202,6 @@
 			"FromFile": "assets/maps/Cave.tmx"
 		},
 		/// Square Road Maps
-		{
-			"Action": "Load",
-			"Target": "Maps/{{ModId}}_Forest_Road",
-			"FromFile": "assets/maps/ForestRoadSquare.tmx",
-			"When": {
-				"SquareRoads": true
-			}
-		},
 		{
 			"Action": "Load",
 			"Target": "Maps/{{ModId}}_Winding_Road",
@@ -635,9 +620,28 @@
 					"SetTilesheet": "out",
 					"SetIndex": "1654"
 				}
-			],
+			]
+		},
+		{
+			"LogName": "Replaces the tunnel section of the Forest Road map with a non-tunnel version if Tego's Stardew Expansion or Stoffton's Fostoria is installed",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Forest_Road",
+			"FromFile": "assets/maps/patches/SVEForestRoad.tmx",
+			"ToArea": { "X": 42, "Y": 0, "Width": 18, "Height": 30 },
 			"When": {
-				"HasMod |contains=Pillow.StardewExpansion.CP, Fostoria.Stoffton": false
+				"SquareRoads": false,
+				"HasMod |contains=Pillow.StardewExpansion.CP, Fostoria.Stoffton": true
+			}
+		},
+		{
+			"LogName": "Replaces the tunnel section of the Forest Road map with a non-tunnel version if Tego's Stardew Expansion or Stoffton's Fostoria is installed",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Forest_Road",
+			"FromFile": "assets/maps/patches/SVEForestRoadSquare.tmx",
+			"ToArea": { "X": 42, "Y": 0, "Width": 18, "Height": 30 },
+			"When": {
+				"SquareRoads": true,
+				"HasMod |contains=Pillow.StardewExpansion.CP, Fostoria.Stoffton": true
 			}
 		},
 		{
@@ -676,44 +680,9 @@
 			}
 		},
 		{
-			"LogName": "Applies a map edit to remove five tiles from the invisible wall on the top left of the Winding Road map if the Ridgeside Village mod is installed.",
-			"Action": "EditMap",
-			"Target": "Maps/{{ModId}}_Winding_Road",
-			"MapTiles": [
-				{
-					"Position": { "X": 0, "Y": 17 },
-					"Layer": "Buildings",
-					"Remove": true
-				},
-				{
-					"Position": { "X": 0, "Y": 18 },
-					"Layer": "Buildings",
-					"Remove": true
-				},
-				{
-					"Position": { "X": 0, "Y": 19 },
-					"Layer": "Buildings",
-					"Remove": true
-				},
-				{
-					"Position": { "X": 0, "Y": 20 },
-					"Layer": "Buildings",
-					"Remove": true
-				},
-				{
-					"Position": { "X": 0, "Y": 21 },
-					"Layer": "Buildings",
-					"Remove": true
-				}
-			],
-			"When": {
-				"HasMod": "Rafseazz.RSVCP"
-			}
-		},
-		{
 			"LogName": "Applies a map edit to remove five tiles from the invisible wall on the bottom left of the Winding Road map if the Garden Village mod is installed.",
 			"Action": "EditMap",
-			"Target": "Maps/Custom_MainShops",
+			"Target": "Maps/Tarniyar.CP.GardenVillage_Main_Shops",
 			"MapTiles": [
 				{
 					"Position": { "X": 54, "Y": 19 },
@@ -743,138 +712,6 @@
 			],
 			"When": {
 				"HasMod": "Tarniyar.CP.GardenVillage"
-			}
-		},
-		{
-			"LogName": "Applies a map edit to remove seven tiles on the top of the Interchange map if the Downtown Zuzu map is installed.",
-			"Action": "EditMap",
-			"Target": "Maps/{{ModId}}_Interchange",
-			"MapTiles": [
-				{
-					"Position": { "X": 22, "Y": 0 },
-					"Layer": "Buildings",
-					"Remove": true
-				},
-				{
-					"Position": { "X": 23, "Y": 0 },
-					"Layer": "Buildings",
-					"Remove": true
-				},
-				{
-					"Position": { "X": 24, "Y": 0 },
-					"Layer": "Buildings",
-					"Remove": true
-				},
-				{
-					"Position": { "X": 25, "Y": 0 },
-					"Layer": "Buildings",
-					"Remove": true
-				},
-				{
-					"Position": { "X": 26, "Y": 0 },
-					"Layer": "Buildings",
-					"Remove": true
-				},
-				{
-					"Position": { "X": 27, "Y": 0 },
-					"Layer": "Buildings",
-					"Remove": true
-				},
-				{
-					"Position": { "X": 28, "Y": 0 },
-					"Layer": "Buildings",
-					"Remove": true
-				}
-			],
-			"When": {
-				"HasMod": "DTZ.DowntownZuzuCP"
-			}
-		},
-		{
-			"LogName": "Applies a map edit to remove six tiles from the invisible wall on the right side of the Desert map.",
-			"Action": "EditMap",
-			"Target": "Maps/Desert",
-			"MapTiles": [
-				{
-					"Position": { "X": 49, "Y": 24 },
-					"Layer": "Buildings",
-					"Remove": true
-				},
-				{
-					"Position": { "X": 49, "Y": 25 },
-					"Layer": "Buildings",
-					"Remove": true
-				},
-				{
-					"Position": { "X": 49, "Y": 26 },
-					"Layer": "Buildings",
-					"Remove": true
-				},
-				{
-					"Position": { "X": 49, "Y": 27 },
-					"Layer": "Buildings",
-					"Remove": true
-				},
-				{
-					"Position": { "X": 49, "Y": 28 },
-					"Layer": "Buildings",
-					"Remove": true
-				},
-				{
-					"Position": { "X": 49, "Y": 29 },
-					"Layer": "Buildings",
-					"Remove": true
-				}
-			],
-			"When": {
-				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
-			}
-		},
-		{
-			"LogName": "Applies a map edit to remove six tiles from the invisible wall on the right side of the Desert map if the Stardew Valley Expanded mod is installed.",
-			"Action": "EditMap",
-			"Target": "Maps/Desert",
-			"MapTiles": [
-				{
-					"Position": { "X": 59, "Y": 24 },
-					"Layer": "Buildings",
-					"Remove": true
-				},
-				{
-					"Position": { "X": 59, "Y": 25 },
-					"Layer": "Buildings",
-					"Remove": true
-				},
-				{
-					"Position": { "X": 59, "Y": 26 },
-					"Layer": "Buildings",
-					"Remove": true
-				},
-				{
-					"Position": { "X": 59, "Y": 27 },
-					"Layer": "Buildings",
-					"Remove": true
-				},
-				{
-					"Position": { "X": 59, "Y": 28 },
-					"Layer": "Buildings",
-					"Remove": true
-				},
-				{
-					"Position": { "X": 59, "Y": 29 },
-					"Layer": "Buildings",
-					"Remove": true
-				},
-				{
-					"Position": { "X": 59, "Y": 29 },
-					"Layer": "Front",
-					"SetTilesheet": "desert-new",
-					"SetIndex": "85"
-				}
-			],
-			"When": {
-				"HasMod": "FlashShifter.StardewValleyExpandedCP",
-				"HasMod |contains=Fostoria.Stoffton": false
 			}
 		},
 		{
@@ -915,53 +752,61 @@
 			]
 		},
 		{
-			"LogName": "Applies a map edit to remove seven tiles on the bottom of the Downtown Zuzu Freeway Transition map if the Downtown Zuzu mod is installed.",
+			"LogName": "Replaces the bottom section of the roads on the Forest Road map if SquaredRoads is true.",
 			"Action": "EditMap",
-			"Target": "Maps/Custom_DTZ_ZuzuCityFreeway1",
-			"MapTiles": [
-				{
-					"Position": { "X": 22, "Y": 42 },
-					"Layer": "Buildings",
-					"Remove": true
-				},
-				{
-					"Position": { "X": 23, "Y": 42 },
-					"Layer": "Buildings",
-					"Remove": true
-				},
-				{
-					"Position": { "X": 24, "Y": 42 },
-					"Layer": "Buildings",
-					"Remove": true
-				},
-				{
-					"Position": { "X": 25, "Y": 42 },
-					"Layer": "Buildings",
-					"Remove": true
-				},
-				{
-					"Position": { "X": 26, "Y": 42 },
-					"Layer": "Buildings",
-					"Remove": true
-				},
-				{
-					"Position": { "X": 27, "Y": 42 },
-					"Layer": "Buildings",
-					"Remove": true
-				},
-				{
-					"Position": { "X": 28, "Y": 42 },
-					"Layer": "Buildings",
-					"Remove": true
-				}
-			],
+			"Target": "Maps/{{ModId}}_Forest_Road",
+			"FromFile": "assets/maps/patches/ForestRoadSquare.tmx",
+			"ToArea": { "X": 0, "Y": 18, "Width": 60, "Height": 1 },
+			"When": {
+				"SquareRoads": true
+			}
+		},
+
+		// JSON Includes for Inter-mod Compatibility
+		{
+			"LogName": "Including the StardewValleyExpanded json file that adds all the warps and map edits required for compatibility.",
+			"Action": "Include",
+			"FromFile": "assets/data/InterModCompats/StardewValleyExpanded.json",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		{
+			"LogName": "Including the Fostoria json file that adds all the warps and map edits required for compatibility.",
+			"Action": "Include",
+			"FromFile": "assets/data/InterModCompats/Fostoria.json",
+			"When": {
+				"HasMod": "Fostoria.Stoffton"
+			}
+		},
+		{
+			"LogName": "Including the StardewExpansion json file that adds all the warps and map edits required for compatibility.",
+			"Action": "Include",
+			"FromFile": "assets/data/InterModCompats/StardewExpansion.json",
+			"When": {
+				"HasMod": "Pillow.StardewExpansion.CP"
+			}
+		},
+		{
+			"LogName": "Including the Ridgeside json file that adds all the warps and map edits required for compatibility.",
+			"Action": "Include",
+			"FromFile": "assets/data/InterModCompats/Ridgeside.json",
+			"When": {
+				"HasMod": "Rafseazz.RSVCP"
+			}
+		},
+		{
+			"LogName": "Including the DowntownZuzu json file that adds all the warps and map edits required for compatibility.",
+			"Action": "Include",
+			"FromFile": "assets/data/InterModCompats/DowntownZuzu.json",
 			"When": {
 				"HasMod": "DTZ.DowntownZuzuCP"
 			}
 		},
-		
+
+		// Map Warps, Magic Warps and NPC Warps
 		{
-			"LogName": "Adds warps from the Tunnel map to the Forest Road map if the mods Fostoria or Tego's Stardew Expansion Redux aren't installed",
+			"LogName": "Adds warps from the Tunnel map to the Forest Road map if the mods Stoffton's Fostoria or Tego's Stardew Expansion Redux aren't installed",
 			"Action": "EditMap",
 			"Target": "Maps/Tunnel",
 			"MapTiles": [
@@ -1013,7 +858,7 @@
 			}
 		},
 		{
-			"LogName": "Adds warps from the Forest Road map to the Tunnel map if the mods Fostoria or Tego's Stardew Expansion Redux aren't installed",
+			"LogName": "Adds warps from the Forest Road map to the Tunnel map if the mods Stoffton's Fostoria or Tego's Stardew Expansion Redux aren't installed",
 			"Action": "EditMap",
 			"Target": "Maps/{{ModId}}_Forest_Road",
 			"MapTiles": [
@@ -1242,96 +1087,6 @@
 			]
 		},
 		{
-			"LogName": "Adds warps from the Winding Road to the RSV Road map if the Ridgeside Village mod is installed.",
-			"Action": "EditMap",
-			"Target": "Maps/{{ModId}}_Winding_Road",
-			"MapTiles": [
-				{
-					"Position": { "X": 0, "Y": 17 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Custom_Ridgeside_RSVRoad 52 24"
-					}
-				},
-				{
-					"Position": { "X": 0, "Y": 18 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Custom_Ridgeside_RSVRoad 52 25"
-					}
-				},
-				{
-					"Position": { "X": 0, "Y": 19 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Custom_Ridgeside_RSVRoad 52 26"
-					}
-				},
-				{
-					"Position": { "X": 0, "Y": 20 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Custom_Ridgeside_RSVRoad 52 27"
-					}
-				},
-				{
-					"Position": { "X": 0, "Y": 21 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Custom_Ridgeside_RSVRoad 52 28"
-					}
-				}
-			],
-			"When": {
-				"HasMod": "Rafseazz.RSVCP"
-			}
-		},
-		{
-			"LogName": "Adds warps from the RSV Road map to the Winding Road map if the Ridgeside Village mod is installed.",
-			"Action": "EditMap",
-			"Target": "Maps/Custom_Ridgeside_RSVRoad",
-			"MapTiles": [
-				{
-					"Position": { "X": 53, "Y": 24 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp {{ModId}}_Winding_Road 1 17"
-					}
-				},
-				{
-					"Position": { "X": 53, "Y": 25 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp {{ModId}}_Winding_Road 1 18"
-					}
-				},
-				{
-					"Position": { "X": 53, "Y": 26 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp {{ModId}}_Winding_Road 1 19"
-					}
-				},
-				{
-					"Position": { "X": 53, "Y": 27 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp {{ModId}}_Winding_Road 1 20"
-					}
-				},
-				{
-					"Position": { "X": 53, "Y": 28 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp {{ModId}}_Winding_Road 1 21"
-					}
-				}
-			],
-			"When": {
-				"HasMod": "Rafseazz.RSVCP"
-			}
-		},
-		{
 			"LogName": "Adds warps from the Interchange map to the Winding Road map.",
 			"Action": "EditMap",
 			"Target": "Maps/{{ModId}}_Interchange",
@@ -1423,124 +1178,6 @@
 			]
 		},
 		{
-			"LogName": "Adds warps from the Interchange map to the Freeway (1) Transition map if the Downtown Zuzu mod is installed.",
-			"Action": "EditMap",
-			"Target": "Maps/{{ModId}}_Interchange",
-			"MapTiles": [
-				{
-					"Position": { "X": 22, "Y": 0 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Custom_DTZ_ZuzuCityFreeway1 22 41"
-					}
-				},
-				{
-					"Position": { "X": 23, "Y": 0 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Custom_DTZ_ZuzuCityFreeway1 23 41"
-					}
-				},
-				{
-					"Position": { "X": 24, "Y": 0 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Custom_DTZ_ZuzuCityFreeway1 24 41"
-					}
-				},
-				{
-					"Position": { "X": 25, "Y": 0 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Custom_DTZ_ZuzuCityFreeway1 25 41"
-					}
-				},
-				{
-					"Position": { "X": 26, "Y": 0 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Custom_DTZ_ZuzuCityFreeway1 26 41"
-					}
-				},
-				{
-					"Position": { "X": 27, "Y": 0 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Custom_DTZ_ZuzuCityFreeway1 27 41"
-					}
-				},
-				{
-					"Position": { "X": 28, "Y": 0 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Custom_DTZ_ZuzuCityFreeway1 28 41"
-					}
-				}
-			],
-			"When": {
-				"HasMod": "DTZ.DowntownZuzuCP"
-			}
-		},
-		{
-			"LogName": "Adds warps from the Freeway (1) Transition to the Interchange map if the Downtown Zuzu mod is installed.",
-			"Action": "EditMap",
-			"Target": "Maps/Custom_DTZ_ZuzuCityFreeway1",
-			"MapTiles": [
-				{
-					"Position": { "X": 22, "Y": 42 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp {{ModId}}_Interchange 22 1"
-					}
-				},
-				{
-					"Position": { "X": 23, "Y": 42 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp {{ModId}}_Interchange 23 1"
-					}
-				},
-				{
-					"Position": { "X": 24, "Y": 42 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp {{ModId}}_Interchange 24 1"
-					}
-				},
-				{
-					"Position": { "X": 25, "Y": 42 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp {{ModId}}_Interchange 25 1"
-					}
-				},
-				{
-					"Position": { "X": 26, "Y": 42 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp {{ModId}}_Interchange 26 1"
-					}
-				},
-				{
-					"Position": { "X": 27, "Y": 42 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp {{ModId}}_Interchange 27 1"
-					}
-				},
-				{
-					"Position": { "X": 28, "Y": 42 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp {{ModId}}_Interchange 28 1"
-					}
-				}
-			],
-			"When": {
-				"HasMod": "DTZ.DowntownZuzuCP"
-			}
-		},
-		{
 			"LogName": "Adds warps from the Ghost Town map to the Interchange map.",
 			"Action": "EditMap",
 			"Target": "Maps/{{ModId}}_Ghost_Town",
@@ -1610,7 +1247,7 @@
 				}
 			]
 		},
-		{
+        {
 			"LogName": "Adds warps from the Ghost Town map to the Desert map if Stardew Valley Expanded is not installed.",
 			"Action": "EditMap",
 			"Target": "Maps/{{ModId}}_Ghost_Town",
@@ -1660,114 +1297,6 @@
 			],
 			"When": {
 				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
-			}
-		},
-		{
-			"LogName": "Adds warps from the Ghost Town map to the Desert map if Stardew Valley Expanded is installed.",
-			"Action": "EditMap",
-			"Target": "Maps/{{ModId}}_Ghost_Town",
-			"MapTiles": [
-				{
-					"Position": { "X": 0, "Y": 33 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Desert 58 24"
-					}
-				},
-				{
-					"Position": { "X": 0, "Y": 34 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Desert 58 25"
-					}
-				},
-				{
-					"Position": { "X": 0, "Y": 35 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Desert 58 26"
-					}
-				},
-				{
-					"Position": { "X": 0, "Y": 36 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Desert 58 27"
-					}
-				},
-				{
-					"Position": { "X": 0, "Y": 37 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Desert 58 28"
-					}
-				},
-				{
-					"Position": { "X": 0, "Y": 38 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Desert 58 29"
-					}
-				}
-			],
-			"When": {
-				"HasMod": "FlashShifter.StardewValleyExpandedCP",
-				"Season |contains=summer": false,
-				"Day |contains=15, 16": false
-			}
-		},
-		{
-			"LogName": "Adds warps from the Ghost Town map to the Desert map if Stardew Valley Expanded is installed.",
-			"Action": "EditMap",
-			"Target": "Maps/{{ModId}}_Ghost_Town",
-			"MapTiles": [
-				{
-					"Position": { "X": 0, "Y": 33 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Desert 48 24"
-					}
-				},
-				{
-					"Position": { "X": 0, "Y": 34 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Desert 48 25"
-					}
-				},
-				{
-					"Position": { "X": 0, "Y": 35 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Desert 48 26"
-					}
-				},
-				{
-					"Position": { "X": 0, "Y": 36 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Desert 48 27"
-					}
-				},
-				{
-					"Position": { "X": 0, "Y": 37 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Desert 48 28"
-					}
-				},
-				{
-					"Position": { "X": 0, "Y": 38 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp Desert 48 29"
-					}
-				}
-			],
-			"When": {
-				"HasMod": "FlashShifter.StardewValleyExpandedCP",
-				"Season": "spring",
-				"Day": "15, 16"
 			}
 		},
 		{
@@ -1872,58 +1401,6 @@
 			]
 		},
 		{
-			"LogName": "Adds warps from the Desert map to the Ghost Town map if Stardew Valley Expanded is installed.",
-			"Action": "EditMap",
-			"Target": "Maps/Desert",
-			"MapTiles": [
-				{
-					"Position": { "X": 59, "Y": 24 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp {{ModId}}_Ghost_Town 1 33"
-					}
-				},
-				{
-					"Position": { "X": 59, "Y": 25 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp {{ModId}}_Ghost_Town 1 34"
-					}
-				},
-				{
-					"Position": { "X": 59, "Y": 26 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp {{ModId}}_Ghost_Town 1 35"
-					}
-				},
-				{
-					"Position": { "X": 59, "Y": 27 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp {{ModId}}_Ghost_Town 1 36"
-					}
-				},
-				{
-					"Position": { "X": 59, "Y": 28 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp {{ModId}}_Ghost_Town 1 37"
-					}
-				},
-				{
-					"Position": { "X": 59, "Y": 29 },
-					"Layer": "Back",
-					"SetProperties": {
-						"TouchAction": "Warp {{ModId}}_Ghost_Town 1 38"
-					}
-				}
-			],
-			"When": {
-				"HasMod": "FlashShifter.StardewValleyExpandedCP"
-			}
-		},
-		{
 			"LogName": "Adds warps from the Winding Road to the Garden Village Main Shops map if Garden village is installed.",
 			"Action": "EditMap",
 			"Target": "Maps/{{ModId}}_Winding_Road",
@@ -1932,35 +1409,35 @@
 					"Position": { "X": 0, "Y": 81 },
 					"Layer": "Back",
 					"SetProperties": {
-						"TouchAction": "Warp Custom_MainShops 53 19"
+						"TouchAction": "Warp Tarniyar.CP.GardenVillage_Main_Shops 53 19"
 					}
 				},
 				{
 					"Position": { "X": 0, "Y": 82 },
 					"Layer": "Back",
 					"SetProperties": {
-						"TouchAction": "Warp Custom_MainShops 53 20"
+						"TouchAction": "Warp Tarniyar.CP.GardenVillage_Main_Shops 53 20"
 					}
 				},
 				{
 					"Position": { "X": 0, "Y": 83 },
 					"Layer": "Back",
 					"SetProperties": {
-						"TouchAction": "Warp Custom_MainShops 53 21"
+						"TouchAction": "Warp Tarniyar.CP.GardenVillage_Main_Shops 53 21"
 					}
 				},
 				{
 					"Position": { "X": 0, "Y": 84 },
 					"Layer": "Back",
 					"SetProperties": {
-						"TouchAction": "Warp Custom_MainShops 53 22"
+						"TouchAction": "Warp Tarniyar.CP.GardenVillage_Main_Shops 53 22"
 					}
 				},
 				{
 					"Position": { "X": 0, "Y": 85 },
 					"Layer": "Back",
 					"SetProperties": {
-						"TouchAction": "Warp Custom_MainShops 53 23"
+						"TouchAction": "Warp Tarniyar.CP.GardenVillage_Main_Shops 53 23"
 					}
 				}
 			],
@@ -1971,7 +1448,7 @@
 		{
 			"LogName": "Adds warps from the Garden Village Main Shops map to the Winding Road map if Garden village is installed.",
 			"Action": "EditMap",
-			"Target": "Maps/Custom_MainShops",
+			"Target": "Maps/Tarniyar.CP.GardenVillage_Main_Shops",
 			"MapTiles": [
 				{
 					"Position": { "X": 54, "Y": 19 },
@@ -2056,6 +1533,16 @@
 						}
 					],
 					"TextureName": "PickledPete",
+					"Appearance": [
+						{
+							"Id": "{{ModId}}_PickledPete",
+							"Portrait": "Portraits/PickledPete",
+							"Sprite": "Characters/PickledPete",
+							"IsIslandAttire": false,
+							"Precedence": -100,
+							"Weight": 0
+						}
+					],
 					"Breather": false//,
 					//"FormerCharacterNames": [ "PickledPete" ]
 				}
@@ -2073,7 +1560,7 @@
 			"LogName": "Loads the Pickled Pete NPC Sprites.",
 			"Action": "Load",
 			"Target": "Characters/PickledPete",
-			"FromFile": "assets/npcs/pickledpete/sprites.png",
+			"FromFile": "assets/npcs/pickledpete/sprites.png"
 		},
 		{
 			"LogName": "Loads the Pickled Pete NPC Portrait.",
@@ -2107,13 +1594,13 @@
 		{
 			"LogName": "Loads a blank json file for the Pickled Pete NPC Schedule.",
 			"Action": "Load",
-			"Target": "Characters/schedules/PickledPete",
+			"Target": "Characters/Schedules/PickledPete",
 			"FromFile": "assets/npcs/pickledpete/schedule.json"
 		},
 		{
 			"LogName": "Edits the Pickled Pete NPC schedule.",
 			"Action": "EditData",
-			"Target":" Characters/schedules/PickledPete",
+			"Target":" Characters/Schedules/PickledPete",
 			"Entries": {
 				"spring": "610 Tarniyar.CP.WalkToDesert_Pete_Hidden 7 5 2/2000 Tarniyar.CP.WalkToDesert_Ghost_Shop 2 4 2/2430 Tarniyar.CP.WalkToDesert_Ghost_Town 42 11 0"
 			}
@@ -2136,7 +1623,7 @@
 		// Custom Sandy Event
 		{
 			"Action": "Include",
-			"FromFile": "assets/events/SandyEvents.json"
+			"FromFile": "assets/data/events/SandyEvents.json"
 		},
 		{
 			"Action": "EditData",
@@ -2219,46 +1706,49 @@
 		},
 		
 		/// Adding the NPC Gift Tastes
-		// NPCGIftTastes has a weird system when it comes to defining Love, Like, Dislike, Hate and Neutral
-		// 1, 	 3,    5, 		7, 	  9
-		// Love, Like, Dislike, Hate, Neutral
+		// NPCGIftTastes has a weird system when it comes to defining
+		// Love, Like, Dislike, Hate and Neutral
+		// 1, 	 3,    5, 		7, 	  	 9
 		{
-			"LogName": "Adding custom items to NPCGiftTastes for all vanilla NPCs and PickledPete.",
 			"Action": "EditData",
 			"Target": "Data/NPCGiftTastes",
 			"TextOperations": [
 				{
 					"Operation": "Append",
-					"Target": [ "Fields", "Leah", 5 ],
-					"Value": "{{ModId}}_Eerie_Plant_Seeds",
-					"Delimiter": " "
-				},
-				{
-					"Operation": "Append",
-					"Target": [ "Fields", "Leah", 1 ],
-					"Value": "{{ModId}}_Ghost_Berry",
-					"Delimiter": " "
-				},
-				{
-					"Operation": "Append",
-					"Target": [ "Fields", "Leah", 1 ],
-					"Value": "{{ModId}}_Ghostly_Wine",
-					"Delimiter": " "
-				},
-				{
-					"Operation": "Append",
-					"Target": [ "Fields", "Leah", 7 ],
-					"Value": "{{ModId}}_Giant_Old_Coin",
-					"Delimiter": " "
-				},
-				{
-					"Operation": "Append",
-					"Target": [ "Fields", "Leah", 7 ],
-					"Value": "{{ModId}}_Old_Coin",
+					"Target": [
+						"Entries",
+						"Universal_Hate"
+					],
+					"Value": "{{ModId}}_Giant_Old_Coin {{ModId}}_Old_Coin",
 					"Delimiter": " "
 				}
 			]
 		},
+		// This isn't necessary until I add more "general" items or what-not
+		//{
+		//	"LogName": "Adding custom items to NPCGiftTastes for all vanilla NPCs and PickledPete.",
+		//	"Action": "EditData",
+		//	"Target": "Data/NPCGiftTastes",
+		//	"TextOperations": [
+		//		// Leah
+		//		{
+		//			"Operation": "Append", "Target": [ "Fields", "Leah", 1 ],
+		//			"Value": "{{ModId}}_Ghostly_Wine", "Delimiter": " "
+		//		},
+		//		{
+		//			"Operation": "Append", "Target": [ "Fields", "Leah", 3 ],
+		//			"Value": "{{ModId}}_Ghost_Berry", "Delimiter": " "
+		//		},
+		//		{
+		//			"Operation": "Append", "Target": [ "Fields", "Leah", 5 ],
+		//			"Value": "{{ModId}}_Eerie_Plant_Seeds", "Delimiter": " "
+		//		},
+		//		{
+		//			"Operation": "Append", "Target": [ "Fields", "Leah", 7 ],
+		//			"Value": "{{ModId}}_Giant_Old_Coin {{ModId}}_Old_Coin", "Delimiter": " "
+		//		}
+		//	]
+		//},
 		
 		/// Adding the Crops (Eerie Plant)
 		{
@@ -2293,14 +1783,14 @@
 			"Action": "EditData",
 			"Target": "Data/Shops",
 			"Entries": {
-				"Tarniyar.CP.WalkToDesert_WTDRGhostShop": {
+				"Tarniyar.CP.WalkToDesert_WTD_GhostShop": {
 					"Owners": [
 						{
 							"Condition": "TIME 600 2000",
 							"Portrait": null,
 							"Dialogues": null,
-							"ClosedMessage": "{{i18n:Shops.WTDRShop.Closed}}",
-							"Id": "{{ModId}}_WTDRShop_Closed",
+							"ClosedMessage": "{{i18n:Shops.WTD.GhostShop.Closed}}",
+							"Id": "{{ModId}}_WTD_GhostShop_Closed",
 							"Name": "None"
 						},
 						{
@@ -2309,15 +1799,15 @@
 								{
 									"Id": "{{ModId}}_Rainy",
 									"Condition": "WEATHER {{ModId}}_Ghost_Town Rain",
-									"Dialogue": "{{i18n:Shops.WTDRShop.Dialogue.Rainy}}"
+									"Dialogue": "{{i18n:Shops.WTD.GhostShop.Dialogue.Rainy}}"
 								},
 								{
 									"Id": "{{ModId}}_Default",
-									"Dialogue": "{{i18n:Shops.WTDRShop.Dialogue}}"
+									"Dialogue": "{{i18n:Shops.WTD.GhostShop.Dialogue}}"
 								}
 							],
 							"ClosedMessage": null,
-							"Id": "{{ModId}}_WTDRShop_Open",
+							"Id": "{{ModId}}_WTD_GhostShop_Open",
 							"Name": "PickledPete"
 						}
 					],
@@ -2407,28 +1897,28 @@
 			"Action": "EditData",
 			"Target": "Strings/StringsFromMaps",
 			"Entries": {
-				"Interchange.1": "{{i18n:MapStrings.Interchange.1}}",
-				"Interchange.2": "{{i18n:MapStrings.Interchange.2}}",
-				"Interchange.3": "{{i18n:MapStrings.Interchange.3}}",
-				"Interchange.4": "{{i18n:MapStrings.Interchange.4}}",
-				"GhostTown.1": "{{i18n:MapStrings.GhostTown.1}}",
-				"GhostTown.2": "{{i18n:MapStrings.GhostTown.2}}",
-				"GhostTown.3": "{{i18n:MapStrings.GhostTown.3}}",
-				"GhostTown.4": "{{i18n:MapStrings.GhostTown.4}}",
-				"GhostTown.5": "{{i18n:MapStrings.GhostTown.5}}",
-				"GhostShop.1": "{{i18n:MapStrings.GhostShop.1}}",
-				"GhostShop.2": "{{i18n:MapStrings.GhostShop.2}}",
-				"Horsepath.1": "{{i18n:MapStrings.HorsePath.1}}",
-				"Horsepath.2": "{{i18n:MapStrings.HorsePath.2}}",
-				"WindingRoad.1": "{{i18n:MapStrings.WindingRoad.1}}",
-				"WindingRoad.2": "{{i18n:MapStrings.WindingRoad.2}}",
-				"WindingRoad.3": "{{i18n:MapStrings.WindingRoad.3}}",
-				"WindingRoad.4": "{{i18n:MapStrings.WindingRoad.4}}",
-				"Cave.1": "{{i18n:MapStrings.Cave.1}}",
-				"Cave.2": "{{i18n:MapStrings.Cave.2}}",
-				"Cave.3": "{{i18n:MapStrings.Cave.3}}",
-				"Cave.4": "{{i18n:MapStrings.Cave.4}}",
-				"Cave.5": "{{i18n:MapStrings.Cave.5}}"
+				"WTD.Interchange.1": "{{i18n:MapStrings.WTD.Interchange.1}}",
+				"WTD.Interchange.2": "{{i18n:MapStrings.WTD.Interchange.2}}",
+				"WTD.Interchange.3": "{{i18n:MapStrings.WTD.Interchange.3}}",
+				"WTD.Interchange.4": "{{i18n:MapStrings.WTD.Interchange.4}}",
+				"WTD.GhostTown.1": "{{i18n:MapStrings.WTD.GhostTown.1}}",
+				"WTD.GhostTown.2": "{{i18n:MapStrings.WTD.GhostTown.2}}",
+				"WTD.GhostTown.3": "{{i18n:MapStrings.WTD.GhostTown.3}}",
+				"WTD.GhostTown.4": "{{i18n:MapStrings.WTD.GhostTown.4}}",
+				"WTD.GhostTown.5": "{{i18n:MapStrings.WTD.GhostTown.5}}",
+				"WTD.GhostShop.1": "{{i18n:MapStrings.WTD.GhostShop.1}}",
+				"WTD.GhostShop.2": "{{i18n:MapStrings.WTD.GhostShop.2}}",
+				"WTD.RoadSigns.1": "{{i18n:MapStrings.WTD.RoadSigns.1}}",
+				"WTD.RoadSigns.2": "{{i18n:MapStrings.WTD.RoadSigns.2}}",
+				"WTD.WindingRoad.1": "{{i18n:MapStrings.WTD.WindingRoad.1}}",
+				"WTD.WindingRoad.2": "{{i18n:MapStrings.WTD.WindingRoad.2}}",
+				"WTD.WindingRoad.3": "{{i18n:MapStrings.WTD.WindingRoad.3}}",
+				"WTD.WindingRoad.4": "{{i18n:MapStrings.WTD.WindingRoad.4}}",
+				"WTD.Cave.1": "{{i18n:MapStrings.WTD.Cave.1}}",
+				"WTD.Cave.2": "{{i18n:MapStrings.WTD.Cave.2}}",
+				"WTD.Cave.3": "{{i18n:MapStrings.WTD.Cave.3}}",
+				"WTD.Cave.4": "{{i18n:MapStrings.WTD.Cave.4}}",
+				"WTD.Cave.5": "{{i18n:MapStrings.WTD.Cave.5}}"
 			}
 		}
 	]

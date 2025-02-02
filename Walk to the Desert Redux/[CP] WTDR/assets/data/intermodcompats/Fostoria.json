@@ -1,0 +1,274 @@
+{
+	"Changes": [
+		{
+			"LogName": "Adds warps from the Forest Road map to the Fostoria7_Big_WTDR map if the mod Stoffton's Fostoria is installed.",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Forest_Road",
+			"MapTiles": [
+				{
+					"Position": { "X": 59, "Y": 14 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Fostoria.Stoffton_Fostoria 0 69"
+					}
+				},
+				{
+					"Position": { "X": 59, "Y": 15 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Fostoria.Stoffton_Fostoria 0 70"
+					}
+				},
+				{
+					"Position": { "X": 59, "Y": 16 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Fostoria.Stoffton_Fostoria 0 71"
+					}
+				},
+				{
+					"Position": { "X": 59, "Y": 17 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Fostoria.Stoffton_Fostoria 0 72"
+					}
+				},
+				{
+					"Position": { "X": 59, "Y": 18 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Fostoria.Stoffton_Fostoria 0 73"
+					}
+				}
+			],
+			"When": {
+				"Spiderbuttons.CMCT/Config: Fostoria.Stoffton, FostoriaSize": "Big"
+			}
+		},
+		{
+			"LogName": "Adds warps from the Forest Road map to the Fostoria7_Big_WTDR map if the mod Stoffton's Fostoria is installed.",
+			"Action": "EditMap",
+			"Target": "Maps/Fostoria.Stoffton_Fostoria",
+			"MapTiles": [
+				{
+					"Position": { "X": 1, "Y": 69 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Forest_Road 58 14"
+					}
+				},
+				{
+					"Position": { "X": 1, "Y": 70 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Forest_Road 58 15"
+					}
+				},
+				{
+					"Position": { "X": 1, "Y": 71 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Forest_Road 58 16"
+					}
+				},
+				{
+					"Position": { "X": 1, "Y": 72 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Forest_Road 58 17"
+					}
+				},
+				{
+					"Position": { "X": 1, "Y": 73 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Forest_Road 58 18"
+					}
+				}
+			],
+			"When": {
+				"Spiderbuttons.CMCT/Config: Fostoria.Stoffton, FostoriaSize": "Big"
+			}
+		},
+		{
+			"LogName": "Adds warps from the Forest Road map to the Fostoria7_Small_WTDR map if the mod Stoffton's Fostoria is installed.",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Forest_Road",
+			"MapTiles": [
+				{
+					"Position": { "X": 59, "Y": 14 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Fostoria.Stoffton_Fostoria 0 61"
+					}
+				},
+				{
+					"Position": { "X": 59, "Y": 15 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Fostoria.Stoffton_Fostoria 0 62"
+					}
+				},
+				{
+					"Position": { "X": 59, "Y": 16 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Fostoria.Stoffton_Fostoria 0 63"
+					}
+				},
+				{
+					"Position": { "X": 59, "Y": 17 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Fostoria.Stoffton_Fostoria 0 64"
+					}
+				},
+				{
+					"Position": { "X": 59, "Y": 18 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Fostoria.Stoffton_Fostoria 0 65"
+					}
+				}
+			],
+			"When": {
+				"Spiderbuttons.CMCT/Config: Fostoria.Stoffton, FostoriaSize": "Small"
+			}
+		},
+		{
+			"LogName": "Adds warps from the Forest Road map to the Fostoria7_Small_WTDR map if the mod Stoffton's Fostoria is installed.",
+			"Action": "EditMap",
+			"Target": "Maps/Fostoria.Stoffton_Fostoria",
+			"MapTiles": [
+				{
+					"Position": { "X": 1, "Y": 61 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Forest_Road 58 14"
+					}
+				},
+				{
+					"Position": { "X": 1, "Y": 62 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Forest_Road 58 15"
+					}
+				},
+				{
+					"Position": { "X": 1, "Y": 63 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Forest_Road 58 16"
+					}
+				},
+				{
+					"Position": { "X": 1, "Y": 64 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Forest_Road 58 17"
+					}
+				},
+				{
+					"Position": { "X": 1, "Y": 65 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Forest_Road 58 18"
+					}
+				}
+			],
+			"When": {
+				"Spiderbuttons.CMCT/Config: Fostoria.Stoffton, FostoriaSize": "Small"
+			}
+		},
+		{
+			"LogName": "Adds warps from the Forest Road map to the Fostoria7_Tiny_WTDR map if the mod Stoffton's Fostoria is installed.",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Forest_Road",
+			"MapTiles": [
+				{
+					"Position": { "X": 59, "Y": 14 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Fostoria.Stoffton_Fostoria 0 22"
+					}
+				},
+				{
+					"Position": { "X": 59, "Y": 15 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Fostoria.Stoffton_Fostoria 0 23"
+					}
+				},
+				{
+					"Position": { "X": 59, "Y": 16 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Fostoria.Stoffton_Fostoria 0 24"
+					}
+				},
+				{
+					"Position": { "X": 59, "Y": 17 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Fostoria.Stoffton_Fostoria 0 25"
+					}
+				},
+				{
+					"Position": { "X": 59, "Y": 18 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Fostoria.Stoffton_Fostoria 0 26"
+					}
+				}
+			],
+			"When": {
+				"Spiderbuttons.CMCT/Config: Fostoria.Stoffton, FostoriaSize": "Tiny"
+			}
+		},
+		{
+			"LogName": "Adds warps from the Forest Road map to the Fostoria7_Tiny_WTDR map if the mod Stoffton's Fostoria is installed.",
+			"Action": "EditMap",
+			"Target": "Maps/Fostoria.Stoffton_Fostoria",
+			"MapTiles": [
+				{
+					"Position": { "X": 1, "Y": 22 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Forest_Road 58 14"
+					}
+				},
+				{
+					"Position": { "X": 1, "Y": 23 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Forest_Road 58 15"
+					}
+				},
+				{
+					"Position": { "X": 1, "Y": 24 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Forest_Road 58 16"
+					}
+				},
+				{
+					"Position": { "X": 1, "Y": 25 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Forest_Road 58 17"
+					}
+				},
+				{
+					"Position": { "X": 1, "Y": 26 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Forest_Road 58 18"
+					}
+				}
+			],
+			"When": {
+				"Spiderbuttons.CMCT/Config: Fostoria.Stoffton, FostoriaSize": "Tiny"
+			}
+		}
+	]
+}

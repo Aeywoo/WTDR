@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="70" height="60" tilewidth="16" tileheight="16" infinite="0" nextlayerid="14" nextobjectid="21">
+<map version="1.10" tiledversion="1.11.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="70" height="60" tilewidth="16" tileheight="16" infinite="0" nextlayerid="14" nextobjectid="21">
  <properties>
   <property name="DayTiles" value="Buildings 40 8 314 Buildings 41 8 315 Buildings 39 9 336 Buildings 40 9 337 Buildings 41 9 338 Buildings 39 10 359 Buildings 40 10 360 Buildings 41 10 361 Buildings 39 11 382 Buildings 40 11 383 Buildings 41 11 384"/>
   <property name="LocationContext" value="Desert"/>
@@ -86,17 +86,17 @@
   </tile>
   <tile id="91">
    <properties>
-    <property name="Water" value="T"/>
+    <property name="Watersdfg" value="T"/>
    </properties>
   </tile>
   <tile id="92">
    <properties>
-    <property name="Water" value="T"/>
+    <property name="Watersdfg" value="T"/>
    </properties>
   </tile>
   <tile id="93">
    <properties>
-    <property name="Water" value="T"/>
+    <property name="sdfg" value="T"/>
    </properties>
   </tile>
   <tile id="94">
@@ -229,76 +229,210 @@
  </tileset>
  <tileset firstgid="433" name="z_wtd_ghosttown_tilesheet" tilewidth="16" tileheight="16" tilecount="851" columns="23">
   <image source="z_wtd_ghosttown_tilesheet" width="368" height="600"/>
- </tileset>
- <tileset firstgid="1284" name="desert_z_wtd_roads" tilewidth="16" tileheight="16" tilecount="256" columns="16">
-  <image source="desert_z_wtd_roads" width="256" height="256"/>
-  <tile id="0">
-   <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
-    <property name="Type" value="Dirt"/>
-   </properties>
-  </tile>
-  <tile id="1">
-   <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
-    <property name="Type" value="Dirt"/>
-   </properties>
-  </tile>
-  <tile id="2">
-   <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
-    <property name="Type" value="Dirt"/>
-   </properties>
-  </tile>
-  <tile id="3">
-   <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
-    <property name="Type" value="Dirt"/>
-   </properties>
-  </tile>
-  <tile id="4">
-   <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
-    <property name="Type" value="Dirt"/>
-   </properties>
-  </tile>
   <tile id="5">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
   <tile id="6">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
-  <tile id="7">
+  <tile id="131">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="132">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="138">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="139">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="140">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="141">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="142">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="143">
    <properties>
     <property name="Diggable" value="T"/>
     <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
-  <tile id="8">
+  <tile id="212">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="213">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="214">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="215">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="216">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="304">
    <properties>
     <property name="Diggable" value="T"/>
     <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
-  <tile id="9">
+  <tile id="322">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="323">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="324">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="325">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="345">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="346">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="347">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="348">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="368">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="369">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="370">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="371">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="385">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="391">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="392">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="393">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="394">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="534">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="535">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="1284" name="desert_z_wtd_roads" tilewidth="16" tileheight="16" tilecount="256" columns="16">
+  <image source="desert_z_wtd_roads" width="256" height="256"/>
+  <tile id="0">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
@@ -334,29 +468,6 @@
   </tile>
   <tile id="22">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
-    <property name="Type" value="Dirt"/>
-   </properties>
-  </tile>
-  <tile id="23">
-   <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
-    <property name="Type" value="Dirt"/>
-   </properties>
-  </tile>
-  <tile id="24">
-   <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
-    <property name="Type" value="Dirt"/>
-   </properties>
-  </tile>
-  <tile id="25">
-   <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
@@ -398,20 +509,6 @@
   <tile id="39">
    <properties>
     <property name="Type" value="Stone"/>
-   </properties>
-  </tile>
-  <tile id="40">
-   <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
-    <property name="Type" value="Dirt"/>
-   </properties>
-  </tile>
-  <tile id="41">
-   <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
-    <property name="Type" value="Dirt"/>
    </properties>
   </tile>
   <tile id="48">
@@ -457,13 +554,6 @@
   <tile id="56">
    <properties>
     <property name="Type" value="Stone"/>
-   </properties>
-  </tile>
-  <tile id="57">
-   <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
-    <property name="Type" value="Dirt"/>
    </properties>
   </tile>
   <tile id="64">
@@ -513,29 +603,21 @@
   </tile>
   <tile id="73">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
   <tile id="80">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
   <tile id="81">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
   <tile id="82">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
@@ -571,36 +653,26 @@
   </tile>
   <tile id="89">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
   <tile id="96">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
   <tile id="97">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
   <tile id="98">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
-    <property name="Type" value="Dirt"/>
+    <property name="Type" value="Stone"/>
    </properties>
   </tile>
   <tile id="99">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
@@ -631,36 +703,26 @@
   </tile>
   <tile id="105">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
   <tile id="112">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
   <tile id="113">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
   <tile id="114">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
   <tile id="115">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
@@ -691,36 +753,26 @@
   </tile>
   <tile id="121">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
   <tile id="128">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
   <tile id="129">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
   <tile id="130">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
-    <property name="Type" value="Dirt"/>
+    <property name="Type" value="Stone"/>
    </properties>
   </tile>
   <tile id="131">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
@@ -751,36 +803,26 @@
   </tile>
   <tile id="137">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
   <tile id="144">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
-    <property name="Type" value="Dirt"/>
+    <property name="Type" value="Stone"/>
    </properties>
   </tile>
   <tile id="145">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
-    <property name="Type" value="Dirt"/>
+    <property name="Type" value="Stone"/>
    </properties>
   </tile>
   <tile id="146">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
-    <property name="Type" value="Dirt"/>
+    <property name="Type" value="Stone"/>
    </properties>
   </tile>
   <tile id="147">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
@@ -811,29 +853,21 @@
   </tile>
   <tile id="153">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
   <tile id="160">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
   <tile id="161">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
-    <property name="Type" value="Dirt"/>
+    <property name="Type" value="Stone"/>
    </properties>
   </tile>
   <tile id="162">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
@@ -869,22 +903,16 @@
   </tile>
   <tile id="169">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
   <tile id="176">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
   <tile id="177">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
@@ -925,8 +953,6 @@
   </tile>
   <tile id="185">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
@@ -975,13 +1001,6 @@
     <property name="Type" value="Stone"/>
    </properties>
   </tile>
-  <tile id="201">
-   <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
-    <property name="Type" value="Dirt"/>
-   </properties>
-  </tile>
   <tile id="208">
    <properties>
     <property name="Type" value="Stone"/>
@@ -1024,15 +1043,6 @@
   </tile>
   <tile id="216">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
-    <property name="Type" value="Dirt"/>
-   </properties>
-  </tile>
-  <tile id="217">
-   <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
@@ -1073,22 +1083,6 @@
   </tile>
   <tile id="231">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
-    <property name="Type" value="Dirt"/>
-   </properties>
-  </tile>
-  <tile id="232">
-   <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
-    <property name="Type" value="Dirt"/>
-   </properties>
-  </tile>
-  <tile id="233">
-   <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
@@ -1119,36 +1113,6 @@
   </tile>
   <tile id="245">
    <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
-    <property name="Type" value="Dirt"/>
-   </properties>
-  </tile>
-  <tile id="246">
-   <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
-    <property name="Type" value="Dirt"/>
-   </properties>
-  </tile>
-  <tile id="247">
-   <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
-    <property name="Type" value="Dirt"/>
-   </properties>
-  </tile>
-  <tile id="248">
-   <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
-    <property name="Type" value="Dirt"/>
-   </properties>
-  </tile>
-  <tile id="249">
-   <properties>
-    <property name="Diggable" value="T"/>
-    <property name="Spawnable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
@@ -1542,37 +1506,37 @@
  <objectgroup id="4" name="Buildings">
   <object id="1" name="TileData" x="448" y="144" width="16" height="16">
    <properties>
-    <property name="Action" value="Message &quot;GhostTown.3&quot;"/>
+    <property name="Action" value="Message &quot;WTD.GhostTown.3&quot;"/>
    </properties>
   </object>
   <object id="2" name="TileData" x="320" y="160" width="16" height="16">
    <properties>
-    <property name="Action" value="Message &quot;GhostTown.4&quot;"/>
+    <property name="Action" value="Message &quot;WTD.GhostTown.4&quot;"/>
    </properties>
   </object>
   <object id="3" name="TileData" x="672" y="160" width="16" height="16">
    <properties>
-    <property name="Action" value="Message &quot;GhostTown.5&quot;"/>
+    <property name="Action" value="Message &quot;WTD.GhostTown.5&quot;"/>
    </properties>
   </object>
   <object id="4" name="TileData" x="848" y="192" width="16" height="16">
    <properties>
-    <property name="Action" value="Message &quot;GhostTown.3&quot;"/>
+    <property name="Action" value="Message &quot;WTD.GhostTown.3&quot;"/>
    </properties>
   </object>
   <object id="5" name="TileData" x="864" y="192" width="16" height="16">
    <properties>
-    <property name="Action" value="Message &quot;GhostTown.3&quot;"/>
+    <property name="Action" value="Message &quot;WTD.GhostTown.3&quot;"/>
    </properties>
   </object>
   <object id="6" name="TileData" x="160" y="272" width="16" height="16">
    <properties>
-    <property name="Action" value="Message &quot;GhostTown.3&quot;"/>
+    <property name="Action" value="Message &quot;WTD.GhostTown.3&quot;"/>
    </properties>
   </object>
   <object id="7" name="TileData" x="736" y="304" width="16" height="16">
    <properties>
-    <property name="Action" value="Message &quot;GhostTown.3&quot;"/>
+    <property name="Action" value="Message &quot;WTD.GhostTown.3&quot;"/>
    </properties>
   </object>
   <object id="8" name="TileData" x="880" y="368" width="16" height="16">
@@ -1582,12 +1546,12 @@
   </object>
   <object id="9" name="TileData" x="416" y="496" width="16" height="16">
    <properties>
-    <property name="Action" value="Message &quot;GhostTown.2&quot;"/>
+    <property name="Action" value="Message &quot;WTD.GhostTown.2&quot;"/>
    </properties>
   </object>
   <object id="10" name="TileData" x="480" y="512" width="16" height="16">
    <properties>
-    <property name="Action" value="Message &quot;GhostTown.1&quot;"/>
+    <property name="Action" value="Message &quot;WTD.GhostTown.1&quot;"/>
    </properties>
   </object>
  </objectgroup>

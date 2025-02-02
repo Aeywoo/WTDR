@@ -1,0 +1,212 @@
+{
+	"Changes": [
+		{
+			"LogName": "Applies a map edit to remove seven tiles on the top of the Interchange map if the Downtown Zuzu map is installed.",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Interchange",
+			"MapTiles": [
+				{
+					"Position": { "X": 22, "Y": 0 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 23, "Y": 0 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 24, "Y": 0 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 25, "Y": 0 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 26, "Y": 0 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 27, "Y": 0 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 28, "Y": 0 },
+					"Layer": "Buildings",
+					"Remove": true
+				}
+			],
+			"When": {
+				"HasMod": "DTZ.DowntownZuzuCP"
+			}
+		},
+		{
+			"LogName": "Applies a map edit to remove seven tiles on the bottom of the Downtown Zuzu Freeway Transition map if the Downtown Zuzu mod is installed.",
+			"Action": "EditMap",
+			"Target": "Maps/Custom_DTZ_ZuzuCityFreeway1",
+			"MapTiles": [
+				{
+					"Position": { "X": 22, "Y": 42 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 23, "Y": 42 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 24, "Y": 42 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 25, "Y": 42 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 26, "Y": 42 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 27, "Y": 42 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 28, "Y": 42 },
+					"Layer": "Buildings",
+					"Remove": true
+				}
+			],
+			"When": {
+				"HasMod": "DTZ.DowntownZuzuCP"
+			}
+		},
+		{
+			"LogName": "Adds warps from the Interchange map to the Freeway (1) Transition map if the Downtown Zuzu mod is installed.",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Interchange",
+			"MapTiles": [
+				{
+					"Position": { "X": 22, "Y": 0 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Custom_DTZ_ZuzuCityFreeway1 22 41"
+					}
+				},
+				{
+					"Position": { "X": 23, "Y": 0 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Custom_DTZ_ZuzuCityFreeway1 23 41"
+					}
+				},
+				{
+					"Position": { "X": 24, "Y": 0 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Custom_DTZ_ZuzuCityFreeway1 24 41"
+					}
+				},
+				{
+					"Position": { "X": 25, "Y": 0 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Custom_DTZ_ZuzuCityFreeway1 25 41"
+					}
+				},
+				{
+					"Position": { "X": 26, "Y": 0 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Custom_DTZ_ZuzuCityFreeway1 26 41"
+					}
+				},
+				{
+					"Position": { "X": 27, "Y": 0 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Custom_DTZ_ZuzuCityFreeway1 27 41"
+					}
+				},
+				{
+					"Position": { "X": 28, "Y": 0 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Custom_DTZ_ZuzuCityFreeway1 28 41"
+					}
+				}
+			],
+			"When": {
+				"HasMod": "DTZ.DowntownZuzuCP"
+			}
+		},
+		{
+			"LogName": "Adds warps from the Freeway (1) Transition to the Interchange map if the Downtown Zuzu mod is installed.",
+			"Action": "EditMap",
+			"Target": "Maps/Custom_DTZ_ZuzuCityFreeway1",
+			"MapTiles": [
+				{
+					"Position": { "X": 22, "Y": 42 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Interchange 22 1"
+					}
+				},
+				{
+					"Position": { "X": 23, "Y": 42 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Interchange 23 1"
+					}
+				},
+				{
+					"Position": { "X": 24, "Y": 42 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Interchange 24 1"
+					}
+				},
+				{
+					"Position": { "X": 25, "Y": 42 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Interchange 25 1"
+					}
+				},
+				{
+					"Position": { "X": 26, "Y": 42 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Interchange 26 1"
+					}
+				},
+				{
+					"Position": { "X": 27, "Y": 42 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Interchange 27 1"
+					}
+				},
+				{
+					"Position": { "X": 28, "Y": 42 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Interchange 28 1"
+					}
+				}
+			],
+			"When": {
+				"HasMod": "DTZ.DowntownZuzuCP"
+			}
+		}
+	]
+}

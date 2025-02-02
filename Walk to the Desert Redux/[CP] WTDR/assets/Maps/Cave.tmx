@@ -1,11 +1,341 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="28" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="7">
+<map version="1.10" tiledversion="1.11.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="28" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="7">
  <properties>
   <property name="AmbientLight" value="140 140 60"/>
   <property name="Music" value="Upper_Ambient"/>
  </properties>
  <tileset firstgid="1" name="mine_desert" tilewidth="16" tileheight="16" tilecount="384" columns="16">
   <image source="Mines/mine_desert" width="256" height="384"/>
+  <tile id="0">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="17">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="18">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="33">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="34">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="35">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="137">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="138">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="139">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="140">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="153">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="154">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="155">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="165">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="166">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="167">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="168">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="169">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="170">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="171">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="172">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="181">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="182">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="183">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="184">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="185">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="186">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="187">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="188">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="198">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="199">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="200">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="201">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="202">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="203">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="204">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="217">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="218">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="219">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="233">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="234">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="235">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="240">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="241">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="242">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="256">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="257">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="258">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="260">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="262">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="263">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="264">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="265">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="266">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="272">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="273">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="274">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="275">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="276">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="277">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="281">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="282">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
  </tileset>
  <tileset firstgid="385" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
   <image source="paths" width="64" height="256"/>
@@ -13,6 +343,27 @@
    <properties>
     <property name="GreenRain" value="asdf"/>
    </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="449" name="fest" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="Festivals" width="512" height="512"/>
+  <tile id="239">
+   <animation>
+    <frame tileid="239" duration="1000"/>
+    <frame tileid="240" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="271">
+   <animation>
+    <frame tileid="271" duration="1000"/>
+    <frame tileid="272" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="298">
+   <animation>
+    <frame tileid="298" duration="1000"/>
+    <frame tileid="299" duration="1000"/>
+   </animation>
   </tile>
  </tileset>
  <layer id="1" name="Back" width="28" height="20">
@@ -72,7 +423,7 @@
 10,11,78,30,78,26,27,129,0,0,0,88,0,0,0,0,0,0,52,0,0,0,0,0,0,0,10,11,
 78,26,27,78,62,78,0,0,0,0,0,104,272,0,0,0,0,0,0,0,0,0,0,0,0,0,78,78,
 78,78,69,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,78,
-78,62,133,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30,78,
+78,62,133,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1042,0,0,30,78,
 78,61,133,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,27,
 78,78,133,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,78,30,
 10,11,133,0,0,0,0,0,0,0,0,180,209,0,0,0,0,0,0,0,0,0,0,0,0,0,62,61,
@@ -115,32 +466,37 @@
  <objectgroup id="4" name="Buildings">
   <object id="1" name="TileData" x="224" y="80" width="16" height="16">
    <properties>
-    <property name="Action" value="Message &quot;Cave.1&quot;"/>
+    <property name="Action" value="Message &quot;WTD.Cave.1&quot;"/>
    </properties>
   </object>
   <object id="2" name="TileData" x="304" y="96" width="16" height="16">
    <properties>
-    <property name="Action" value="Message &quot;Cave.4&quot;"/>
+    <property name="Action" value="Message &quot;WTD.Cave.4&quot;"/>
    </properties>
   </object>
   <object id="3" name="TileData" x="336" y="176" width="16" height="16">
    <properties>
-    <property name="Action" value="Message &quot;Cave.3&quot;"/>
+    <property name="Action" value="Message &quot;WTD.Cave.3&quot;"/>
    </properties>
   </object>
   <object id="4" name="TileData" x="320" y="96" width="16" height="16">
    <properties>
-    <property name="Action" value="Message &quot;Cave.4&quot;"/>
+    <property name="Action" value="Message &quot;WTD.Cave.4&quot;"/>
    </properties>
   </object>
   <object id="5" name="TileData" x="176" y="176" width="16" height="16">
    <properties>
-    <property name="Action" value="Message &quot;Cave.5&quot;"/>
+    <property name="Action" value="Message &quot;WTD.Cave.5&quot;"/>
    </properties>
   </object>
   <object id="6" name="TileData" x="192" y="176" width="16" height="16">
    <properties>
-    <property name="Action" value="Message &quot;Cave.5&quot;"/>
+    <property name="Action" value="Message &quot;WTD.Cave.5&quot;"/>
+   </properties>
+  </object>
+  <object id="7" name="TileData" x="368" y="112" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;WTD.Cave.2&quot;"/>
    </properties>
   </object>
  </objectgroup>

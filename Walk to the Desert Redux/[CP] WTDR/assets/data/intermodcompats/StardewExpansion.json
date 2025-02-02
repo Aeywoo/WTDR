@@ -1,0 +1,159 @@
+{
+	"Changes": [
+		{
+			"LogName": "Applies a map edit to change five tiles and remove five invisible wall tiles on the left of the TSVRoad map if Tego's Stardew Expansion is installed.",
+			"Action": "EditMap",
+			"Target": "Maps/Custom_TSVRoad",
+			"MapTiles": [
+				{
+					"Position": { "X": 0, "Y": 31 },
+					"Layer": "Back",
+					"SetTilesheet": "sveoutdoors",
+					"SetIndex": "503"
+				},
+				{
+					"Position": { "X": 1, "Y": 32 },
+					"Layer": "Back",
+					"SetTilesheet": "sveoutdoors",
+					"SetIndex": "535"
+				},
+				{
+					"Position": { "X": 0, "Y": 33 },
+					"Layer": "Back",
+					"SetTilesheet": "sveoutdoors",
+					"SetIndex": "535"
+				},
+				{
+					"Position": { "X": 0, "Y": 34 },
+					"Layer": "Back",
+					"SetTilesheet": "sveoutdoors",
+					"SetIndex": "535"
+				},
+				{
+					"Position": { "X": 1, "Y": 35 },
+					"Layer": "Back",
+					"SetTilesheet": "sveoutdoors",
+					"SetIndex": "567"
+				},
+				{
+					"Position": { "X": 0, "Y": 31 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 0, "Y": 32 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 0, "Y": 33 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 0, "Y": 34 },
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": { "X": 0, "Y": 35 },
+					"Layer": "Buildings",
+					"Remove": true
+				}
+			],
+			"When": {
+				"HasMod": "Pillow.StardewExpansion.CP"
+			}
+		},
+		{
+			"LogName": "Adds warps from the TSVRoad map to the Forest Road map if the mod Tego's Stardew Expansion Redux is installed.",
+			"Action": "EditMap",
+			"Target": "Maps/Custom_TSVRoad",
+			"MapTiles": [
+				{
+					"Position": { "X": 0, "Y": 31 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Forest_Road 58 14"
+					}
+				},
+				{
+					"Position": { "X": 0, "Y": 32 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Forest_Road 58 15"
+					}
+				},
+				{
+					"Position": { "X": 0, "Y": 33 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Forest_Road 58 16"
+					}
+				},
+				{
+					"Position": { "X": 0, "Y": 34 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Forest_Road 58 17"
+					}
+				},
+				{
+					"Position": { "X": 0, "Y": 35 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Forest_Road 58 18"
+					}
+				}
+			],
+			"When": {
+				"HasMod": "Pillow.StardewExpansion.CP"
+			}
+		},
+		{
+			"LogName": "Adds warps from the Forest Road map to the TSVRoad map if the mod Tego's Stardew Expansion Redux is installed.",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Forest_Road",
+			"MapTiles": [
+				{
+					"Position": { "X": 59, "Y": 14 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Custom_TSVRoad 0 31"
+					}
+				},
+				{
+					"Position": { "X": 59, "Y": 15 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Custom_TSVRoad 0 32"
+					}
+				},
+				{
+					"Position": { "X": 59, "Y": 16 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Custom_TSVRoad 0 33"
+					}
+				},
+				{
+					"Position": { "X": 59, "Y": 17 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Custom_TSVRoad 0 34"
+					}
+				},
+				{
+					"Position": { "X": 59, "Y": 18 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Custom_TSVRoad 0 35"
+					}
+				}
+			],
+			"When": {
+				"HasMod": "Pillow.StardewExpansion.CP"
+			}
+		}
+	]
+}

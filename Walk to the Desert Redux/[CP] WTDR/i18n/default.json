@@ -1,5 +1,5 @@
 { // Original English Translation by: Aeywoo
-	// NPC Names
+	// NPC Strings
 	"NPC.Name.PickledPete": "Pickled Pete",
 	"NPC.Gifts.PickledPete.Love": "For me? Really? Aw, thank you so much!",
 	"NPC.Gifts.PickledPete.Like": "Thank you very kindly.",
@@ -59,37 +59,37 @@
 	"Events.13730002.2": "Just promise me you'll be careful. Okay, sweetie?$h",
 	
 	// Shop Strings
-	"Shops.WTDRShop.Closed": "Come back later...",
-	"Shops.WTDRShop.Dialogue": "Come to peruse my wares?",
-	"Shops.WTDRShop.Dialogue.Rainy": "In the rain, everything is washed away.",
+	"Shops.WTD.GhostShop.Closed": "Come back later...",
+	"Shops.WTD.GhostShop.Dialogue": "Come to peruse my wares?",
+	"Shops.WTD.GhostShop.Dialogue.Rainy": "In the rain, everything is washed away.",
 	
 	// Mail Strings
 	"Mail.GhostBerry.Wizard.1": "@-^I've heard rumors that you successfully grew a \"Ghost Berry.\" I would be most interested to study such a fruit.^Please provide me with a suitable specimen at your earliest convenience.^ -M. Rasmodius, Wizard",
 	"Mail.GhostBerry.Wizard.2": "Ghost Berry for the Wizard",
 	
 	// Map Strings (Text Tiles)
-	"MapStrings.Interchange.1": "You don't see any reason to visit Zuzu City right now, maybe next time?",
-	"MapStrings.Interchange.2": "` Highway 5 to Zuzu City^` Glacier Outpost^@ Calico Desert",
-	"MapStrings.Interchange.3": "` Highway 5 to Zuzu City^> Glacier Outpost",
-	"MapStrings.Interchange.4": "The road was destroyed by an avalanche, this will take quite a lot of time to clear.",
-	"MapStrings.GhostTown.1": "DANGER!",
-	"MapStrings.GhostTown.2": "DO NOT ENTER!",
-	"MapStrings.GhostTown.3": "This building collapsed a long time ago, it doesn't look safe to enter.",
-	"MapStrings.GhostTown.4": "The door is jammed shut, the house has shifted over time and has become unstable, despite its lack of major damage.",
-	"MapStrings.GhostTown.5": "The door is locked, an eerie voice whispers \"Future Update.\"",
-	"MapStrings.GhostShop.1": "The door is locked, and the doorknob is covered in sticky spiderwebs, Eugh.",
-	"MapStrings.GhostShop.2": "Pickled Pete: Won't you buy some of my wares?",
-	"MapStrings.HorsePath.1": "@ Horse and Tractor path this way.",
-	"MapStrings.HorsePath.2": "> Horse and Tractor path this way.",
-	"MapStrings.WindingRoad.1": "` Highway 5 to Zuzu City^@ Garden Village^> Pelican Town",
-	"MapStrings.WindingRoad.2": "` Highway 5 to Zuzu City^@ Ridgeside Village",
-	"MapStrings.WindingRoad.3": "Due to an unfortunate set of events and seaside erosion, the road has fallen into the sea, I hope they get around to fixing it someday.",
-	"MapStrings.WindingRoad.4": "Several downed powerlines, fallen trees and emergency vehicles block your path, you make a wise decision to not proceed.",
-	"MapStrings.Cave.1": "For some reason, this door is painted on to the wall. Who would do such a thing?",
-	"MapStrings.Cave.2": "It's a pile of bones.^ Wait, where did the skulls go?",
-	"MapStrings.Cave.3": "This is a hole, do not jump into it. Random holes are not to be triffled with.",
-	"MapStrings.Cave.4": "This appears to be a crude joke about a persons mother, but some of the joke has erroded away. You know who else-",
-	"MapStrings.Cave.5": "An old rusty minecart, the rusty inscription on it reads \"Ridgeside Village\", the way it came from appears to have collapsed.",
+	"MapStrings.WTD.Interchange.1": "You don't see any reason to visit Zuzu City right now, maybe next time?",
+	"MapStrings.WTD.Interchange.2": "` Highway 5 to Zuzu City^` Glacier Outpost^@ Calico Desert",
+	"MapStrings.WTD.Interchange.3": "` Highway 5 to Zuzu City^> Glacier Outpost",
+	"MapStrings.WTD.Interchange.4": "The road was destroyed by an avalanche, this will take quite a lot of time to clear.",
+	"MapStrings.WTD.GhostTown.1": "DANGER!",
+	"MapStrings.WTD.GhostTown.2": "DO NOT ENTER!",
+	"MapStrings.WTD.GhostTown.3": "This building collapsed a long time ago, it doesn't look safe to enter.",
+	"MapStrings.WTD.GhostTown.4": "The door is jammed shut, the house has shifted over time and has become unstable, despite its lack of major damage.",
+	"MapStrings.WTD.GhostTown.5": "The door is locked, an eerie voice whispers \"Future Update.\"",
+	"MapStrings.WTD.GhostShop.1": "The door is locked, and the doorknob is covered in sticky spiderwebs, Eugh.",
+	"MapStrings.WTD.GhostShop.2": "Pickled Pete: Won't you buy some of my wares?",
+	"MapStrings.WTD.RoadSigns.1": "@ Horse and Tractor path this way.",
+	"MapStrings.WTD.RoadSigns.2": "> Horse and Tractor path this way.",
+	"MapStrings.WTD.WindingRoad.1": "` Highway 5 to Zuzu City^@ Garden Village^> Pelican Town",
+	"MapStrings.WTD.WindingRoad.2": "` Highway 5 to Zuzu City^@ Ridgeside Village",
+	"MapStrings.WTD.WindingRoad.3": "Due to an unfortunate set of events and seaside erosion, the road has fallen into the sea, I hope they get around to fixing it someday.",
+	"MapStrings.WTD.WindingRoad.4": "Several downed powerlines, fallen trees and emergency vehicles block your path, you make a wise decision to not proceed.",
+	"MapStrings.WTD.Cave.1": "For some reason, this door is painted on to the wall. Who would do such a thing?",
+	"MapStrings.WTD.Cave.2": "It's a pile of bones.^ Wait, where did the skulls go?",
+	"MapStrings.WTD.Cave.3": "This is a hole, do not jump into it. Random holes are not to be triffled with.",
+	"MapStrings.WTD.Cave.4": "This appears to be a crude joke about a persons mother, but some of the joke has erroded away. You know who else-",
+	"MapStrings.WTD.Cave.5": "An old rusty minecart, the rusty inscription on it reads \"Ridgeside Village\", the way it came from appears to have collapsed.",
 	
 	// Object Names and Descriptions
 	"Objects.EeriePlantSeeds.Name": "Eerie Plant Seeds",
@@ -101,7 +101,7 @@
 	"Objects.OldCoin.Name": "Old Coin",
 	"Objects.OldCoin.Desc": "Just because it's old doesn't mean it's valuable",
 	
-	// Generic Config Menu Translations
+	// Generic Config Menu Strings
 	"config.section.RoadType.name": "Road Type",
 	"config.section.RoadType.description": "The type of roads you want enabled.",
 	"config.section.RecolourVariants.name": "Recolour Tilesheet Variants",

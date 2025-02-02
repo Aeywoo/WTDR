@@ -7,10 +7,10 @@
 	"MinimumApiVersion": "4.0.7",
 	"MinimumGameVersion": "1.6.4",
 	"UpdateKeys": [
-		"Nexus:8630",
-		"ModDrop:980591",
+		"GitHub:Aeywoo/WTDR",
 		"CurseForge:499736",
-		"GitHub:Aeywoo/WTDR"
+		"ModDrop:980591",
+		"Nexus:8630"
 	],
 	"ContentPackFor": {
 		"UniqueID": "Pathoschild.ContentPatcher"

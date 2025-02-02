@@ -64,7 +64,7 @@
  <objectgroup id="7" name="Buildings">
   <object id="7" name="TileData" x="0" y="32" width="16" height="16">
    <properties>
-    <property name="Action" value="Message &quot;Horsepath.1&quot;"/>
+    <property name="Action" value="Message &quot;WTD.Horsepath.1&quot;"/>
    </properties>
   </object>
  </objectgroup>
