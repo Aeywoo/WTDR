@@ -1,5 +1,9 @@
 # Walk (to) The Desert Redux
-This is the repository for the Walk to the Desert Redux mod for Stardew Valley Version 1.3.4. You can find the original mod is by Tarniyar, it was called [Walk to the Desert](https://www.nexusmods.com/stardewvalley/mods/6234).
+This is the repository for the Walk to the Desert Redux mod for Stardew Valley Verson 1.6.4. You can find the original mod is by Tarniyar, it was called [Walk to the Desert](https://www.nexusmods.com/stardewvalley/mods/6234).
+
+# Current Versions
+* Release Version: 1.3.3
+* In-dev Version: 1.3.4
 
 # Credits
 ## Mod Author
