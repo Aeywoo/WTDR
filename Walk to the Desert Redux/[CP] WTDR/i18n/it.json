@@ -1,4 +1,5 @@
 { // Traduzione Italiana di: Kana (Italian Translation by: 7Kana)
+	"$schema": "https://smapi.io/schemas/i18n.json",
 	// NPC Names
 	"NPC.Name.PickledPete": "Acido Pete",
 	"NPC.Gifts.PickledPete.Love": "Per me? Davvero? Grazie mille!",

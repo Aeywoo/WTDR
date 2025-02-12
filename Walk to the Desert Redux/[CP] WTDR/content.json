@@ -1,4 +1,5 @@
 {
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
 	"Format": "2.5.0",
 	"ConfigSchema": {
 		"SquareRoads": {
@@ -685,27 +686,27 @@
 			"Target": "Maps/Tarniyar.CP.GardenVillage_Main_Shops",
 			"MapTiles": [
 				{
-					"Position": { "X": 54, "Y": 19 },
+					"Position": { "X": 79, "Y": 19 },
 					"Layer": "Buildings",
 					"Remove": true
 				},
 				{
-					"Position": { "X": 54, "Y": 20 },
+					"Position": { "X": 79, "Y": 20 },
 					"Layer": "Buildings",
 					"Remove": true
 				},
 				{
-					"Position": { "X": 54, "Y": 21 },
+					"Position": { "X": 79, "Y": 21 },
 					"Layer": "Buildings",
 					"Remove": true
 				},
 				{
-					"Position": { "X": 54, "Y": 22 },
+					"Position": { "X": 79, "Y": 22 },
 					"Layer": "Buildings",
 					"Remove": true
 				},
 				{
-					"Position": { "X": 54, "Y": 23 },
+					"Position": { "X": 79, "Y": 23 },
 					"Layer": "Buildings",
 					"Remove": true
 				}
@@ -1409,35 +1410,35 @@
 					"Position": { "X": 0, "Y": 81 },
 					"Layer": "Back",
 					"SetProperties": {
-						"TouchAction": "Warp Tarniyar.CP.GardenVillage_Main_Shops 53 19"
+						"TouchAction": "Warp Tarniyar.CP.GardenVillage_Main_Shops 78 19"
 					}
 				},
 				{
 					"Position": { "X": 0, "Y": 82 },
 					"Layer": "Back",
 					"SetProperties": {
-						"TouchAction": "Warp Tarniyar.CP.GardenVillage_Main_Shops 53 20"
+						"TouchAction": "Warp Tarniyar.CP.GardenVillage_Main_Shops 78 20"
 					}
 				},
 				{
 					"Position": { "X": 0, "Y": 83 },
 					"Layer": "Back",
 					"SetProperties": {
-						"TouchAction": "Warp Tarniyar.CP.GardenVillage_Main_Shops 53 21"
+						"TouchAction": "Warp Tarniyar.CP.GardenVillage_Main_Shops 78 21"
 					}
 				},
 				{
 					"Position": { "X": 0, "Y": 84 },
 					"Layer": "Back",
 					"SetProperties": {
-						"TouchAction": "Warp Tarniyar.CP.GardenVillage_Main_Shops 53 22"
+						"TouchAction": "Warp Tarniyar.CP.GardenVillage_Main_Shops 78 22"
 					}
 				},
 				{
 					"Position": { "X": 0, "Y": 85 },
 					"Layer": "Back",
 					"SetProperties": {
-						"TouchAction": "Warp Tarniyar.CP.GardenVillage_Main_Shops 53 23"
+						"TouchAction": "Warp Tarniyar.CP.GardenVillage_Main_Shops 78 23"
 					}
 				}
 			],
@@ -1451,35 +1452,35 @@
 			"Target": "Maps/Tarniyar.CP.GardenVillage_Main_Shops",
 			"MapTiles": [
 				{
-					"Position": { "X": 54, "Y": 19 },
+					"Position": { "X": 79, "Y": 19 },
 					"Layer": "Back",
 					"SetProperties": {
 						"TouchAction": "Warp {{ModId}}_Winding_Road 1 81"
 					}
 				},
 				{
-					"Position": { "X": 54, "Y": 20 },
+					"Position": { "X": 79, "Y": 20 },
 					"Layer": "Back",
 					"SetProperties": {
 						"TouchAction": "Warp {{ModId}}_Winding_Road 1 82"
 					}
 				},
 				{
-					"Position": { "X": 54, "Y": 21 },
+					"Position": { "X": 79, "Y": 21 },
 					"Layer": "Back",
 					"SetProperties": {
 						"TouchAction": "Warp {{ModId}}_Winding_Road 1 83"
 					}
 				},
 				{
-					"Position": { "X": 54, "Y": 22 },
+					"Position": { "X": 79, "Y": 22 },
 					"Layer": "Back",
 					"SetProperties": {
 						"TouchAction": "Warp {{ModId}}_Winding_Road 1 84"
 					}
 				},
 				{
-					"Position": { "X": 54, "Y": 23 },
+					"Position": { "X": 79, "Y": 23 },
 					"Layer": "Back",
 					"SetProperties": {
 						"TouchAction": "Warp {{ModId}}_Winding_Road 1 85"
@@ -1497,7 +1498,7 @@
 			"Action": "EditData",
 			"Target": "Data/Characters",
 			"Entries": {
-				"PickledPete": {
+				"{{ModId}}_PickledPete": {
 					"DisplayName": "{{i18n:NPC.Name.PickledPete}}",
 					"Language": "Default",
 					"Gender": "Male",
@@ -1511,9 +1512,9 @@
 					"HomeRegion": "Desert",
 					"IsDarkSkinned": false,
 					
-					"CanSocialize": "FALSE",
+					"CanSocialize": "TRUE",
 					"CanBeRomanced": false,
-					"CanReceiveGifts": false,
+					"CanReceiveGifts": true,
 					"CanCommentOnPurchaseShopItems": false,
 					"CanGreetNearbyCharacters": false,
 					"CanVisitIsland": false,
@@ -1532,52 +1533,51 @@
 							"Direction": "down"
 						}
 					],
-					"TextureName": "PickledPete",
 					"Appearance": [
 						{
 							"Id": "{{ModId}}_PickledPete",
-							"Portrait": "Portraits/PickledPete",
-							"Sprite": "Characters/PickledPete",
+							"Portrait": "Portraits/{{ModId}}_PickledPete",
+							"Sprite": "Characters/{{ModId}}_PickledPete",
 							"IsIslandAttire": false,
 							"Precedence": -100,
 							"Weight": 0
 						}
 					],
-					"Breather": false//,
-					//"FormerCharacterNames": [ "PickledPete" ]
+					"Breather": false,
+					"FormerCharacterNames": [ "PickledPete" ]
 				}
 			}
 		},
-		//{
-		//	"LogName": "Sets up the Pickled Pete NPC Gift Tastes.",
-		//	"Action": "EditData",
-		//	"Target": "Data/NPCGiftTastes",
-		//	"Entries": {
-		//		"PickledPete": "{{i18n:NPC.Gifts.PickledPete.Love}}/303 348/{{i18n:NPC.Gifts.PickledPete.Like}}/308 346/{{i18n:NPC.Gifts.PickledPete.Dislike}}/72 74/{{i18n:NPC.Gifts.PickledPete.Hate}}/373 446/{{i18n:NPC.Gifts.PickledPete.Neutral}}/-7 -75 -79 -80 -81/"
-		//	}
-		//},
+		{
+			"LogName": "Sets up the Pickled Pete NPC Gift Tastes.",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"Entries": {
+				"{{ModId}}_PickledPete": "{{i18n:NPC.Gifts.PickledPete.Love}}/303 348/{{i18n:NPC.Gifts.PickledPete.Like}}/308 346/{{i18n:NPC.Gifts.PickledPete.Dislike}}/72 74/{{i18n:NPC.Gifts.PickledPete.Hate}}/373 446/{{i18n:NPC.Gifts.PickledPete.Neutral}}/-7 -75 -79 -80 -81/"
+			}
+		},
 		{
 			"LogName": "Loads the Pickled Pete NPC Sprites.",
 			"Action": "Load",
-			"Target": "Characters/PickledPete",
+			"Target": "Characters/{{ModId}}_PickledPete",
 			"FromFile": "assets/npcs/pickledpete/sprites.png"
 		},
 		{
 			"LogName": "Loads the Pickled Pete NPC Portrait.",
 			"Action": "Load",
-			"Target": "Portraits/PickledPete",
+			"Target": "Portraits/{{ModId}}_PickledPete",
 			"FromFile": "assets/npcs/pickledpete/portrait.png"
 		},
 		{
 			"LogName": "Loads a blank json file for the Pickled Pete NPC dialogue.",
 			"Action": "Load",
-			"Target": "Characters/Dialogue/PickledPete",
+			"Target": "Characters/Dialogue/{{ModId}}_PickledPete",
 			"FromFile": "assets/npcs/pickledpete/dialogue.json"
 		},
 		{
 			"LogName": "Edits the dialogue for PickledPete.",
 			"Action": "EditData",
-			"Target": "Characters/Dialogue/PickledPete",
+			"Target": "Characters/Dialogue/{{ModId}}_PickledPete",
 			"Entries": {
 				"winter_Fri": "{{i18n:NPC.Dialogue.PickledPete.Fri.Winter}}",
 				"fall_Sat": "{{i18n:NPC.Dialogue.PickledPete.Sat.Fall}}",
@@ -1594,15 +1594,15 @@
 		{
 			"LogName": "Loads a blank json file for the Pickled Pete NPC Schedule.",
 			"Action": "Load",
-			"Target": "Characters/Schedules/PickledPete",
+			"Target": "Characters/Schedules/{{ModId}}_PickledPete",
 			"FromFile": "assets/npcs/pickledpete/schedule.json"
 		},
 		{
 			"LogName": "Edits the Pickled Pete NPC schedule.",
 			"Action": "EditData",
-			"Target":" Characters/Schedules/PickledPete",
+			"Target":" Characters/Schedules/{{ModId}}_PickledPete",
 			"Entries": {
-				"spring": "610 Tarniyar.CP.WalkToDesert_Pete_Hidden 7 5 2/2000 Tarniyar.CP.WalkToDesert_Ghost_Shop 2 4 2/2430 Tarniyar.CP.WalkToDesert_Ghost_Town 42 11 0"
+				"spring": "610 {{ModId}}_Pete_Hidden 7 5 2/2000 {{ModId}}_Ghost_Shop 2 4 2/2430 {{ModId}}_Ghost_Town 42 11 0"
 			}
 		},
 		{
@@ -1616,7 +1616,7 @@
 			"Action": "EditData",
 			"Target": "Data/Events/{{ModId}}_Ghost_Shop",
 			"Entries": {
-				"13730004/t 2000 2600": "XOR/4 7/farmer 4 6 0/skippable/pause 1500/emote farmer 40/faceDirection farmer 1/pause 1000/faceDirection farmer 3/pause 1000/move farmer 1 0 1/move farmer 0 -1 0/pause 500/addTemporaryActor PickledPete 16 32 7 4 2/pause 300/jump farmer 8/move farmer 0 1 0/emote PickledPete 8/pause 1000/emote farmer 8/speak PickledPete \"{{i18n:Events.13730004.1}}\"/move farmer 0 -1 0/emote farmer 8/speak PickledPete \"{{i18n:Events.13730004.2}}\"/emote PickledPete 28/pause 1000/move PickledPete -5 0 2/speak PickledPete \"{{i18n:Events.13730004.3}}\"/end dialogue PickledPete \"{{i18n:Events.13730004.4}}\""
+				"13730004/t 2000 2600": "XOR/4 7/farmer 4 6 0/skippable/pause 1500/emote farmer 40/faceDirection farmer 1/pause 1000/faceDirection farmer 3/pause 1000/move farmer 1 0 1/move farmer 0 -1 0/pause 500/addTemporaryActor {{ModId}}_PickledPete 16 32 7 4 2/pause 300/jump farmer 8/move farmer 0 1 0/emote {{ModId}}_PickledPete 8/pause 1000/emote farmer 8/speak {{ModId}}_PickledPete \"{{i18n:Events.13730004.1}}\"/move farmer 0 -1 0/emote farmer 8/speak {{ModId}}_PickledPete \"{{i18n:Events.13730004.2}}\"/emote {{ModId}}_PickledPete 28/pause 1000/move {{ModId}}_PickledPete -5 0 2/speak {{ModId}}_PickledPete \"{{i18n:Events.13730004.3}}\"/end dialogue {{ModId}}_PickledPete \"{{i18n:Events.13730004.4}}\""
 			}
 		},
 		
@@ -1641,7 +1641,7 @@
 			"Action": "EditData",
 			"Target": "Data/Objects",
 			"Entries": {
-			// Eerie Plant Seeds
+				// Eerie Plant Seeds
 				"{{ModId}}_Eerie_Plant_Seeds": {
 					"Name": "{{ModId}}_Eerie_Plant_Seeds",
 					"Displayname": "{{i18n:Objects.EeriePlantSeeds.Name}}",
@@ -1759,7 +1759,9 @@
 					"Seasons": [ "spring", "summer", "fall", "winter" ],
 					"DaysInPhase": [ 3, 3, 3, 2, 2 ],
 					"RegrowDays": -1,
-					"IsPaddyCrop": true,
+					"IsRaised": true,
+					"IsPaddyCrop": false,
+					"NeedsWatering": true,
 					"HarvestItemId": "{{ModId}}_Ghost_Berry",
 					"HarvestMethod": "Scythe",
 					"HarvestMinStack": 1,
@@ -1783,33 +1785,35 @@
 			"Action": "EditData",
 			"Target": "Data/Shops",
 			"Entries": {
-				"Tarniyar.CP.WalkToDesert_WTD_GhostShop": {
+				"{{ModId}}_WTD_GhostShop": {
 					"Owners": [
 						{
-							"Condition": "TIME 600 2000",
-							"Portrait": null,
-							"Dialogues": null,
-							"ClosedMessage": "{{i18n:Shops.WTD.GhostShop.Closed}}",
-							"Id": "{{ModId}}_WTD_GhostShop_Closed",
-							"Name": "None"
-						},
-						{
-							"Condition": "!TIME 600 2000",
+							"Name": "{{ModId}}_PickledPete",
+							"Id": "{{ModId}}_WTD_GhostShop_Open",
 							"Dialogues": [
-								{
-									"Id": "{{ModId}}_Rainy",
-									"Condition": "WEATHER {{ModId}}_Ghost_Town Rain",
-									"Dialogue": "{{i18n:Shops.WTD.GhostShop.Dialogue.Rainy}}"
-								},
 								{
 									"Id": "{{ModId}}_Default",
 									"Dialogue": "{{i18n:Shops.WTD.GhostShop.Dialogue}}"
-								}
+								},
+								//{
+								//	"Id": "{{ModId}}_Rainy",
+								//	"Dialogue": "{{i18n:Shops.WTD.GhostShop.Dialogue.Rainy}}",
+								//	"Condition": "WEATHER {{ModId}}_Ghost_Town Rain"
+								//}
 							],
-							"ClosedMessage": null,
-							"Id": "{{ModId}}_WTD_GhostShop_Open",
-							"Name": "PickledPete"
+							"Condition": "TIME 2000 2430"
+						},
+						{
+							"Name": null,
+							"Id": "{{ModId}}_WTD_GhostShop_Closed",
+							"ClosedMessage": "{{i18n:Shops.WTD.GhostShop.Closed}}",
+							"Condition": "TIME 130 2000"
 						}
+					],
+					"SalableItemTags": [
+						"category_seeds",
+						"category_flowers",
+						"category_greens"
 					],
 					"Items": [
 						{
@@ -1828,11 +1832,6 @@
 							// "TradeItemAmount": 1,
 							"AvailableStock": 20
 						}
-					],
-					"SalableItemTags": [
-						"category_seeds",
-						"category_flowers",
-						"category_greens"
 					]
 				}
 			}
@@ -1860,7 +1859,7 @@
 			"Action": "EditData",
 			"Target": "Data/Mail",
 			"Entries": {
-				"Tarniyar.CP.WalkToDesert_Ghost_Berry": "{{i18n:Mail.GhostBerry.Wizard.1}}%item quest 1373001 %%[#]{{i18n:Mail.GhostBerry.Wizard.2}}"
+				"{{ModId}}_Ghost_Berry_Mail": "{{i18n:Mail.GhostBerry.Wizard.1}}%item quest 1373001 %%[#]{{i18n:Mail.GhostBerry.Wizard.2}}"
 			}
 		},
 
@@ -1874,7 +1873,7 @@
 					"Trigger": "DayStarted",
 					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Current (O){{ModId}}_Ghost_Berry",
 					"Actions": [
-						"AddMail Current {{ModId}}_Ghost_Berry"
+						"AddMail Current {{ModId}}_Ghost_Berry_Mail"
 					]
 				}
 			}
@@ -1885,10 +1884,7 @@
 			"Action": "EditData",
 			"Target": "Data/Quests",
 			"Entries": {
-				"1373001": "ItemDelivery/{{i18n:Quests.1373001.Title}}/{{i18n:Quests.1373001.Details}}/{{i18n:Quests.1373001.Hint}}/Wizard {{ModId}}_Ghost_Berry/-1/500/-1/true/{{i18n:Quests.1373001.Reaction}}",
-				"1373002": "ItemDelivery/{{i18n:Quests.1373002.Title}}/{{i18n:Quests.1373002.Details}}/{{i18n:Quests.1373002.Hint}}/Hephaestus 338 10/-1/2000/-1/true/{{i18n:Quests.1373002.Reaction}}",
-				"1373003": "ItemDelivery/{{i18n:Quests.1373003.Title}}/{{i18n:Quests.1373003.Details}}/{{i18n:Quests.1373003.Hint}}/Hephaestus 766 50/-1/1000/-1/true/{{i18n:Quests.1373003.Reaction}}",
-				"1373004": "ItemDelivery/{{i18n:Quests.1373004.Title}}/{{i18n:Quests.1373004.Details}}/{{i18n:Quests.1373004.Hint}}/Hephaestus 337 5/-1/25000/-1/true/{{i18n:Quests.1373004.Reaction}}"
+				"1373001": "ItemDelivery/{{i18n:Quests.1373001.Title}}/{{i18n:Quests.1373001.Details}}/{{i18n:Quests.1373001.Hint}}/Wizard {{ModId}}_Ghost_Berry/-1/500/-1/true/{{i18n:Quests.1373001.Reaction}}"
 			}
 		},
 		

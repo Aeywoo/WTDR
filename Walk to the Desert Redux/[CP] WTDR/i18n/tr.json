@@ -1,4 +1,5 @@
 { // Turkish Translation by: halifemuhsin
+	"$schema": "https://smapi.io/schemas/i18n.json",
 	// NPC Names
 	"NPC.Name.PickledPete": "Turşu Pete",
 	"NPC.Gifts.PickledPete.Love": "Benim için mi? Gerçekten mi? Çok teşekkür ederim!",

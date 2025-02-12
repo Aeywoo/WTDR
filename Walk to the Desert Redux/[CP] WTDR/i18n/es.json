@@ -1,4 +1,5 @@
 { // Spanish Translation by: ArazRed
+	"$schema": "https://smapi.io/schemas/i18n.json",
 	// NPC Names
 	"NPC.Name.PickledPete": "Pete Escabeche",
 	"NPC.Gifts.PickledPete.Love": "¿Para mí? ¿De verdad? ¡Oh, muchas gracias!",

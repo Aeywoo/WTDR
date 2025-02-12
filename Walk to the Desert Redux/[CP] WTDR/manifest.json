@@ -25,11 +25,11 @@
 			"UniqueID": "Esca.FarmTypeManager",
 			"MinimumVersion": "1.17.0",
 			"IsRequired": true
-		}//,
-		//{
-		//	"UniqueID": "Tarniyar.CP.GardenVillage",
-		//	"MinimumVersion": "1.4.6",
-		//	"IsRequired": false
-		//}
+		},
+		{
+			"UniqueID": "Tarniyar.CP.GardenVillage",
+			"MinimumVersion": "1.4.6",
+			"IsRequired": true
+		}
 	]
 }

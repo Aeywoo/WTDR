@@ -1,4 +1,5 @@
 { // Chinese Translation by: FENGSHUO0113
+	"$schema": "https://smapi.io/schemas/i18n.json",
 	// NPC Names
 	"NPC.Name.PickledPete": "醉鬼皮特",
 	"NPC.Gifts.PickledPete.Love": "给我的？真的？哦，非常感谢！",
