@@ -25,4 +25,4 @@ This is the repository for the Walk to the Desert Redux mod for Stardew Valley V
 * [Garden Village 1.3.4](https://github.com/Aeywoo/GardenVillage)
 
 # Licensing
-[All information can be found in the licensing document in this repository.](LICENSING)
+[All information can be found in the licensing document in this repository.](LICENSE)
