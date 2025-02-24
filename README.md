@@ -8,6 +8,8 @@ This is the repository for the Walk to the Desert Redux mod for Stardew Valley V
 # Credits
 ## Mod Author
 * [Tarniyar](https://next.nexusmods.com/profile/Tarniyar)
+## SMAPI Code
+* [Rokugin](https://next.nexusmods.com/profile/Rokugin)
 ## Tilesheets and Spritesheets
 * [omena007](https://next.nexusmods.com/profile/omena007)
 * [Gweniaczec](https://next.nexusmods.com/profile/Gweniaczek)
@@ -15,9 +17,12 @@ This is the repository for the Walk to the Desert Redux mod for Stardew Valley V
 ## Internationalisation Files
 * Italian Translation: [Kana](https://next.nexusmods.com/profile/7Kana)
 * Japanese Translation: [mitekano23](https://next.nexusmods.com/profile/mitekano23)
+* [Korean Translation:](https://www.nexusmods.com/stardewvalley/mods/8738) [ksheep0527](https://next.nexusmods.com/profile/ksheep0527)
 * Mandarin Translation: [FENGSHUO0113](https://next.nexusmods.com/profile/FENGSHUO0113)
 * Portuguese Translation: [Kiyugamods](https://next.nexusmods.com/profile/Kiyugamods)
+* [Russian Translation:](https://www.nexusmods.com/stardewvalley/mods/10284) [Sunbeam135](https://next.nexusmods.com/profile/Sunbeam135)
 * Spanish Translation: [ArazRed](https://next.nexusmods.com/profile/ArazRed)
+* [Thai Translation:](https://www.nexusmods.com/stardewvalley/mods/18289) [DksKing007](https://next.nexusmods.com/profile/Dksking007)
 * Turkish Translation: [halifemuhsin](https://next.nexusmods.com/profile/halifemuhsin)
 
 # Mod Dependencies
