@@ -1,0 +1,102 @@
+{
+	"Changes": [
+		{
+			"LogName": "Adds warps from the Winding Road map to the Stoffton map if the mod Lizzie's Stoffton mod is installed.",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Winding_Road",
+			"MapTiles": [
+				{
+					"Position": { "X": 39, "Y": 36 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Lizzie.Stoffton_Stoffton 6 67"
+					}
+				},
+				{
+					"Position": { "X": 39, "Y": 37 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Lizzie.Stoffton_Stoffton 6 68"
+					}
+				},
+				{
+					"Position": { "X": 39, "Y": 38 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Lizzie.Stoffton_Stoffton 6 69"
+					}
+				},
+				{
+					"Position": { "X": 39, "Y": 39 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Lizzie.Stoffton_Stoffton 6 70"
+					}
+				},
+				{
+					"Position": { "X": 39, "Y": 40 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Lizzie.Stoffton_Stoffton 6 71"
+					}
+				},
+				{
+					"Position": { "X": 39, "Y": 41 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp Lizzie.Stoffton_Stoffton 6 72"
+					}
+				}
+			]
+		},
+		{
+			"LogName": "Adds warps from the Stoffton map to the Winding Road map if the mod Lizzie's Stoffton mod is installed.",
+			"Action": "EditMap",
+			"Target": "Maps/Lizzie.Stoffton_Stoffton",
+			"MapTiles": [
+				{
+					"Position": { "X": 0, "Y": 67 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Winding_Road 38 36"
+					}
+				},
+				{
+					"Position": { "X": 0, "Y": 68 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Winding_Road 38 37"
+					}
+				},
+				{
+					"Position": { "X": 0, "Y": 69 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Winding_Road 38 38"
+					}
+				},
+				{
+					"Position": { "X": 0, "Y": 70 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Winding_Road 38 39"
+					}
+				},
+				{
+					"Position": { "X": 0, "Y": 71 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Winding_Road 38 40"
+					}
+				},
+				{
+					"Position": { "X": 0, "Y": 72 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "Warp {{ModId}}_Winding_Road 38 41"
+					}
+				}
+			]
+		}
+	]
+}

@@ -1,17 +1,17 @@
 {
 	"$schema": "https://smapi.io/schemas/content-patcher.json",
-	"Format": "2.5.0",
+	"Format": "2.6.0",
 	"ConfigSchema": {
 		"SquareRoads": {
 			"AllowValues": "True, False",
 			"Default": "False",
 			"Section": "RoadType"
 		},
-		//"EemieFallVariant": {
-		//	"AllowValues": "Green, Orange",
-		//	"Default": "Orange",
-		//	"Section": "RecolourVariants"
-		//},
+		"EemieFallVariant": {
+			"AllowValues": "Green, Orange",
+			"Default": "Orange",
+			"Section": "RecolourVariants"
+		},
 		"StarblueSpringVariant": {
 			"AllowValues": "Green, Blue",
 			"Default": "Blue",
@@ -30,14 +30,14 @@
 				"HasMod": "DaisyNiko.EarthyRecolour"
 			}
 		},
-		// Mod has been delisted, can't find it anywhere
-		//{
-		//	"Name": "recolor",
-		//	"Value": "eemie",
-		//	"When": {
-		//		"HasMod": "minervamaga.CP.eemieMapRecolour"
-		//	}
-		//},
+		// Mod has been delisted, can't find a public copy anywhere
+		{
+			"Name": "recolor",
+			"Value": "eemie",
+			"When": {
+				"HasMod": "minervamaga.CP.eemieMapRecolour"
+			}
+		},
 		{
 			"Name": "recolor",
 			"Value": "pastoral",
@@ -121,15 +121,15 @@
 		},
 		
 		// Re-Color Seasonal Variants
-		//{
-		//	"Action": "EditImage",
-		//	"Target": "Maps/fall_z_wtd_tilesheet",
-		//	"FromFile": "assets/recolors/eemie/fall_z_wtd_tilesheet-g.png",
-		//	"When": {
-		//		"recolor": "eemie",
-		//		"EemieFallVariant": "Green"
-		//	}
-		//},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/fall_z_wtd_tilesheet",
+			"FromFile": "assets/recolors/eemie/fall_z_wtd_tilesheet-g.png",
+			"When": {
+				"recolor": "eemie",
+				"EemieFallVariant": "Green"
+			}
+		},
 		{
 			"Action": "EditImage",
 			"Target": "Maps/spring_z_wtd_tilesheet",
@@ -624,6 +624,45 @@
 			]
 		},
 		{
+			"LogName": "Adds a new T-Junction going to the Stoffton Town if Lizzie's Stoffton Mod is installed on its own.",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Winding_Road",
+			"FromFile": "assets/maps/patches/WindingRoadStoffton.tmx",
+			"ToArea": { "X": 22, "Y": 33, "Width": 18, "Height": 11 },
+			"When": {
+				"HasMod| contains=Fostoria.Stoffton": false,
+				"HasMod": "Lizzie.Stoffton",
+				"SquareRoads": false
+			}
+		},
+		{
+			"LogName": "Adds a new T-Junction going to the Stoffton Town if Lizzie's Stoffton Mod is installed on its own.",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Winding_Road",
+			"FromFile": "assets/maps/patches/WindingRoadSquareStoffton.tmx",
+			"ToArea": { "X": 22, "Y": 33, "Width": 18, "Height": 11 },
+			"When": {
+				"HasMod| contains=Fostoria.Stoffton": false,
+				"HasMod": "Lizzie.Stoffton",
+				"SquareRoads": true
+			}
+		},
+		{
+			"LogName": "Applies a map edit to remove an invisible tile from the invisible wall on the bottom left of the Stoffton map if Lizzie's Stoffton mod is installed.",
+			"Action": "EditMap",
+			"Target": "Maps/Lizzie.Stoffton_Stoffton",
+			"MapTiles": [
+				{
+					"Position": { "X": 0, "Y": 67 },
+					"Layer": "Buildings",
+					"Remove": true
+				}
+			],
+			"When": {
+				"HasMod": "Lizzie.Stoffton"
+			}
+		},
+		{
 			"LogName": "Replaces the tunnel section of the Forest Road map with a non-tunnel version if Tego's Stardew Expansion or Stoffton's Fostoria is installed",
 			"Action": "EditMap",
 			"Target": "Maps/{{ModId}}_Forest_Road",
@@ -767,7 +806,7 @@
 		{
 			"LogName": "Including the StardewValleyExpanded json file that adds all the warps and map edits required for compatibility.",
 			"Action": "Include",
-			"FromFile": "assets/data/InterModCompats/StardewValleyExpanded.json",
+			"FromFile": "assets/data/intermodcompats/StardewValleyExpanded.json",
 			"When": {
 				"HasMod": "FlashShifter.StardewValleyExpandedCP"
 			}
@@ -775,15 +814,23 @@
 		{
 			"LogName": "Including the Fostoria json file that adds all the warps and map edits required for compatibility.",
 			"Action": "Include",
-			"FromFile": "assets/data/InterModCompats/Fostoria.json",
+			"FromFile": "assets/data/intermodcompats/Fostoria.json",
 			"When": {
 				"HasMod": "Fostoria.Stoffton"
 			}
 		},
 		{
+			"LogName": "Including the Stoffton json file that adds all the warps and map edits required for compatibility.",
+			"Action": "Include",
+			"FromFile": "assets/data/intermodcompats/Stoffton.json",
+			"When": {
+				"HasMod": "Lizzie.Stoffton"
+			}
+		},
+		{
 			"LogName": "Including the StardewExpansion json file that adds all the warps and map edits required for compatibility.",
 			"Action": "Include",
-			"FromFile": "assets/data/InterModCompats/StardewExpansion.json",
+			"FromFile": "assets/data/intermodcompats/StardewExpansion.json",
 			"When": {
 				"HasMod": "Pillow.StardewExpansion.CP"
 			}
@@ -791,7 +838,7 @@
 		{
 			"LogName": "Including the Ridgeside json file that adds all the warps and map edits required for compatibility.",
 			"Action": "Include",
-			"FromFile": "assets/data/InterModCompats/Ridgeside.json",
+			"FromFile": "assets/data/intermodcompats/Ridgeside.json",
 			"When": {
 				"HasMod": "Rafseazz.RSVCP"
 			}
@@ -799,7 +846,7 @@
 		{
 			"LogName": "Including the DowntownZuzu json file that adds all the warps and map edits required for compatibility.",
 			"Action": "Include",
-			"FromFile": "assets/data/InterModCompats/DowntownZuzu.json",
+			"FromFile": "assets/data/intermodcompats/DowntownZuzu.json",
 			"When": {
 				"HasMod": "DTZ.DowntownZuzuCP"
 			}
@@ -1910,6 +1957,7 @@
 				"WTD.WindingRoad.2": "{{i18n:MapStrings.WTD.WindingRoad.2}}",
 				"WTD.WindingRoad.3": "{{i18n:MapStrings.WTD.WindingRoad.3}}",
 				"WTD.WindingRoad.4": "{{i18n:MapStrings.WTD.WindingRoad.4}}",
+				"WTD.WindingRoad.5": "{{i18n:MapStrings.WTD.WindingRoad.5}}",
 				"WTD.Cave.1": "{{i18n:MapStrings.WTD.Cave.1}}",
 				"WTD.Cave.2": "{{i18n:MapStrings.WTD.Cave.2}}",
 				"WTD.Cave.3": "{{i18n:MapStrings.WTD.Cave.3}}",

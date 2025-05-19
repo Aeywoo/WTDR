@@ -96,9 +96,7 @@
 				}
 			],
 			"When": {
-				"HasMod": "FlashShifter.StardewValleyExpandedCP",
-				"Season |contains=summer": false,
-				"Day |contains=15, 16": false
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
 			}
 		},
 		{
@@ -150,9 +148,7 @@
 				}
 			],
 			"When": {
-				"HasMod": "FlashShifter.StardewValleyExpandedCP",
-				"Season": "spring",
-				"Day": "15, 16"
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
 			}
 		},
 		{
