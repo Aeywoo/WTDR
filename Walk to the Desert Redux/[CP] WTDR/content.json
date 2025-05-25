@@ -1874,9 +1874,9 @@
 						{
 							"Id": "{{ModId}}_Old_Coin",
 							"ItemId": "(O){{ModId}}_Old_Coin",
-							"Price": 120, // 0,
-							// "TradeItemId": "Tarniyar.CP.GardenVillage_Slime_Cheese",
-							// "TradeItemAmount": 1,
+							"Price": 0, //120
+							"TradeItemId": "Tarniyar.CP.GardenVillage_Slime_Cheese",
+							"TradeItemAmount": 1,
 							"AvailableStock": 20
 						}
 					]
